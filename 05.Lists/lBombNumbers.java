@@ -1,4 +1,4 @@
-package com.company;
+package company;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,6 +25,19 @@ public class lBombNumbers {
             for (int i = begin; i < index; i++) {
                 numbers.remove(begin);
             }
+            
+            index = numbers.indexOf(bomb);
+            int end = Math.min(index + power, numbers.size() - 1);
+
+            for (int i = index; i <= end; i++) {
+                numbers.remove(index);
+            }
         }
+        
+        int sum = 0;
+        for (Integer number : numbers) {
+            sum += number;
+        }
+        System.out.println(sum);
     }
 }
