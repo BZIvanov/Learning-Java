@@ -19,4 +19,4 @@
     It stores key, value pairs where the keys are sorted on some criteria.
 
     Basic example:
-    ```Map<Double, Integer> myMap = new TreeMap<>();```
+    `Map<Double, Integer> myMap = new TreeMap<>();`
