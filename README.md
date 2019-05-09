@@ -20,3 +20,9 @@
 
     Basic example:
     `Map<Double, Integer> myMap = new TreeMap<>();`
+
+## Set
+
+It stores only unique elements.
+    Basic example:
+    `Set<Integer> mySet = new HashSet<>();`
