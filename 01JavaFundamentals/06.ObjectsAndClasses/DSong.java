@@ -1,6 +1,4 @@
-package com.company;
-
-public class DSong {
+public class Song {
     private String typeList;
     private String name;
     private String time;

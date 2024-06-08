@@ -1,4 +1,4 @@
-public class LVehicle {
+public class Vehicle {
     private String type;
     private String model;
     private String color;

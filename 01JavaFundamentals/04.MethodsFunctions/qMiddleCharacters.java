@@ -1,8 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class qMiddleCharacters {
+public class MiddleCharacters {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -15,7 +13,7 @@ public class qMiddleCharacters {
         String result = "";
         int middleIndex = str.length() / 2;
 
-        if(str.length() % 2 == 0) {
+        if (str.length() % 2 == 0) {
             result += "" + str.charAt(middleIndex - 1) + str.charAt(middleIndex);
         } else {
             result += str.charAt(middleIndex);

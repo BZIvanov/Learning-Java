@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class jMultiplyEvensByOdds {
+public class MultiplyEvensByOdds {
 
     static int getSumOfEvenDigits(int n) {
         int result = 0;
@@ -30,6 +30,7 @@ public class jMultiplyEvensByOdds {
         return  result;
     }
 
+    // private means that this method is accessible only by this class
     private static int getMultipleOfEvensAndOdds(int n) {
         int evenSum = getSumOfEvenDigits(n);
         int odsSum = getSumOfOddDigits(n);

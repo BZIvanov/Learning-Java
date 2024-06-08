@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class HNestedFolders {
+public class NestedFolders {
     public static void main(String[] args) {
         File f = new File("H:\\Charters Training");
 

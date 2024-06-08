@@ -1,8 +1,9 @@
-package com.company;
+// classes are orgianized in packages, which usually represents the folder they are in, if the class is in the root folder it won't have package
+package company;
 
 import java.util.Scanner;
 
-public class aIntegerOperations {
+public class IntegerOperations {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

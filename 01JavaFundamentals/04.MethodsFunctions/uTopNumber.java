@@ -1,8 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class uTopNumber {
+public class TopNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -34,7 +32,7 @@ public class uTopNumber {
             num /= 10;
             sum += digit;
         }
-        if(sum % 8 == 0) {
+        if (sum % 8 == 0) {
             return true;
         }
         return false;

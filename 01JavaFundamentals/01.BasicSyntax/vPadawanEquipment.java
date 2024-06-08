@@ -1,8 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class vPadawanEquipment {
+public class PadawanEquipment {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

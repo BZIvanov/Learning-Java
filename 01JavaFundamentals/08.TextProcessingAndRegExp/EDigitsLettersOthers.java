@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EDigitsLettersOthers {
+public class DigitsLettersOthers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

@@ -1,8 +1,6 @@
-package com.company;
-
 import java.util.Scanner;
 
-public class pVacation {
+public class Vacation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,7 +9,7 @@ public class pVacation {
         String day = sc.nextLine();
 
         double totalPrice = 0;
-        if(group.equals("Students")) {
+        if (group.equals("Students")) {
             if (day.equals("Friday")) {
                 totalPrice = 8.45 * n;
             } else if (day.equals("Saturday")) {

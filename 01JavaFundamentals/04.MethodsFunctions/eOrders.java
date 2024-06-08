@@ -1,9 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class eOrders {
-
+public class Orders {
     static void calculatePrice(String drink, int quantity) {
         switch (drink) {
             case "coffee":

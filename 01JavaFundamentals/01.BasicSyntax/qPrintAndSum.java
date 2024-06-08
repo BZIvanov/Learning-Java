@@ -1,8 +1,6 @@
-package com.company;
-
 import java.util.Scanner;
 
-public class qPrintAndSum {
+public class PrintAndSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,7 +9,7 @@ public class qPrintAndSum {
 
         int sum = 0;
         String nums = "";
-        for(int i = start; i <= end; i++) {
+        for (int i = start; i <= end; i++) {
             sum += i;
             nums += i + " ";
         }

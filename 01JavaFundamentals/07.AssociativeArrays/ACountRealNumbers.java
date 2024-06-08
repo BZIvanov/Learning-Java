@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ACountRealNumbers {
+public class CountRealNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-public class UCreateZipArchive {
+public class CreateZipArchive {
     public static void main(String[] args) throws IOException {
         // this is where our file will be saved
         ZipOutputStream zip = new ZipOutputStream(new FileOutputStream("H:\\Exercises Resources\\zip.zip"));

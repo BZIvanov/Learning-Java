@@ -1,12 +1,10 @@
-package company;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class oAnonymousThreat {
+public class AnonymousThreat {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -57,7 +55,7 @@ public class oAnonymousThreat {
                 if (!element.isEmpty()) {
                     result.add(element);
                 }
-                if(!lastElement.isEmpty()) {
+                if (!lastElement.isEmpty()) {
                     result.add(lastElement);
                 }
                 elements.remove(start);

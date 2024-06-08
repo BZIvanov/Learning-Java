@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class JSumLines {
+public class SumLines {
     public static void main(String[] args) throws IOException {
         String filePath = "H:\\input.txt";
         String outFile = "H:\\output.txt";

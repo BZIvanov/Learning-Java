@@ -1,9 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class cPrintTriangle {
-
+public class PrintTriangle {
     static String printLine(int y) {
         String result = "";
         for (int i = 1; i <= y; i++) {

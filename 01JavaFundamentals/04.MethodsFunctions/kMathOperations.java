@@ -1,9 +1,6 @@
-package com.company;
-
 import java.util.Scanner;
 
-public class kMathOperations {
-
+public class MathOperations {
     static double add(double a, double b) {
         return a + b;
     }

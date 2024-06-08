@@ -1,9 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class zzMethodExamples {
-
+public class MethodExamples {
     static void printHelloWorld() {
         // static is always used
         // void is because this method doesn't return anything, just prints a message

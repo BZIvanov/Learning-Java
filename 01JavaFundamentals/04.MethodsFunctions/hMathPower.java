@@ -1,9 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class hMathPower {
-
+public class MathPower {
     static double numPower(double n, double p) {
         return Math.pow(n, p);
     }

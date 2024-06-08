@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class GFindRealQueen {
+public class FindRealQueen {
     private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -37,6 +37,7 @@ public class GFindRealQueen {
     private static boolean checkLeftAndRight(char[][] matrix, int i, int j) {
         for (int cols = 0; cols < 8; cols++) {
             if (cols == j) {
+                // continue will skip the current itteration and continue with the next one
                 continue;
             }
             if (matrix[i][cols] == 'q') {

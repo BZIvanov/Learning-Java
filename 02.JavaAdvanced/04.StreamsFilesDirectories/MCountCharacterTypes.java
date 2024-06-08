@@ -2,7 +2,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class MCountCharacterTypes {
+public class CountCharacterTypes {
     public static void main(String[] args) throws IOException {
         String filePath = "H:\\input.txt";
         String outputPath = "H:\\charTypes.txt";

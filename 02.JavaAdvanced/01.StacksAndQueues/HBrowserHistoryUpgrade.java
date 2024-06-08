@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-public class HBrowserHistoryUpgrade {
+public class BrowserHistoryUpgrade {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
 

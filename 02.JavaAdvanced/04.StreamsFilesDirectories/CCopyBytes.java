@@ -2,7 +2,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class CCopyBytes {
+public class CopyBytes {
     public static void main(String[] args) {
         String pathIn = "H:\\input.txt";
         String pathOut = "H:\\output.txt";

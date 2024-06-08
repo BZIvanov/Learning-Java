@@ -1,8 +1,6 @@
-package com.company;
-
 import java.util.Scanner;
 
-public class qLadyBugs {
+public class LadyBugs {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

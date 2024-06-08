@@ -1,9 +1,7 @@
-package com.company;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class eEvenOddSubtraction {
+public class EvenOddSubtraction {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -14,6 +12,7 @@ public class eEvenOddSubtraction {
         int evenSum = 0;
         int oddSum = 0;
 
+        // this is example of forEach loop
         for (int number : numbers) {
             if (number % 2 == 0) {
                 evenSum += number;

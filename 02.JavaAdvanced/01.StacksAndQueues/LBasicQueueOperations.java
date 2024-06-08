@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class LBasicQueueOperations {
+public class BasicQueueOperations {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

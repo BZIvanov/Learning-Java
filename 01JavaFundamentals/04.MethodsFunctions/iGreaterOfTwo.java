@@ -1,9 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class iGreaterOfTwo {
-
+public class GreaterOfTwo {
     static int getMax(int first, int second) {
         return first > second ? first : second;
     }

@@ -1,8 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class oPasswordValidator {
+public class PasswordValidator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -45,7 +43,7 @@ public class oPasswordValidator {
         for (int i = 0; i < p.length(); i++) {
             char symbol = p.charAt(i);
             // Character class has already implemented method to check for letter or number
-            if(!Character.isLetterOrDigit(symbol)) {
+            if (!Character.isLetterOrDigit(symbol)) {
                 System.out.println("Password must consist only of letters and digits");
                 return false;
             }

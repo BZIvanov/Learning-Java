@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class HAcademyGraduation {
+public class AcademyGraduation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

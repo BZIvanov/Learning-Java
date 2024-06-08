@@ -1,8 +1,6 @@
-package com.company;
-
 import java.util.Scanner;
 
-public class rLogin {
+public class Login {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,11 +11,11 @@ public class rLogin {
         while (true) {
             String input = sc.nextLine();
             blocked++;
-            if(input.equals(password)) {
+            if (input.equals(password)) {
                 System.out.printf("User %s logged in.", user);
                 break;
             } else {
-                if(blocked == 4) {
+                if (blocked == 4) {
                     System.out.printf("User %s blocked!", user);
                     break;
                 }

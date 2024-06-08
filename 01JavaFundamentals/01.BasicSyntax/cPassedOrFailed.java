@@ -1,9 +1,6 @@
-package com.company;
-
 import java.util.Scanner;
 
-public class cPassedOrFailed {
-
+public class PassedOrFailed {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

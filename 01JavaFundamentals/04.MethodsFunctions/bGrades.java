@@ -1,9 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class bGrades {
-
+public class Grades {
     static void printGrade(double grade) {
         if (grade >= 2.0 && grade < 3.0) {
             System.out.println("Fail");

@@ -1,8 +1,6 @@
-package com.company;
-
 import java.util.Scanner;
 
-public class dReverseArray {
+public class ReverseArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

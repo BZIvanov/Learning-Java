@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class OWordCount {
+public class WordCount {
     public static void main(String[] args) throws IOException {
         String textInput = "H:\\text.txt";
         String wordsInput = "H:\\words.txt";

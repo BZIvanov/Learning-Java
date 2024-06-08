@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class GListFiles {
+public class ListFiles {
     public static void main(String[] args) {
         File f = new File("H:\\");
 

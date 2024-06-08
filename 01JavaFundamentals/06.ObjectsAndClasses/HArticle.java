@@ -1,4 +1,4 @@
-public class HArticle {
+public class Article {
     private String title;
     private String content;
     private String author;

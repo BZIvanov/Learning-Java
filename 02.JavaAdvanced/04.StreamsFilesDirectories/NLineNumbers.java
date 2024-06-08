@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class NLineNumbers {
+public class LineNumbers {
     public static void main(String[] args) throws IOException {
         String filePath = "H:\\input.txt";
         String outputPath = "H:\\lineNumbers.txt";

@@ -2,7 +2,7 @@ import java.util.LinkedHashMap;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class VDragonArmy {
+public class DragonArmy {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

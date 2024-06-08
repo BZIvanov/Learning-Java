@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-public class GMathPotato {
+public class MathPotato {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -34,7 +34,7 @@ public class GMathPotato {
         if (cycle <= 1) {
             return false;
         }
-        if(cycle == 2){
+        if (cycle == 2){
             return true;
         }
         for (int i = 2; i < cycle; i++) {

@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FSortLines {
+public class SortLines {
     public static void main(String[] args) throws IOException {
         Path pathIn = Paths.get("H:\\input.txt");
         Path pathOut = Paths.get("H:\\output.txt");

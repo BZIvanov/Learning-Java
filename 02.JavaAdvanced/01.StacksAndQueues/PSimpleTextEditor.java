@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-public class PSimpleTextEditor {
+public class SimpleTextEditor {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

@@ -1,9 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class dCalculations {
-
+public class Calculations {
     static void add(int first, int second) {
         System.out.printf("%d", first + second);
     }

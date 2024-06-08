@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PHeiganDance {
+public class HeiganDance {
     private static boolean[][] playground = new boolean[15][];
     private static final int matrixSize = 15;
     private static int playerRow = 7;

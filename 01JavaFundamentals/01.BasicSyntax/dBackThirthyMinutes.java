@@ -1,8 +1,7 @@
-package com.company;
-
 import java.util.Scanner;
 
-public class dBackThirthyMinutes {
+public class BackThirthyMinutes {
+    // void means this method is not returning anything
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,9 +12,9 @@ public class dBackThirthyMinutes {
         int h = totalMinutes / 60;
         int m = totalMinutes % 60;
 
-        if(h > 23) {
+        if (h > 23) {
             h -= 24;
         }
-        System.out.printf("%d:%02d",h , m);
+        System.out.printf("%d:%02d", h, m);
     }
 }

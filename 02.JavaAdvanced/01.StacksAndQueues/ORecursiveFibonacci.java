@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ORecursiveFibonacci {
+public class RecursiveFibonacci {
     private static long[] memory;
 
     public static void main(String[] args) {

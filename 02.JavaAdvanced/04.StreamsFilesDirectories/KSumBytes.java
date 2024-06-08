@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.math.BigInteger;
 
-public class KSumBytes {
+public class SumBytes {
     public static void main(String[] args) throws IOException {
         String filePath = "H:\\input.txt";
         String outputPath = "H:\\BigInt.txt";

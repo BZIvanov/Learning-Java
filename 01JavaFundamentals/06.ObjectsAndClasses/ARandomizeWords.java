@@ -1,5 +1,3 @@
-package com.company;
-
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class ARandomizeWords {
+public class RandomizeWords {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
 

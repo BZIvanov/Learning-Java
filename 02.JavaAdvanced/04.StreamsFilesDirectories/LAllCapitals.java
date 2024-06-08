@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class LAllCapitals {
+public class AllCapitals {
     public static void main(String[] args) throws IOException {
         String filePath = "H:\\input.txt";
         String outputPath = "H:\\allCapitals.txt";

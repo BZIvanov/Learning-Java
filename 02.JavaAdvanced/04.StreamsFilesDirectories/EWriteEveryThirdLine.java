@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class EWriteEveryThirdLine {
+public class WriteEveryThirdLine {
     public static void main(String[] args) {
         String pathIn = "H:\\input.txt";
         String pathOut = "H:\\output.txt";

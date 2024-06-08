@@ -2,7 +2,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class RCopyPicture {
+public class CopyPicture {
     public static void main(String[] args) throws IOException {
         String filePath = "H:\\Emiiter.PNG";
 

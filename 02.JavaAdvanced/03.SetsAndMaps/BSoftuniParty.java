@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class BSoftuniParty {
+public class SoftuniParty {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

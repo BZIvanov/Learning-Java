@@ -1,8 +1,8 @@
 import java.util.LinkedHashMap;
-        import java.util.Map;
-        import java.util.Scanner;
+import java.util.Map;
+import java.util.Scanner;
 
-public class OFixEmails {
+public class FixEmails {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

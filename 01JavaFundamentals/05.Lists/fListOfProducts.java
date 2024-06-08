@@ -1,8 +1,6 @@
-package company;
-
 import java.util.*;
 
-public class fListOfProducts {
+public class ListOfProducts {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

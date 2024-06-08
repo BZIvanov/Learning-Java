@@ -1,9 +1,7 @@
-package company;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class nAppendArrays {
+public class AppendArrays {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

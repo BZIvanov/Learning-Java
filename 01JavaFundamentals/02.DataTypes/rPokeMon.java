@@ -1,8 +1,6 @@
-package com.company;
-
 import java.util.Scanner;
 
-public class rPokeMon {
+public class PokeMon {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

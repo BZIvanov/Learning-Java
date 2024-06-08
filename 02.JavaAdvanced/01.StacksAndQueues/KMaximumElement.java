@@ -2,7 +2,7 @@ import java.util.ArrayDeque;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class KMaximumElement {
+public class MaximumElement {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

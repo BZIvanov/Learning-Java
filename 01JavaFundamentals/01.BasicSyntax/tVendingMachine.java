@@ -1,8 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class tVendingMachine {
+public class VendingMachine {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,12 +8,12 @@ public class tVendingMachine {
         while (true) {
             String input = sc.nextLine();
 
-            if(input.equals("Start")) {
+            if (input.equals("Start")) {
                 break;
             } else {
                 double coin = Double.parseDouble(input);
 
-                if(coin == 0.1 || coin == 0.2 || coin == 0.5 || coin == 1 || coin == 2) {
+                if (coin == 0.1 || coin == 0.2 || coin == 0.5 || coin == 1 || coin == 2) {
                     money += coin;
                 } else {
                     System.out.printf("Cannot accept %.2f%n", coin);

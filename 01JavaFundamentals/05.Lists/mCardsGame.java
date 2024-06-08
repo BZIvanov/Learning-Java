@@ -1,11 +1,9 @@
-package company;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class mCardsGame {
+public class CardsGame {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -46,6 +44,5 @@ public class mCardsGame {
             int sum = second.stream().reduce((a, b) -> a + b).get();
             System.out.printf("Second player wins! Sum: %d", sum);
         }
-
     }
 }

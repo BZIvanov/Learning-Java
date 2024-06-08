@@ -1,9 +1,7 @@
-package company;
-
 import java.util.Scanner;
 
-public class aSignOfInteger {
-
+public class SignOfInteger {
+    // integerSign is method of our class
     static void integerSign(int num) {
         if(num > 0) {
             System.out.printf("The number %d is positive.", num);

@@ -1,9 +1,7 @@
-package com.company;
-
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class bExactSumRealNumbers {
+public class ExactSumRealNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

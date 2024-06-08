@@ -1,6 +1,7 @@
+// with * we will import everything from java.io
 import java.io.*;
 
-public class PMergeTwoFiles {
+public class MergeTwoFiles {
     public static void main(String[] args) {
         String inputOne = "H:\\Exercises Resources\\inputOne.txt";
         String inputTwo = "H:\\Exercises Resources\\inputTwo.txt";

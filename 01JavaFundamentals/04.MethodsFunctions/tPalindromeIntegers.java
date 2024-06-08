@@ -1,8 +1,6 @@
-package company;
+import java.util.Scanner;
 
-        import java.util.Scanner;
-
-public class tPalindromeIntegers {
+public class PalindromeIntegers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

@@ -1,8 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class sFactorialDivision {
+public class FactorialDivision {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -14,7 +12,7 @@ public class sFactorialDivision {
     }
 
     public static double fact(double num) {
-        if(num < 1) {
+        if (num < 1) {
             return 1;
         }
 

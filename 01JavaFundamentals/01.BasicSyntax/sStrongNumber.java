@@ -1,8 +1,6 @@
-package company;
-
 import java.util.Scanner;
 
-public class sStrongNumber {
+public class StrongNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -17,13 +15,13 @@ public class sStrongNumber {
 
             int factorial = 1;
 
-            for(int i = 1; i <= digit; i++) {
+            for (int i = 1; i <= digit; i++) {
                 factorial *= i;
             }
             sum += factorial;
         }
 
-        if(sum == input) {
+        if (sum == input) {
             System.out.println("yes");
         } else {
             System.out.println("no");

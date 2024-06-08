@@ -2,7 +2,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class RPopulationCounter {
+public class PopulationCounter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
