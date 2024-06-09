@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RefactorPyramidVolume {
+public class PyramidVolume {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

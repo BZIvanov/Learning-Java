@@ -1,4 +1,4 @@
-# Java Basic syntax
+# Basic syntax
 
 ## Recommended learning order
 
