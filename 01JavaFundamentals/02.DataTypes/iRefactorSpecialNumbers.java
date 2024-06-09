@@ -6,7 +6,7 @@ public class RefactorSpecialNumbers {
 
         int n = Integer.parseInt(scanner.nextLine());
 
-        boolean toe = false;
+        boolean toe;
         for (int ch = 1; ch <= n; ch++) {
             int sum = 0;
             int nums = ch;

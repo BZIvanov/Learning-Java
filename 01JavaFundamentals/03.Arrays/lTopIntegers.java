@@ -6,7 +6,7 @@ public class TopIntegers {
         Scanner sc = new Scanner(System.in);
 
         int[] numbers = Arrays.stream(sc.nextLine().split(" "))
-                .mapToInt(e -> Integer.parseInt(e)).toArray();
+                .mapToInt(Integer::parseInt).toArray();
 
         for (int i = 0; i < numbers.length; i++) {
             int currentNum = numbers[i];
@@ -14,6 +14,7 @@ public class TopIntegers {
             for (int j = i + 1; j < numbers.length; j++) {
                 if (currentNum <= numbers[j]) {
                     isMax = false;
+                    break;
                 }
             }
             if (isMax) {

@@ -28,7 +28,7 @@ public class VendingMachine {
                 break;
             }
 
-            Boolean hasProduct = true;
+            boolean hasProduct = true;
             switch (product) {
                 case "Nuts":
                     if (money >= 2) {
@@ -39,7 +39,7 @@ public class VendingMachine {
                         System.out.printf("Sorry, not enough money%n");
                         hasProduct = false;
                     }
-                break;
+                    break;
                 case "Water":
                     if (money >= 0.7) {
                         System.out.printf("Purchased Water%n");
@@ -49,7 +49,7 @@ public class VendingMachine {
                         System.out.printf("Sorry, not enough money%n");
                         hasProduct = false;
                     }
-                break;
+                    break;
                 case "Crisps":
                     if (money >= 1.5) {
                         System.out.printf("Purchased Crisps%n");
@@ -59,7 +59,7 @@ public class VendingMachine {
                         System.out.printf("Sorry, not enough money%n");
                         hasProduct = false;
                     }
-                break;
+                    break;
                 case "Soda":
                     if (money >= 0.8) {
                         System.out.printf("Purchased Soda%n");
@@ -69,7 +69,7 @@ public class VendingMachine {
                         System.out.printf("Sorry, not enough money%n");
                         hasProduct = false;
                     }
-                break;
+                    break;
                 case "Coke":
                     if (money >= 1) {
                         System.out.printf("Purchased Coke%n");
@@ -79,7 +79,7 @@ public class VendingMachine {
                         System.out.printf("Sorry, not enough money%n");
                         hasProduct = false;
                     }
-                break;
+                    break;
             }
             if (hasProduct) {
                 System.out.printf("Invalid product%n");

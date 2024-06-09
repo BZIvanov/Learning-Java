@@ -14,19 +14,7 @@ public class VowelsCount {
         String strToLower = s.toLowerCase();
         for (int i = 0; i < strToLower.length(); i++) {
             switch (strToLower.charAt(i)) {
-                case 'a':
-                    count++;
-                    break;
-                case 'o':
-                    count++;
-                    break;
-                case 'u':
-                    count++;
-                    break;
-                case 'i':
-                    count++;
-                    break;
-                case 'e':
+                case 'a', 'u', 'o', 'i', 'e':
                     count++;
                     break;
             }

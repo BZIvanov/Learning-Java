@@ -6,7 +6,7 @@ public class EqualSum {
         Scanner sc = new Scanner(System.in);
 
         int[] numbers = Arrays.stream(sc.nextLine().split(" "))
-                .mapToInt(e -> Integer.parseInt(e)).toArray();
+                .mapToInt(Integer::parseInt).toArray();
 
         boolean hasEqualSum = false;
         for (int i = 0; i < numbers.length; i++) {

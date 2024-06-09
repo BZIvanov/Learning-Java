@@ -6,10 +6,10 @@ public class EqualArrays {
         Scanner sc = new Scanner(System.in);
 
         int[] first = Arrays.stream(sc.nextLine().split(" "))
-                .mapToInt(e -> Integer.parseInt(e)).toArray();
+                .mapToInt(Integer::parseInt).toArray();
 
         int[] second = Arrays.stream(sc.nextLine().split(" "))
-                .mapToInt(e -> Integer.parseInt(e)).toArray();
+                .mapToInt(Integer::parseInt).toArray();
 
         int sum = 0;
         for (int i = 0; i < first.length; i++) {

@@ -3,7 +3,6 @@ package com.company;
 import java.util.Scanner;
 
 public class MultiplyEvensByOdds {
-
     static int getSumOfEvenDigits(int n) {
         int result = 0;
         while (n > 0) {

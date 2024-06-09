@@ -48,7 +48,7 @@ public class AnonymousThreat {
                 int parts = element.length() - lastElementLength;
                 String lastElement = element.substring(element.length() - lastElementLength);
                 element = element.substring(0, element.length() - lastElementLength);
-                for (int i = 0; i < parts && element.length() > 0; i++) {
+                for (int i = 0; i < parts && !element.isEmpty(); i++) {
                     result.add(element.substring(0, symbols));
                     element = element.substring(symbols);
                 }

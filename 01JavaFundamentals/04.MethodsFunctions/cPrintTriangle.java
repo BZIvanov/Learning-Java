@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class PrintTriangle {
     static String printLine(int y) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (int i = 1; i <= y; i++) {
-            result += i + " ";
+            result.append(i).append(" ");
         }
-        return result.trim();
+        return result.toString().trim();
     }
 
     public static void main(String[] args) {

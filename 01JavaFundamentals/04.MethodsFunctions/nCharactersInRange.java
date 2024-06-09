@@ -11,7 +11,7 @@ public class CharactersInRange {
     }
 
     public static String getCharsInRange(char start, char end) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         if (end < start) {
             char temp = end;
@@ -20,9 +20,9 @@ public class CharactersInRange {
         }
 
         for (int i = start + 1; i < end; i++) {
-            result += (char) i + " ";
+            result.append((char) i).append(" ");
         }
 
-        return result.trim();
+        return result.toString().trim();
     }
 }

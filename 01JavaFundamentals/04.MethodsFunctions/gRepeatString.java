@@ -2,11 +2,7 @@ import java.util.Scanner;
 
 public class RepeatString {
     static String wholeText(String text, int n) {
-        String result = "";
-        for (int i = 0; i < n; i++) {
-            result += text;
-        }
-        return result;
+        return String.valueOf(text).repeat(Math.max(0, n));
     }
 
     public static void main(String[] args) {

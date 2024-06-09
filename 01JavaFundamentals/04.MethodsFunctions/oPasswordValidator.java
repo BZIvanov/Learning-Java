@@ -16,10 +16,7 @@ public class PasswordValidator {
         boolean onlyLettersAndDigits = validateContent(p);
         boolean haveTwoDigits = validateDigitsCount(p);
 
-        if (correctCharCount && onlyLettersAndDigits && haveTwoDigits) {
-            return true;
-        }
-        return false;
+        return correctCharCount && onlyLettersAndDigits && haveTwoDigits;
     }
 
     private static boolean validateDigitsCount(String p) {

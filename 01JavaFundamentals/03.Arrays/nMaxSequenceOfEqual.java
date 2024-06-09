@@ -6,7 +6,7 @@ public class MaxSequenceOfEqual {
         Scanner sc = new Scanner(System.in);
 
         int[] numbers = Arrays.stream(sc.nextLine().split(" "))
-                .mapToInt(e -> Integer.parseInt(e)).toArray();
+                .mapToInt(Integer::parseInt).toArray();
 
         int maxLength = 1;
         int counter = 1;

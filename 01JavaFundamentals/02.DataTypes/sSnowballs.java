@@ -14,7 +14,7 @@ public class Snowballs {
             int time = Integer.parseInt(sc.nextLine());
             int quality = Integer.parseInt(sc.nextLine());
 
-            double value = Math.pow(snow / time, quality);
+            double value = Math.pow((double) snow / time, quality);
 
             if (maxValue < value) {
                 maxValue = value;
@@ -24,6 +24,6 @@ public class Snowballs {
             }
         }
 
-        System.out.println(String.format("%d : %d = %.0f (%d)", maxSnow, maxTime, maxValue, maxQuality));
+        System.out.printf("%d : %d = %.0f (%d)%n", maxSnow, maxTime, maxValue, maxQuality);
     }
 }

@@ -13,23 +13,23 @@ public class CardsGame {
         ArrayList<Integer> second = Arrays.stream(sc.nextLine().split(" "))
                 .map(Integer::parseInt).collect(Collectors.toCollection(ArrayList::new));
 
-        while (first.size() > 0 && second.size() > 0) {
-            int cardA = first.get(0);
-            int cardB = second.get(0);
+        while (!first.isEmpty() && !second.isEmpty()) {
+            int cardA = first.getFirst();
+            int cardB = second.getFirst();
 
             if (cardA > cardB) {
                 first.add(cardA);
                 first.add(cardB);
-                first.remove(0);
-                second.remove(0);
+                first.removeFirst();
+                second.removeFirst();
             } else if (cardA < cardB) {
                 second.add(cardA);
                 second.add(cardB);
-                first.remove(0);
-                second.remove(0);
+                first.removeFirst();
+                second.removeFirst();
             } else {
-                first.remove(0);
-                second.remove(0);
+                first.removeFirst();
+                second.removeFirst();
             }
 
             System.out.println(first.toString());
@@ -37,11 +37,11 @@ public class CardsGame {
             System.out.println();
         }
 
-        if (first.size() > 0) {
-            int sum = first.stream().reduce((a, b) -> a + b).get();
+        if (!first.isEmpty()) {
+            int sum = first.stream().reduce(Integer::sum).get();
             System.out.printf("First player wins! Sum: %d", sum);
-        } else if (second.size() > 0) {
-            int sum = second.stream().reduce((a, b) -> a + b).get();
+        } else if (!second.isEmpty()) {
+            int sum = second.stream().reduce(Integer::sum).get();
             System.out.printf("Second player wins! Sum: %d", sum);
         }
     }

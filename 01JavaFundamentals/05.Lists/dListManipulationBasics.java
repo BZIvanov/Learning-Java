@@ -26,16 +26,27 @@ public class ListManipulationBasics {
                     break;
                 case "Remove":
                     int numberToRemove = Integer.parseInt(tokens[1]);
-                    numbers.remove(numberToRemove);
+                    numbers.remove(Integer.valueOf(numberToRemove));
                     break;
                 case "RemoveAt":
                     int indexToRemove = Integer.parseInt(tokens[1]);
-                    numbers.remove(indexToRemove);
+                    if (indexToRemove >= 0 && indexToRemove < numbers.size()) {
+                        numbers.remove(indexToRemove);
+                    } else {
+                        System.out.println("Invalid index");
+                    }
                     break;
                 case "Insert":
                     int numberToInsert = Integer.parseInt(tokens[1]);
                     int indexToInsert = Integer.parseInt(tokens[2]);
-                    numbers.add(indexToInsert, numberToInsert);
+                    if (indexToInsert >= 0 && indexToInsert <= numbers.size()) {
+                        numbers.add(indexToInsert, numberToInsert);
+                    } else {
+                        System.out.println("Invalid index");
+                    }
+                    break;
+                default:
+                    System.out.println("Unknown command");
                     break;
             }
         }

@@ -10,8 +10,8 @@ public class LadyBugs {
 
         int[] field = new int[fieldSize];
 
-        for (int i = 0; i < indexes.length; i++) {
-            int index = Integer.parseInt(indexes[i]);
+        for (String s : indexes) {
+            int index = Integer.parseInt(s);
             if (index >= 0 && index < fieldSize) {
                 field[index] = 1;
             }
@@ -53,8 +53,8 @@ public class LadyBugs {
             command = sc.nextLine();
         }
 
-        for (int i = 0; i < field.length; i++) {
-            System.out.print(field[i] + " ");
+        for (int j : field) {
+            System.out.print(j + " ");
         }
     }
 }

@@ -6,8 +6,8 @@ public class ConcatNames {
 
         String firstName = sc.nextLine();
         String secondName = sc.nextLine();
-        String delimeter = sc.nextLine();
+        String delimiter = sc.nextLine();
 
-        System.out.printf("%s%s%s", firstName, delimeter, secondName);
+        System.out.printf("%s%s%s", firstName, delimiter, secondName);
     }
 }

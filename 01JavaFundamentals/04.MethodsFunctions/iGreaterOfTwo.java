@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class GreaterOfTwo {
     static int getMax(int first, int second) {
-        return first > second ? first : second;
+        return Math.max(first, second);
     }
 
     static char getMax(char first, char second) {

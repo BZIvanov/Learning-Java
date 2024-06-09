@@ -1,14 +1,13 @@
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class ListManipulationAdvanced {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         List<Integer> nums = Arrays.stream(sc.nextLine().split(" "))
-                .map(Integer::parseInt).collect(Collectors.toList());
+                .map(Integer::parseInt).toList();
 
         String line = sc.nextLine();
 
@@ -34,23 +33,20 @@ public class ListManipulationAdvanced {
                     break;
                 case "Get":
                     // if Present is needed to check if there is something to reduce and not empty list for example
-                    nums.stream().reduce((e1, e2) -> e1 + e2).ifPresent(System.out::print);
+                    nums.stream().reduce(Integer::sum).ifPresent(System.out::print);
                     break;
                 case "Filter":
                     String condition = tokens[1];
                     int number = Integer.parseInt(tokens[2]);
-                    if (condition.equals("<")) {
-                        nums.stream().filter(e -> e < number).forEach(e -> System.out.print(e + " "));
-                    } else if (condition.equals(">")) {
-                        nums.stream().filter(e -> e > number).forEach(e -> System.out.print(e + " "));
-                    } else if (condition.equals(">=")) {
-                        nums.stream().filter(e -> e >= number).forEach(e -> System.out.print(e + " "));
-                    } else {
-                        nums.stream().filter(e -> e <= number).forEach(e -> System.out.print(e + " "));
+                    switch (condition) {
+                        case "<" -> nums.stream().filter(e -> e < number).forEach(e -> System.out.print(e + " "));
+                        case ">" -> nums.stream().filter(e -> e > number).forEach(e -> System.out.print(e + " "));
+                        case ">=" -> nums.stream().filter(e -> e >= number).forEach(e -> System.out.print(e + " "));
+                        default -> nums.stream().filter(e -> e <= number).forEach(e -> System.out.print(e + " "));
                     }
                     break;
                 default:
-                        break;
+                    break;
             }
             System.out.println();
             line = sc.nextLine();

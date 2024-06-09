@@ -12,8 +12,8 @@ public class ReverseArray {
             items[items.length - 1 - i] = temp;
         }
 
-        for (int i = 0; i < items.length; i++) {
-            System.out.print(items[i] + " ");
+        for (String item : items) {
+            System.out.print(item + " ");
         }
     }
 }

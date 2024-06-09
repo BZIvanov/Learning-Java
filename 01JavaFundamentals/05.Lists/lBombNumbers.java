@@ -20,18 +20,18 @@ public class BombNumbers {
             int begin = index - power;
             begin = Math.max(0, begin);
 
-            for (int i = begin; i < index; i++) {
-                numbers.remove(begin);
+            if (index > begin) {
+                numbers.subList(begin, index).clear();
             }
-            
+
             index = numbers.indexOf(bomb);
             int end = Math.min(index + power, numbers.size() - 1);
 
-            for (int i = index; i <= end; i++) {
-                numbers.remove(index);
+            if (end >= index) {
+                numbers.subList(index, end + 1).clear();
             }
         }
-        
+
         int sum = 0;
         for (Integer number : numbers) {
             sum += number;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class rNxNMatrix {
+public class NxNMatrix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

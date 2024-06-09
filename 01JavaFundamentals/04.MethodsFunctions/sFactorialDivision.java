@@ -8,7 +8,7 @@ public class FactorialDivision {
         double second = Double.parseDouble(sc.nextLine());
 
         double divisionResult = fact(first) / fact(second);
-        System.out.println(String.format("%.2f", divisionResult));
+        System.out.printf("%.2f%n", divisionResult);
     }
 
     public static double fact(double num) {

@@ -12,14 +12,14 @@ public class PadawanEquipment {
 
         double sabersPrice = Math.ceil(students * 1.1) * lightsabrePrice;
         robesPrice *= students;
-        beltsPrice *= (students - students / 6);
+        beltsPrice *= (students - (double) students / 6);
 
         double totalCost = sabersPrice + robesPrice + beltsPrice;
 
         if (budget >= totalCost) {
-            System.out.println(String.format("The money is enough - it would cost %.2flv.", totalCost));
+            System.out.printf("The money is enough - it would cost %.2flv.%n", totalCost);
         } else {
-            System.out.println(String.format("Ivan Cho will need %.2flv more.", totalCost - budget));
+            System.out.printf("Ivan Cho will need %.2flv more.%n", totalCost - budget);
         }
     }
 }

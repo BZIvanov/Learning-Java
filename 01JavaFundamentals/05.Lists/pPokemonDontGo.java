@@ -22,14 +22,14 @@ public class PokemonDontGo {
                 pokemons.remove(index);
                 changeListElements(pokemons, element);
             } else if (index < 0) {
-                int element = pokemons.get(0);
+                int element = pokemons.getFirst();
                 sum += element;
-                pokemons.set(0, pokemons.get(pokemons.size() - 1));
+                pokemons.set(0, pokemons.getLast());
                 changeListElements(pokemons, element);
             } else {
-                int element = pokemons.get(pokemons.size() - 1);
+                int element = pokemons.getLast();
                 sum += element;
-                pokemons.set(pokemons.size() - 1, pokemons.get(0));
+                pokemons.set(pokemons.size() - 1, pokemons.getFirst());
                 changeListElements(pokemons, element);
             }
         }

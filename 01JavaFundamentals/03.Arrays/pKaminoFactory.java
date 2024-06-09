@@ -4,8 +4,6 @@ public class KaminoFactory {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int sequenceLength = Integer.parseInt(sc.nextLine());
-
         String line = sc.nextLine();
 
         int bestLengt = 0;
@@ -24,12 +22,12 @@ public class KaminoFactory {
             int maxLength = 0;
             int sum = 0;
             String bestLocalDna = "";
-            for (int i = 0; i < dnas.length; i++) {
-                if (dnas[i].length() > maxLength) {
-                    maxLength = dnas[i].length();
-                    bestLocalDna = dnas[i];
+            for (String dna : dnas) {
+                if (dna.length() > maxLength) {
+                    maxLength = dna.length();
+                    bestLocalDna = dna;
                 }
-                sum += dnas[i].length();
+                sum += dna.length();
             }
 
             int beginIndex = sequence.indexOf(bestLocalDna);
@@ -57,7 +55,7 @@ public class KaminoFactory {
             line = sc.nextLine();
         }
 
-        System.out.println(String.format("Best DNA sample " + "%d with sum: %d.", bestCounter, bestSum));
+        System.out.printf("Best DNA sample " + "%d with sum: %d.%n", bestCounter, bestSum);
 
         for (int i = 0; i < bestDna.length(); i++) {
             System.out.print(bestDna.charAt(i) + " ");

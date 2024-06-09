@@ -13,8 +13,8 @@ public class GaussTrick {
         int size = numbers.size();
 
         for (int i = 0; i < size / 2; i++) {
-            numbers.set(i, numbers.get(i) + numbers.get(numbers.size() - 1));
-            numbers.remove(numbers.size() - 1);
+            numbers.set(i, numbers.get(i) + numbers.getLast());
+            numbers.removeLast();
         }
 
         System.out.println(numbers.toString().replaceAll("[\\[\\],]", ""));

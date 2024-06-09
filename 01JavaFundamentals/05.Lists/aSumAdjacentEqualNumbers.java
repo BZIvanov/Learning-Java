@@ -19,15 +19,15 @@ public class SumAdjacentEqualNumbers {
                 i = -1;
             }
         }
-        String output = joinElementsByDelimiter(numbers, " ");
+        String output = joinElementsByDelimiter(numbers);
         System.out.println(output);
     }
 
-    static String joinElementsByDelimiter(List<Double> items, String delimiter) {
-        String output = "";
+    static String joinElementsByDelimiter(List<Double> items) {
+        StringBuilder output = new StringBuilder();
         for (Double item : items) {
-            output += (new DecimalFormat("0.#").format(item) + delimiter);
+            output.append(new DecimalFormat("0.#").format(item)).append(" ");
         }
-        return output;
+        return output.toString();
     }
 }

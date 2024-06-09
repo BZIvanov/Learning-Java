@@ -8,12 +8,12 @@ public class PrintAndSum {
         int end = Integer.parseInt(sc.nextLine());
 
         int sum = 0;
-        String nums = "";
+        StringBuilder nums = new StringBuilder();
         for (int i = start; i <= end; i++) {
             sum += i;
-            nums += i + " ";
+            nums.append(i).append(" ");
         }
-        System.out.println(nums.trim());
+        System.out.println(nums.toString().trim());
         System.out.printf("Sum: %d", sum);
     }
 }

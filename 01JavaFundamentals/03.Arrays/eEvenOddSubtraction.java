@@ -6,7 +6,7 @@ public class EvenOddSubtraction {
         Scanner sc = new Scanner(System.in);
 
         int[] numbers = Arrays.stream(sc.nextLine().split(" "))
-                .mapToInt(e -> Integer.parseInt(e))
+                .mapToInt(Integer::parseInt)
                 .toArray();
 
         int evenSum = 0;

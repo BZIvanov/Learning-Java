@@ -14,8 +14,8 @@ public class Train {
             sum += passengers[i];
         }
 
-        for (int i = 0; i < passengers.length; i++) {
-            System.out.print(passengers[i] + " ");
+        for (int passenger : passengers) {
+            System.out.print(passenger + " ");
         }
         System.out.println();
         System.out.println(sum);

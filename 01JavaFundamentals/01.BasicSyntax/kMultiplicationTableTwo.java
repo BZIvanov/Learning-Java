@@ -6,10 +6,7 @@ public class MultiplicationTableTwo {
 
         int n = Integer.parseInt(sc.nextLine());
         int start = Integer.parseInt(sc.nextLine());
-        int end = start;
-        if (start <= 10) {
-            end = 10;
-        }
+        int end = Math.max(start, 10);
 
         for (int i = start; i <= end; i++) {
             System.out.printf("%d X %d = %d%n", n, i, n * i);

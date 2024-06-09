@@ -32,9 +32,7 @@ public class TopNumber {
             num /= 10;
             sum += digit;
         }
-        if (sum % 8 == 0) {
-            return true;
-        }
-        return false;
+        
+        return sum % 8 == 0;
     }
 }

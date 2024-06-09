@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class CalculateRectangleArea {
-
     static double calculateArea(double sideA, double sideB) {
         return sideA * sideB;
     }
