@@ -20,6 +20,6 @@ public class CountChars {
             countChars.put(symbol, countChars.get(symbol) + 1);
         }
 
-        countChars.forEach((key, value) -> System.out.println(String.format("%c -> %d", key, value)));
+        countChars.forEach((key, value) -> System.out.printf("%c -> %d%n", key, value));
     }
 }

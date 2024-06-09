@@ -39,14 +39,8 @@ public class StudentAcademy {
                     }
                     average2 = average2 / s2.getValue().size();
 
-                    if (average2 > average1) {
-                        return 1;
-                    } else if (average2 < average1) {
-                        return -1;
-                    } else {
-                        return 0;
-                    }
-                }).forEach(e -> System.out.println(String.format("%s -> %.2f",
-                e.getKey(), e.getValue().stream().mapToDouble(Double::valueOf).average().getAsDouble())));
+                    return Double.compare(average2, average1);
+                }).forEach(e -> System.out.printf("%s -> %.2f%n",
+                        e.getKey(), e.getValue().stream().mapToDouble(Double::valueOf).average().getAsDouble()));
     }
 }

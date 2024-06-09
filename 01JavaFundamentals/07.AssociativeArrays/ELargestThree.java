@@ -11,7 +11,7 @@ public class LargestThree {
                 .map(Integer::parseInt)
                 .sorted(Collections.reverseOrder())
                 .limit(3)
-                .map(n -> String.valueOf(n))
+                .map(String::valueOf)
                 .collect(Collectors.joining(" ")));
     }
 }

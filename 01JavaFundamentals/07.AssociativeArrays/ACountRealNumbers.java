@@ -22,7 +22,7 @@ public class CountRealNumbers {
 
         String pattern = "%.0f -> %d";
         for (Map.Entry<Double, Integer> kvp : someMap.entrySet()) {
-            System.out.println(String.format(pattern, kvp.getKey(), kvp.getValue()));
+            System.out.printf((pattern) + "%n", kvp.getKey(), kvp.getValue());
         }
     }
 }

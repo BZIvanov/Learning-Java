@@ -7,7 +7,7 @@ public class Songs {
         Scanner sc = new Scanner(System.in);
 
         int numSongs = Integer.parseInt(sc.nextLine());
-        List<DSong> songs = new ArrayList<>();
+        List<Song> songs = new ArrayList<>();
 
         for (int i = 0; i < numSongs; i++) {
             String[] data = sc.nextLine().split("_");
@@ -16,7 +16,7 @@ public class Songs {
             String name = data[1];
             String time = data[2];
 
-            DSong song = new DSong();
+            Song song = new Song();
 
             song.setTypeList(type);
             song.setName(name);
@@ -28,11 +28,11 @@ public class Songs {
         String typeList = sc.nextLine();
 
         if (typeList.equals("all")) {
-            for (DSong song : songs) {
+            for (Song song : songs) {
                 System.out.println(song.getName());
             }
         } else {
-            for (DSong song : songs) {
+            for (Song song : songs) {
                 if (song.getTypeList().equals(typeList)) {
                     System.out.println(song.getName());
                 }

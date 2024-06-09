@@ -12,18 +12,15 @@ public class MinerTask {
         String input = "";
 
         while (!"stop".equals(input = reader.readLine())) {
-            String resource = input;
             int quantity = Integer.parseInt(reader.readLine());
 
-            if (!resources.containsKey(resource)) {
-                resources.put(resource, quantity);
+            if (!resources.containsKey(input)) {
+                resources.put(input, quantity);
             } else {
-                resources.put(resource, resources.get(resource) + quantity);
+                resources.put(input, resources.get(input) + quantity);
             }
         }
 
-        resources.entrySet().forEach(e -> {
-            System.out.println(String.format("%s -> %d", e.getKey(), e.getValue()));
-        });
+        resources.forEach((key, value) -> System.out.printf("%s -> %d%n", key, value));
     }
 }

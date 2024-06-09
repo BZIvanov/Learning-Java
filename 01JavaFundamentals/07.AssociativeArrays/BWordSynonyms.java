@@ -21,7 +21,7 @@ public class WordSynonyms {
             String key = kvp.getKey();
             String value = String.join(", ", kvp.getValue());
 
-            System.out.println(String.format(pattern, key, value));
+            System.out.printf(pattern + "%n", key, value);
         }
     }
 }

@@ -10,22 +10,22 @@ public class OpinionPoll {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(reader.readLine());
-        List<IPerson> people = new ArrayList<>();
+        List<Person> people = new ArrayList<>();
 
         while (n-- > 0) {
             String[] data = reader.readLine().split("\\s+");
             String name = data[0];
             int age = Integer.parseInt(data[1]);
 
-            IPerson person = new IPerson(name, age);
+            Person person = new Person(name, age);
             people.add(person);
         }
 
         people
                 .stream()
-                .filter(e -> e.getAge() > 30)
-                .sorted((p1, p2) -> Integer.compare(p1.getAge(), p2.getAge()))
-                .sorted(Comparator.comparing(IPerson::getName))
+                .filter(e -> e.age() > 30)
+                .sorted((p1, p2) -> Integer.compare(p1.age(), p2.age()))
+                .sorted(Comparator.comparing(Person::name))
                 .forEach(e -> System.out.println(e.toString()));
     }
 }

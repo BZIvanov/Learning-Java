@@ -4,7 +4,7 @@ public class Student {
     private int age;
     private String city;
 
-    public EStudent(String firstName, String lastName, int age, String city) {
+    public Student(String firstName, String lastName, int age, String city) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;

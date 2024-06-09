@@ -65,13 +65,13 @@ public class LegendaryFarming {
 
             return sort;
         }).forEach(e -> {
-            System.out.println(String.format("%s: %d", e.getKey(), e.getValue()));
+            System.out.printf("%s: %d%n", e.getKey(), e.getValue());
         });
 
         junks.entrySet().stream()
                 .sorted(Comparator.comparing(Map.Entry::getKey))
                 .forEach(e -> {
-            System.out.println(String.format("%s: %d", e.getKey(), e.getValue()));
-        });
+                    System.out.printf("%s: %d%n", e.getKey(), e.getValue());
+                });
     }
 }

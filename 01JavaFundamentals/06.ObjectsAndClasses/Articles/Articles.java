@@ -9,7 +9,7 @@ public class Articles {
         String[] data = reader.readLine().split(", ");
         int n = Integer.parseInt(reader.readLine());
 
-        HArticle article = new HArticle(data[0], data[1], data[2]);
+        Article article = new Article(data[0], data[1], data[2]);
 
         for (int i = 0; i < n; i++) {
             String[] input = reader.readLine().split(": ");

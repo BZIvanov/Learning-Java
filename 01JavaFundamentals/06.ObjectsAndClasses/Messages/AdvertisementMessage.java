@@ -8,7 +8,7 @@ public class AdvertisementMessage {
 
         int n = Integer.parseInt(reader.readLine());
 
-        GMessage message = new GMessage();
+        Message message = new Message();
         for (int i = 0; i < n; i++) {
             String msg = message.randomMessage();
             System.out.println(msg);

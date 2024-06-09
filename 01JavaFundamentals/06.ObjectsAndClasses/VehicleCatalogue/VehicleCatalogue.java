@@ -11,10 +11,10 @@ public class VehicleCatalogue {
 
         String input = "";
 
-        List<LVehicle> vehicles = new ArrayList<>();
+        List<Vehicle> vehicles = new ArrayList<>();
         while (!"End".equals(input = reader.readLine())) {
             String[] data = input.split("\\s+");
-            LVehicle vehicle = new LVehicle(data[0], data[1], data[2], Integer.parseInt(data[3]));
+            Vehicle vehicle = new Vehicle(data[0], data[1], data[2], Integer.parseInt(data[3]));
             vehicles.add(vehicle);
         }
 
@@ -23,31 +23,29 @@ public class VehicleCatalogue {
             String finalModel = model;
             vehicles
                     .stream()
-                    .filter(v -> v.getModel().equals(finalModel))
+                    .filter(v -> v.model().equals(finalModel))
                     .forEach(System.out::println);
 
             model = reader.readLine();
         }
 
-        System.out.println(
-                String.format("Cars have average horsepower of: %.2f.",average(vehicles.stream()
-                .filter(v -> v.getType().equals("car"))
-                .collect(Collectors.toList()))));
-        System.out.println(
-                String.format("Trucks have average horsepower of: %.2f.",average(vehicles.stream()
-                .filter(v -> v.getType().equals("truck"))
-                .collect(Collectors.toList()))));
+        System.out.printf("Cars have average horsepower of: %.2f.%n",average(vehicles.stream()
+                .filter(v -> v.type().equals("car"))
+                .collect(Collectors.toList())));
+        System.out.printf("Trucks have average horsepower of: %.2f.%n",average(vehicles.stream()
+                .filter(v -> v.type().equals("truck"))
+                .collect(Collectors.toList())));
     }
 
-    private static double average(List<LVehicle> vehicles) {
-        if (vehicles.size() == 0) {
+    private static double average(List<Vehicle> vehicles) {
+        if (vehicles.isEmpty()) {
             return 0.0;
         }
 
         double sum = 0;
 
-        for (LVehicle vehicle : vehicles) {
-            sum += vehicle.getHorsepower();
+        for (Vehicle vehicle : vehicles) {
+            sum += vehicle.horsepower();
         }
 
         return sum / vehicles.size();

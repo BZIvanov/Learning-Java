@@ -20,25 +20,25 @@ public class SoftuniParking {
                 case "register":
                     String regNumber = tokens[2];
                     if (users.containsKey(name)) {
-                        System.out.println(String.format("ERROR: already registered with plate number %s", users.get(name)));
+                        System.out.printf("ERROR: already registered with plate number %s%n", users.get(name));
                     } else {
                         users.put(name, regNumber);
-                        System.out.println(String.format("%s registered %s successfully", name, regNumber));
+                        System.out.printf("%s registered %s successfully%n", name, regNumber);
                     }
                     break;
                 case "unregister":
                     if (users.containsKey(name)) {
                         users.remove(name);
-                        System.out.println(String.format("%s unregistered successfully", name));
+                        System.out.printf("%s unregistered successfully%n", name);
                     } else {
-                        System.out.println(String.format("ERROR: user %s not found", name));
+                        System.out.printf("ERROR: user %s not found%n", name);
                     }
                     break;
             }
         }
 
         for (Map.Entry<String, String> entry : users.entrySet()) {
-            System.out.println(String.format("%s => %s", entry.getKey(), entry.getValue()));
+            System.out.printf("%s => %s%n", entry.getKey(), entry.getValue());
         }
     }
 }

@@ -27,7 +27,7 @@ public class Orders {
         }
 
         for (Map.Entry<String, double[]> entry : products.entrySet()) {
-            System.out.println(String.format("%s -> %.2f", entry.getKey(), entry.getValue()[0] * entry.getValue()[1]));
+            System.out.printf("%s -> %.2f%n", entry.getKey(), entry.getValue()[0] * entry.getValue()[1]);
         }
     }
 }

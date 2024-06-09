@@ -32,7 +32,7 @@ public class Courses {
 
                     i.getValue().stream()
                             .sorted(String::compareTo)
-                            .forEach(n -> System.out.println(String.format("-- %s", n)));
+                            .forEach(n -> System.out.printf("-- %s%n", n));
                 });
     }
 }

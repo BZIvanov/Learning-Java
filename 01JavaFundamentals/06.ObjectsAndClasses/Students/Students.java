@@ -6,7 +6,7 @@ public class Students {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        List<EStudent> students = new ArrayList<>();
+        List<Student> students = new ArrayList<>();
 
         String line = sc.nextLine();
 
@@ -19,14 +19,14 @@ public class Students {
             String city = tokens[3];
 
             if (isStudentExisting(students, firstName, lastName)) {
-                EStudent student = getStudent(students, firstName, lastName);
+                Student student = getStudent(students, firstName, lastName);
 
                 student.setFirstName(firstName);
                 student.setLastName(lastName);
                 student.setAge(age);
                 student.setCity(city);
             } else {
-                EStudent student = new EStudent(firstName, lastName, age, city);
+                Student student = new Student(firstName, lastName, age, city);
                 students.add(student);
             }
 
@@ -35,18 +35,18 @@ public class Students {
 
         String filterCity = sc.nextLine();
 
-        for (EStudent student : students) {
+        for (Student student : students) {
             if (student.getCity().equals(filterCity)) {
-                System.out.printf("%s %s is %d years old\n",
+                System.out.printf("%s %s is %d years old and lives in city %s\n",
                         student.getFirstName(), student.getLastName(), student.getAge(), student.getCity());
             }
         }
     }
 
-    private static EStudent getStudent(List<EStudent> students, String firstName, String lastName) {
-        EStudent existingStudent = null;
+    private static Student getStudent(List<Student> students, String firstName, String lastName) {
+        Student existingStudent = null;
 
-        for (EStudent student : students) {
+        for (Student student : students) {
             if (student.getFirstName().equals(firstName) && student.getLastName().equals(lastName)) {
                 existingStudent = student;
             }
@@ -55,8 +55,8 @@ public class Students {
         return  existingStudent;
     }
 
-    private static boolean isStudentExisting(List<EStudent> students, String firstName, String lastName) {
-        for (EStudent student : students) {
+    private static boolean isStudentExisting(List<Student> students, String firstName, String lastName) {
+        for (Student student : students) {
             if (student.getFirstName().equals(firstName) && student.getLastName().equals(lastName)) {
                 return true;
             }
