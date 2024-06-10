@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.Scanner;
 
 public class MultiplyEvensByOdds {
@@ -41,7 +39,7 @@ public class MultiplyEvensByOdds {
         Scanner sc = new Scanner(System.in);
 
         int n = Integer.parseInt(sc.nextLine());
-        if(n < 0) {
+        if (n < 0) {
             n *= -1;
         }
         System.out.println(getMultipleOfEvensAndOdds(n));
