@@ -6,13 +6,10 @@ public class RepeatStrings {
 
         String[] inputArray = sc.nextLine().split("\\s+");
 
-        String result = "";
-        for (int i = 0; i < inputArray.length; i++) {
-            String el = inputArray[i];
+        StringBuilder result = new StringBuilder();
+        for (String el : inputArray) {
             int elLength = el.length();
-            for (int j = 0; j < elLength; j++) {
-                result += el;
-            }
+            result.append(el.repeat(elLength));
         }
 
         System.out.println(result);

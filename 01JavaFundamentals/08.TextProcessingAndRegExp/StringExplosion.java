@@ -8,11 +8,11 @@ public class StringExplosion {
 
         String text = reader.readLine();
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         int strength = 0;
         for (int i = 0; i < text.length(); i++) {
-            result += text.charAt(i);
+            result.append(text.charAt(i));
 
             if (text.charAt(i) == '>') {
                 strength += Integer.parseInt(String.valueOf(text.charAt(i + 1)));

@@ -8,11 +8,11 @@ public class ExtractFile {
 
         String dir = reader.readLine();
 
-        String fileName = dir.substring(dir.lastIndexOf('\\') +1);
+        String fileName = dir.substring(dir.lastIndexOf('\\') + 1);
         String name = fileName.substring(0, fileName.lastIndexOf('.'));
         String extension = fileName.substring(fileName.lastIndexOf('.') + 1);
 
-        System.out.println(String.format("File name: %s", name));
-        System.out.println(String.format("File extension: %s", extension));
+        System.out.printf("File name: %s%n", name);
+        System.out.printf("File extension: %s%n", extension);
     }
 }

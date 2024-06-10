@@ -4,21 +4,20 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class Race {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         List<String> names = Arrays.stream(reader.readLine().split(", "))
-                .collect(Collectors.toList());
-
-        String raw = "";
+                .toList();
 
         Pattern namePattern = Pattern.compile("[A-Za-z]");
         Pattern scorePattern = Pattern.compile("[0-9]");
 
         LinkedHashMap<String, Integer> finals = new LinkedHashMap<>();
+
+        String raw = "";
 
         while (!"end of race".equals(raw = reader.readLine())) {
             String currentName = extractName(raw, namePattern);
@@ -39,19 +38,19 @@ public class Race {
             finalList.add(e.getKey());
         });
 
-        System.out.println(String.format("1st place: %s%n2nd place: %s%n3rd place: %s",
-                finalList.get(0), finalList.get(1), finalList.get(2)));
+        System.out.printf("1st place: %s%n2nd place: %s%n3rd place: %s%n",
+                finalList.get(0), finalList.get(1), finalList.get(2));
     }
 
     private static String extractName(String raw, Pattern patt) {
         Matcher m = patt.matcher(raw);
 
-        String name = "";
+        StringBuilder name = new StringBuilder();
         while (m.find()) {
-            name += m.group();
+            name.append(m.group());
         }
 
-        return name;
+        return name.toString();
     }
 
     private static Integer extractScore(String raw, Pattern patt) {

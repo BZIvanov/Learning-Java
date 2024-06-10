@@ -13,7 +13,7 @@ public class MatchFullName {
         Matcher matcher = pattern.matcher(input);
 
         while (matcher.find()) {
-            System.out.print(matcher.group() + " ");
+            System.out.println(matcher.group());
         }
     }
 }

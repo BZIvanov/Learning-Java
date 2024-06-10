@@ -8,7 +8,7 @@ public class TextFilter {
         String text = sc.nextLine();
         for (String banWord : banWords) {
             if (text.contains(banWord)) {
-                String replacement = repeatStr("*", banWord.length());
+                String replacement = repeatStr(banWord.length());
                 text = text.replace(banWord, replacement);
             }
         }
@@ -16,12 +16,7 @@ public class TextFilter {
 
     }
 
-    private static String repeatStr(String str, int length) {
-        String replacement = "";
-        for (int i = 0; i < length; i++) {
-            replacement += str;
-        }
-        return replacement;
+    private static String repeatStr(int length) {
+        return String.valueOf("*").repeat(Math.max(0, length));
     }
-
 }

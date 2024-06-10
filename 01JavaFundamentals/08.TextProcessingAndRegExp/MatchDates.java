@@ -8,12 +8,12 @@ public class MatchDates {
 
         String dates = sc.nextLine();
 
-        Pattern patt = Pattern.compile("\\b(?<day>\\d{2})(\\.|\\/|-)(?<month>[A-Z][a-z]{2})\\2(?<year>\\d{4})\\b");
+        Pattern patt = Pattern.compile("\\b(?<day>\\d{2})([./\\-])(?<month>[A-Z][a-z]{2})\\2(?<year>\\d{4})\\b");
         Matcher mat = patt.matcher(dates);
 
         while (mat.find()) {
-            System.out.println(String.format("Day: %s, Month: %s, Year: %s",
-                    mat.group("day"), mat.group("month"), mat.group("year")));
+            System.out.printf("Day: %s, Month: %s, Year: %s%n",
+                    mat.group("day"), mat.group("month"), mat.group("year"));
         }
     }
 }
