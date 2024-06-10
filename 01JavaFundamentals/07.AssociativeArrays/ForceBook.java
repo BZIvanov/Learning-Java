@@ -13,7 +13,7 @@ public class ForceBook {
         LinkedHashMap<String, Set<String>> forceBook = new LinkedHashMap<>();
 
         String input = "";
-        while (!"Lumpawaroo".equals(input = reader.readLine())) {
+        while (!"End".equals(input = reader.readLine())) {
             String[] data = Arrays.stream(input.split("\\s+\\|\\s+|\\s+->\\s+")).toArray(String[]::new);
 
             if (input.contains("|")) {
@@ -40,12 +40,12 @@ public class ForceBook {
                 }
 
                 forceBook.get(forceSide).add(forceUser);
-                System.out.println(String.format("%s joins the %s side!", forceUser, forceSide));
+                System.out.printf("%s joins the %s side!%n", forceUser, forceSide);
             }
         }
 
         forceBook.entrySet().stream()
-                .filter(e -> e.getValue().size() > 0)
+                .filter(e -> !e.getValue().isEmpty())
                 .sorted((e1, e2) -> {
                     int sort = Integer.compare(e2.getValue().size(), e1.getValue().size());
 
@@ -53,12 +53,12 @@ public class ForceBook {
                         sort = e1.getKey().compareTo(e2.getKey());
                     }
                     return sort;
-        }).forEach(e -> {
-            System.out.println(String.format("Side: %s, Members: %d", e.getKey(), e.getValue().size()));
+                }).forEach(e -> {
+                    System.out.printf("Side: %s, Members: %d%n", e.getKey(), e.getValue().size());
 
-            e.getValue().forEach(u -> {
-                System.out.println(String.format("! %s", u));
-            });
-        });
+                    e.getValue().forEach(u -> {
+                        System.out.printf("! %s%n", u);
+                    });
+                });
     }
 }

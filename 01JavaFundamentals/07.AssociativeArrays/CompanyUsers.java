@@ -25,9 +25,9 @@ public class CompanyUsers {
         }
 
         companies.entrySet().stream().forEach(e -> {
-                    System.out.println(e.getKey());
+            System.out.println(e.getKey());
 
-                    e.getValue().stream().forEach(a -> System.out.println(String.format("-- %s",a)));
-                });
+            e.getValue().stream().forEach(a -> System.out.printf("-- %s%n", a));
+        });
     }
 }

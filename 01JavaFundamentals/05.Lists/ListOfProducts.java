@@ -12,8 +12,7 @@ public class ListOfProducts {
         }
 
         Collections.sort(products);
-        // below is example of how to sort in descending order
-        // Collections.sort(products, Collections.reverseOrder());
+        products.sort(Collections.reverseOrder());
 
         for (int i = 1; i <= n; i++) {
             System.out.println(i + "." + products.get(i - 1));

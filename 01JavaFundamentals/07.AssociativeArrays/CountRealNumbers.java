@@ -20,7 +20,7 @@ public class CountRealNumbers {
             someMap.put(num, oldValue + 1);
         }
 
-        String pattern = "%.0f -> %d";
+        String pattern = "%.1f -> %d";
         for (Map.Entry<Double, Integer> kvp : someMap.entrySet()) {
             System.out.printf((pattern) + "%n", kvp.getKey(), kvp.getValue());
         }
