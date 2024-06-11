@@ -9,22 +9,26 @@ public class SimpleTextEditor {
 
         ArrayDeque<StringBuilder> stack = new ArrayDeque<>();
         StringBuilder text = new StringBuilder();
+        
         for (int i = 0; i < n; i++) {
             String[] tokens = sc.nextLine().split("\\s+");
 
             switch (tokens[0]) {
                 case "1":
+                    assert text != null;
                     text.append(tokens[1]);
                     stack.push(new StringBuilder(text));
                     break;
                 case "2":
                     int count = Integer.parseInt(tokens[1]);
+                    assert text != null;
                     int start = text.length() - count;
                     text.delete(start, start + count);
                     stack.push(new StringBuilder(text));
                     break;
                 case "3":
                     int index = Integer.parseInt(tokens[1]);
+                    assert text != null;
                     System.out.println(text.charAt(index - 1));
                     break;
                 case "4":

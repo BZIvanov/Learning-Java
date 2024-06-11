@@ -1,9 +1,8 @@
-import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
 public class BrowserHistoryUpgrade {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         ArrayDeque<String> history = new ArrayDeque<>();

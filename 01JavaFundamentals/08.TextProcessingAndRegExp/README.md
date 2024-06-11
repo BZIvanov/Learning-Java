@@ -1,4 +1,4 @@
-# Lists
+# Strings and regular expressions
 
 ## Recommended learning order
 

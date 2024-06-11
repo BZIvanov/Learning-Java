@@ -1,4 +1,5 @@
 import java.util.ArrayDeque;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class HotPotato {
@@ -6,7 +7,7 @@ public class HotPotato {
         Scanner sc = new Scanner(System.in);
 
         String[] children = sc.nextLine().split("\\s+");
-        int n = Integer.valueOf(sc.nextLine());
+        int n = Integer.parseInt(sc.nextLine());
 
         ArrayDeque<String> queue = new ArrayDeque<>();
 
@@ -16,7 +17,7 @@ public class HotPotato {
 
         while (queue.size() > 1) {
             for (int i = 1; i < n; i++) {
-                queue.offer(queue.poll());
+                queue.offer(Objects.requireNonNull(queue.poll()));
             }
 
             System.out.println("Removed " + queue.poll());

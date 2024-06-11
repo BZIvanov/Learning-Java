@@ -7,7 +7,7 @@ public class DecimalToBinaryConverter {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int decimal = Integer.valueOf(reader.readLine());
+        int decimal = Integer.parseInt(reader.readLine());
         ArrayDeque<Integer> myStack = new ArrayDeque<>();
 
         if (decimal == 0) {

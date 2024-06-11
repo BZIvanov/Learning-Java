@@ -1,4 +1,4 @@
-# Lists
+# Objects and classes
 
 ## Recommended learning order
 

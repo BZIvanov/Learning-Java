@@ -1,4 +1,4 @@
-# Lists
+# Associative arrays
 
 ## Recommended learning order
 

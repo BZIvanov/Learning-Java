@@ -19,10 +19,10 @@ public class PoisonousPlants {
         for (int i = 1; i < plants.length; i++) {
             int maxDays = 0;
 
-            while (stack.size() > 0 && plants[stack.peek()] >= plants[i]) {
+            while (!stack.isEmpty() && plants[stack.peek()] >= plants[i]) {
                 maxDays = Math.max(maxDays, days[stack.pop()]);
             }
-            if (stack.size() > 0) {
+            if (!stack.isEmpty()) {
                 days[i] = maxDays + 1;
             }
             stack.push(i);
