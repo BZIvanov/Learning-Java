@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class HeiganDance {
-    private static boolean[][] playground = new boolean[15][];
+    private static final boolean[][] playground = new boolean[15][];
     private static final int matrixSize = 15;
     private static int playerRow = 7;
     private static int playerCol = 7;

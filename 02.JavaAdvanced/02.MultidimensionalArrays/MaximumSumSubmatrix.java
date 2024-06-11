@@ -2,14 +2,14 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MaximumSumSubmatrix {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int[] dims = Arrays.stream(sc.nextLine().split(", "))
+        int[] dimensions = Arrays.stream(sc.nextLine().split(" "))
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
-        int[][] matrix = fillMatrix(dims[0], dims[1]);
+        int[][] matrix = fillMatrix(dimensions[0], dimensions[1]);
 
         int maxSum = 0;
         int[] winningStartIndex = new int[2];
@@ -38,13 +38,11 @@ public class MaximumSumSubmatrix {
 
     private static int[][] fillMatrix(int r, int c) {
         int[][] matrix = new int[r][c];
-        for (int row = 0; row < matrix.length; row++) {
-            int[] tempRow = Arrays.stream(sc.nextLine().split(", "))
+        for (int[] ints : matrix) {
+            int[] tempRow = Arrays.stream(sc.nextLine().split(" "))
                     .mapToInt(Integer::parseInt)
                     .toArray();
-            for (int col = 0; col < matrix[row].length; col++) {
-                matrix[row][col] = tempRow[col];
-            }
+            System.arraycopy(tempRow, 0, ints, 0, ints.length);
         }
         return matrix;
     }

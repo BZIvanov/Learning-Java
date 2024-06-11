@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class FindRealQueen {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        char[][] matrix = fillMatrix(8, 8);
+        char[][] matrix = fillMatrix();
 
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
@@ -23,11 +23,11 @@ public class FindRealQueen {
         }
     }
 
-    private static char[][] fillMatrix(int r, int c) {
-        char[][] matrix = new char[r][c];
-        for (int row = 0; row < r; row++) {
+    private static char[][] fillMatrix() {
+        char[][] matrix = new char[8][8];
+        for (int row = 0; row < 8; row++) {
             String[] tempRow = sc.nextLine().split(" ");
-            for (int col = 0; col < c; col++) {
+            for (int col = 0; col < 8; col++) {
                 matrix[row][col] = tempRow[col].charAt(0);
             }
         }
@@ -37,7 +37,7 @@ public class FindRealQueen {
     private static boolean checkLeftAndRight(char[][] matrix, int i, int j) {
         for (int cols = 0; cols < 8; cols++) {
             if (cols == j) {
-                // continue will skip the current itteration and continue with the next one
+                // continue will skip the current iteration and continue with the next one
                 continue;
             }
             if (matrix[i][cols] == 'q') {

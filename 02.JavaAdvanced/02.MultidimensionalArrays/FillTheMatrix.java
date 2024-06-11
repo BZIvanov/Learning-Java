@@ -2,10 +2,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class FillTheMatrix {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String[] tokens = sc.nextLine().split(", ");
+        String[] tokens = sc.nextLine().split(" ");
         int size = Integer.parseInt(tokens[0]);
         String type = tokens[1];
 
@@ -16,9 +16,9 @@ public class FillTheMatrix {
             case "B":
                 printMatrix(fillTypeB(size));
                 break;
-                default:
-                    System.out.println("invalid type");
-                    break;
+            default:
+                System.out.println("invalid type");
+                break;
         }
     }
 
@@ -54,8 +54,8 @@ public class FillTheMatrix {
 
     private static void printMatrix(int[][] matrix) {
         Arrays.stream(matrix).forEach(e -> {
-            for (int i = 0; i < e.length; i++) {
-                System.out.print(e[i] + " ");
+            for (int j : e) {
+                System.out.print(j + " ");
             }
             System.out.println();
         });

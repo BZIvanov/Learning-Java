@@ -39,7 +39,7 @@ public class IntersectionOfTwoMatrices {
 
     private static void printMatrix(char[][] result) {
         for (char[] row : result) {
-            System.out.println(Arrays.toString(row).replaceAll("\\[|\\]|,", ""));
+            System.out.println(Arrays.toString(row).replaceAll("[\\[\\],]", ""));
         }
     }
 }

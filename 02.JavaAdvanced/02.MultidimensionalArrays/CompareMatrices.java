@@ -25,13 +25,11 @@ public class CompareMatrices {
     }
 
     private static void fillMatrix(int[][] matrix, Scanner sc) {
-        for (int row = 0; row < matrix.length; row++) {
+        for (int[] ints : matrix) {
             int[] tempRow = Arrays.stream(sc.nextLine().split("\\s+"))
                     .mapToInt(Integer::parseInt)
                     .toArray();
-            for (int col = 0; col < matrix[row].length; col++) {
-                matrix[row][col] = tempRow[col];
-            }
+            System.arraycopy(tempRow, 0, ints, 0, ints.length);
         }
     }
 

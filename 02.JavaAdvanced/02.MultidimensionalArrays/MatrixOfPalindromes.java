@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MatrixOfPalindromes {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         int[] values = Arrays.stream(sc.nextLine().split("\\s+"))
@@ -27,8 +27,8 @@ public class MatrixOfPalindromes {
 
     private static void printMatrix(String[][] matrix) {
         Arrays.stream(matrix).forEach(e -> {
-            for (int i = 0; i < e.length; i++) {
-                System.out.print(e[i] + " ");
+            for (String s : e) {
+                System.out.print(s + " ");
             }
             System.out.println();
         });

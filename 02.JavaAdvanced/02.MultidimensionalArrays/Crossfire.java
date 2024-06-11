@@ -14,7 +14,7 @@ public class Crossfire {
         ArrayList<ArrayList<Integer>> matrix = generateMatrix(rows, cols);
 
         String input = sc.nextLine();
-        while (!input.equals("Nuke it from orbit")) {
+        while (!input.equals("Nuke it")) {
             int[] tokens = Arrays.stream(input.split("\\s+"))
                     .mapToInt(Integer::parseInt)
                     .toArray();
@@ -39,7 +39,7 @@ public class Crossfire {
                         .stream()
                         .filter(e -> e != 0)
                         .collect(Collectors.toCollection(ArrayList::new)));
-                if (matrix.get(r).size() == 0) {
+                if (matrix.get(r).isEmpty()) {
                     matrix.remove(r);
                     r--;
                 }
@@ -68,9 +68,9 @@ public class Crossfire {
     }
 
     private static void printMatrix(ArrayList<ArrayList<Integer>> matrix) {
-        for (int r = 0; r < matrix.size(); r++) {
-            for (int c = 0; c < matrix.get(r).size(); c++) {
-                System.out.print(matrix.get(r).get(c) + " ");
+        for (ArrayList<Integer> integers : matrix) {
+            for (Integer integer : integers) {
+                System.out.print(integer + " ");
             }
             System.out.println();
         }

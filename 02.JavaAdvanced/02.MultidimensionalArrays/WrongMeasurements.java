@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class WrongMeasurements {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         int n = Integer.parseInt(sc.nextLine());
@@ -63,8 +63,8 @@ public class WrongMeasurements {
 
     private static void printMatrix(int[][] result) {
         Arrays.stream(result).forEach(x -> {
-            for (int i = 0; i < x.length; i++) {
-                System.out.print(x[i] + " ");
+            for (int j : x) {
+                System.out.print(j + " ");
             }
             System.out.println();
         });

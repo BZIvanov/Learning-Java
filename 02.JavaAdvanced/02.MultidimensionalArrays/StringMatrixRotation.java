@@ -2,11 +2,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StringMatrixRotation {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String degrees = sc.nextLine();
-        int angle = Integer.parseInt(degrees.substring(7, degrees.length() - 1)) % 360;
+        int angle = Integer.parseInt(sc.nextLine());
 
         String input = sc.nextLine();
 
@@ -49,15 +48,15 @@ public class StringMatrixRotation {
             }
         } else if (angle == 270) {
             for (int c = maxWordLength - 1; c >= 0; c--) {
-                for (int r = 0; r < matrix.length; r++) {
-                    System.out.print(matrix[r][c]);
+                for (char[] chars : matrix) {
+                    System.out.print(chars[c]);
                 }
                 System.out.println();
             }
         } else {
-            for (int r = 0; r < matrix.length; r++) {
+            for (char[] chars : matrix) {
                 for (int c = 0; c < maxWordLength; c++) {
-                    System.out.print(matrix[r][c]);
+                    System.out.print(chars[c]);
                 }
                 System.out.println();
             }

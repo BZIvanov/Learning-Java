@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MatrixShuffling {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         int rows = sc.nextInt();
@@ -50,9 +50,9 @@ public class MatrixShuffling {
     }
 
     private static void printMatrix(String[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j] + " ");
+        for (String[] strings : matrix) {
+            for (String string : strings) {
+                System.out.print(string + " ");
             }
             System.out.println();
         }
