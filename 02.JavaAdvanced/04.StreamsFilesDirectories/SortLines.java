@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 
 public class SortLines {
     public static void main(String[] args) throws IOException {
-        Path pathIn = Paths.get("H:\\input.txt");
-        Path pathOut = Paths.get("H:\\output.txt");
+        Path pathIn = Paths.get("D:\\input.txt");
+        Path pathOut = Paths.get("D:\\output.txt");
 
         List<String> inputLines = Files.readAllLines(pathIn)
                 .parallelStream()

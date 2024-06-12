@@ -2,7 +2,7 @@ import java.io.File;
 
 public class ListFiles {
     public static void main(String[] args) {
-        File f = new File("H:\\");
+        File f = new File("D:\\testFiles");
 
         File[] allFiles = f.listFiles();
         if (allFiles == null) {
@@ -11,7 +11,7 @@ public class ListFiles {
 
         for (File f1 : allFiles) {
             if (!f1.isDirectory()) {
-                System.out.println(String.format("%s: [%d]", f1.getName(), f1.length()));
+                System.out.printf("%s: [%d]%n", f1.getName(), f1.length());
             }
         }
     }

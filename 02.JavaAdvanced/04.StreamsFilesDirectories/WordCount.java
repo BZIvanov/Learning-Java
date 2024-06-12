@@ -7,15 +7,17 @@ import java.util.Map;
 
 public class WordCount {
     public static void main(String[] args) throws IOException {
-        String textInput = "H:\\text.txt";
-        String wordsInput = "H:\\words.txt";
-        String resultOutput = "H:\\result.txt";
+        String textInput = "D:\\text.txt";
+        String wordsInput = "D:\\words.txt";
+        String resultOutput = "D:\\result.txt";
 
         Map<String, Integer> words = new LinkedHashMap<>();
 
-        try (BufferedReader wordsReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(wordsInput))));
-             BufferedReader textReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(textInput))));
-                PrintWriter out = new PrintWriter(new FileWriter(resultOutput))) {
+        try (
+                BufferedReader textReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(textInput))));
+                BufferedReader wordsReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(wordsInput))));
+                PrintWriter out = new PrintWriter(new FileWriter(resultOutput))
+        ) {
             String line;
 
             while ((line = wordsReader.readLine()) != null) {

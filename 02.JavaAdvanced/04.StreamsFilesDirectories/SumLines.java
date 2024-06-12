@@ -2,8 +2,8 @@ import java.io.*;
 
 public class SumLines {
     public static void main(String[] args) throws IOException {
-        String filePath = "H:\\input.txt";
-        String outFile = "H:\\output.txt";
+        String filePath = "D:\\input.txt";
+        String outFile = "D:\\output.txt";
 
         FileWriter writer = new FileWriter(outFile);
         try {

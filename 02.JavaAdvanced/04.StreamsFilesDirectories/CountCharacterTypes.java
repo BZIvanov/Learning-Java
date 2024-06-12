@@ -4,8 +4,8 @@ import java.nio.file.Path;
 
 public class CountCharacterTypes {
     public static void main(String[] args) throws IOException {
-        String filePath = "H:\\input.txt";
-        String outputPath = "H:\\charTypes.txt";
+        String filePath = "D:\\input.txt";
+        String outputPath = "D:\\output.txt";
 
         String text = Files.readString(Path.of(filePath)).replaceAll("\r\n", " ");
 

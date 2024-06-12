@@ -4,12 +4,13 @@ import java.io.IOException;
 
 public class CopyBytes {
     public static void main(String[] args) {
-        String pathIn = "H:\\input.txt";
-        String pathOut = "H:\\output.txt";
+        String pathIn = "D:\\input.txt";
+        String pathOut = "D:\\output.txt";
 
-        try (FileInputStream fis = new FileInputStream(pathIn);
-             FileOutputStream fos = new FileOutputStream(pathOut)) {
-
+        try (
+                FileInputStream fis = new FileInputStream(pathIn);
+                FileOutputStream fos = new FileOutputStream(pathOut)
+        ) {
             int oneByte = fis.read();
             while (oneByte >= 0) {
                 if (oneByte == 32 || oneByte == 10) {

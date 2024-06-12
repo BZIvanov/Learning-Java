@@ -2,8 +2,8 @@ import java.io.*;
 
 public class LineNumbers {
     public static void main(String[] args) throws IOException {
-        String filePath = "H:\\input.txt";
-        String outputPath = "H:\\lineNumbers.txt";
+        String filePath = "D:\\input.txt";
+        String outputPath = "D:\\output.txt";
 
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
 
