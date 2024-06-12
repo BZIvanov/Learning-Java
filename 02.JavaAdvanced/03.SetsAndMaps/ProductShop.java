@@ -23,7 +23,7 @@ public class ProductShop {
         shop.forEach((shopName, products) -> {
             System.out.println(shopName + "->");
             products.forEach((productName, productPrice) -> {
-                System.out.println(String.format("Product: %s, Price: %.1f", productName, productPrice));
+                System.out.printf("Product: %s, Price: %.1f%n", productName, productPrice);
             });
         });
     }

@@ -23,7 +23,7 @@ public class MinerTask {
         }
 
         for (Map.Entry<String, Integer> kvp : result.entrySet()) {
-            System.out.println(String.format("%s -> %d", kvp.getKey(), kvp.getValue()));
+            System.out.printf("%s -> %d%n", kvp.getKey(), kvp.getValue());
         }
     }
 }

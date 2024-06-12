@@ -19,7 +19,7 @@ public class CountSymbols {
         }
 
         for (Character ch : table.keySet()) {
-            System.out.println(String.format("%c: %d time/s", ch, table.get(ch)));
+            System.out.printf("%c: %d time/s%n", ch, table.get(ch));
         }
     }
 }

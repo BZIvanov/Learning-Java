@@ -23,7 +23,7 @@ public class AverageStudentsGrades {
                     .map(g -> String.format("%.2f", g))
                     .collect(Collectors.joining(" "));
             double avg = v.stream().mapToDouble(e -> e).average().orElse(0d);
-            System.out.println(String.format("%s -> %s (avg: %.2f)", k, allGrades, avg));
+            System.out.printf("%s -> %s (avg: %.2f)%n", k, allGrades, avg);
         });
     }
 }

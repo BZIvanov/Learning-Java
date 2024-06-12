@@ -29,14 +29,14 @@ public class PopulationCounter {
 
         populationCounter.entrySet().stream().sorted((f, s) -> {
             Long firstPopulation = populationCounter.get(f.getKey())
-                    .entrySet()
+                    .values()
                     .stream()
-                    .mapToLong(Map.Entry::getValue)
+                    .mapToLong(l -> l)
                     .sum();
             Long secondPopulation = populationCounter.get(s.getKey())
-                    .entrySet()
+                    .values()
                     .stream()
-                    .mapToLong(Map.Entry::getValue)
+                    .mapToLong(l -> l)
                     .sum();
             return secondPopulation.compareTo(firstPopulation);
         }).forEach(entry -> {
@@ -45,13 +45,13 @@ public class PopulationCounter {
                     .mapToLong(v -> v)
                     .sum();
 
-            System.out.println(String.format("%s (total population: %d)", entry.getKey(), totalPopulation));
+            System.out.printf("%s (total population: %d)%n", entry.getKey(), totalPopulation);
 
             entry.getValue().entrySet()
                     .stream()
                     .sorted((f, s) -> s.getValue().compareTo(f.getValue()))
                     .forEach(e -> {
-                        System.out.println(String.format("=>%s: %d", e.getKey(), e.getValue()));
+                        System.out.printf("=>%s: %d%n", e.getKey(), e.getValue());
                     });
         });
     }

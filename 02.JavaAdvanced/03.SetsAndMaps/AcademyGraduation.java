@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class AcademyGraduation {
     public static void main(String[] args) {
@@ -12,7 +11,7 @@ public class AcademyGraduation {
             String name = sc.nextLine();
             List<Double> grades = Arrays.stream(sc.nextLine().split("\\s+"))
                     .map(Double::parseDouble)
-                    .collect(Collectors.toList());
+                    .toList();
 
             school.putIfAbsent(name, new ArrayList<>());
             school.get(name).addAll(grades);
@@ -24,7 +23,7 @@ public class AcademyGraduation {
                 sum += grade;
             }
             double avg = sum / grades.size();
-            System.out.println(String.format("%s is graduated with %s", name, avg));
+            System.out.printf("%s is graduated with %s%n", name, avg);
         });
     }
 }

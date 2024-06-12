@@ -15,33 +15,39 @@ public class HandsOfCards {
             if (!players.containsKey(name)) {
                 players.put(name, new HashSet<>());
             }
-            for (int i = 0; i < cards.length; i++) {
-                players.get(name).add(cards[i]);
+            for (String card : cards) {
+                players.get(name).add(card);
             }
         }
 
         for (Map.Entry<String, Set<String>> hands : players.entrySet()) {
-            long sum = 0;
-
-            for (String card : hands.getValue()) {
-                int suitSize = 0;
-                int countSize = 0;
-                switch (card.substring(card.length() - 1)) {
-                    case "S": suitSize = 4; break;
-                    case "H": suitSize = 3; break;
-                    case "D": suitSize = 2; break;
-                    case "C": suitSize = 1; break;
-                }
-                switch (card.substring(0, card.length() - 1)) {
-                    case "A": countSize = 14; break;
-                    case "K": countSize = 13; break;
-                    case "Q": countSize = 12; break;
-                    case "J": countSize = 11; break;
-                    default: countSize = Integer.parseInt(card.substring(0, card.length() - 1));
-                }
-                sum += suitSize * countSize;
-            }
-            System.out.println(String.format("%s: %d", hands.getKey(), sum));
+            long sum = getSum(hands);
+            System.out.printf("%s: %d%n", hands.getKey(), sum);
         }
+    }
+
+    private static long getSum(Map.Entry<String, Set<String>> hands) {
+        long sum = 0;
+
+        for (String card : hands.getValue()) {
+            int suitSize = 0;
+            int countSize = 0;
+            suitSize = switch (card.substring(card.length() - 1)) {
+                case "S" -> 4;
+                case "H" -> 3;
+                case "D" -> 2;
+                case "C" -> 1;
+                default -> suitSize;
+            };
+            countSize = switch (card.substring(0, card.length() - 1)) {
+                case "A" -> 14;
+                case "K" -> 13;
+                case "Q" -> 12;
+                case "J" -> 11;
+                default -> Integer.parseInt(card.substring(0, card.length() - 1));
+            };
+            sum += (long) suitSize * countSize;
+        }
+        return sum;
     }
 }

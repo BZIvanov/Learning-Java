@@ -32,42 +32,40 @@ public class DragonArmy {
             }
         }
 
-        dragons.entrySet().forEach(entry -> {
+        dragons.forEach((key1, value1) -> {
             double avgDamage = 0;
             double avgHealth = 0;
             double avgArmor = 0;
             int[] aggragatedData = new int[3];
 
-            entry.getValue().entrySet().stream().forEach(innerEntry -> {
-                int damage = innerEntry.getValue()[0];
-                int health = innerEntry.getValue()[1];
-                int armor = innerEntry.getValue()[2];
+            value1.forEach((_, value) -> {
+                int damage = value[0];
+                int health = value[1];
+                int armor = value[2];
 
                 aggragatedData[0] += damage;
                 aggragatedData[1] += health;
                 aggragatedData[2] += armor;
             });
 
-            int dragonsCount = entry.getValue().size();
+            int dragonsCount = value1.size();
             avgDamage = aggragatedData[0] / (dragonsCount * 1.00);
             avgHealth = aggragatedData[1] / (dragonsCount * 1.00);
             avgArmor = aggragatedData[2] / (dragonsCount * 1.00);
 
-            System.out.println(String.format("%s::(%.2f/%.2f/%.2f)",
-                    entry.getKey(),
+            System.out.printf("%s::(%.2f/%.2f/%.2f)%n",
+                    key1,
                     avgDamage,
                     avgHealth,
                     avgArmor
-            ));
+            );
 
-            entry.getValue().entrySet().stream().forEach(dragon -> {
-                System.out.println(String.format("-%s -> damage: %d, health: %d, armor: %d",
-                        dragon.getKey(),
-                        dragon.getValue()[0],
-                        dragon.getValue()[1],
-                        dragon.getValue()[2]
-                ));
-            });
+            value1.forEach((key, value) -> System.out.printf("-%s -> damage: %d, health: %d, armor: %d%n",
+                    key,
+                    value[0],
+                    value[1],
+                    value[2]
+            ));
         });
     }
 }

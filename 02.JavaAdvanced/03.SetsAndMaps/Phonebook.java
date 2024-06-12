@@ -17,9 +17,9 @@ public class Phonebook {
         String target;
         while (!"stop".equals(target = sc.nextLine())) {
             if (phonebook.containsKey(target)) {
-                System.out.println(String.format("%s -> %s", target, phonebook.get(target)));
+                System.out.printf("%s -> %s%n", target, phonebook.get(target));
             } else {
-                System.out.println(String.format("Contact %s does not exist.", target));
+                System.out.printf("Contact %s does not exist.%n", target);
             }
         }
     }

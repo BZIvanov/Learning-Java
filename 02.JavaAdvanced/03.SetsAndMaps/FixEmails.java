@@ -20,7 +20,7 @@ public class FixEmails {
         }
 
         for (Map.Entry<String, String> entry : emails.entrySet()) {
-            System.out.println(String.format("%s -> %s", entry.getKey(), entry.getValue()));
+            System.out.printf("%s -> %s%n", entry.getKey(), entry.getValue());
         }
     }
 }

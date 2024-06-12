@@ -9,7 +9,7 @@ public class ParkingLot {
         String input;
 
         while (!"END".equals(input = sc.nextLine())) {
-            String[] tokens = input.split(",\\s+");
+            String[] tokens = input.split("\\s+");
             switch (tokens[0]) {
                 case "IN":
                     parkingLot.add(tokens[1]);

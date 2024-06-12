@@ -25,10 +25,10 @@ public class CitiesByContinetAndCountry {
         }
 
         towns.forEach((key, value) -> {
-            System.out.println(String.format("%s:", key));
+            System.out.printf("%s:%n", key);
             value.forEach((innerKey, innerValue) -> {
                 String cities = String.join(", ", innerValue);
-                System.out.println(String.format("  %s -> %s", innerKey, cities));
+                System.out.printf("  %s -> %s%n", innerKey, cities);
             });
         });
     }
