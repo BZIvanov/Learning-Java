@@ -9,6 +9,7 @@ public class Articles {
         String[] data = reader.readLine().split(", ");
         int n = Integer.parseInt(reader.readLine());
 
+        // we don't need to import this class in this example, because it is within the same package
         Article article = new Article(data[0], data[1], data[2]);
 
         for (int i = 0; i < n; i++) {

@@ -9,6 +9,7 @@ public class NxNMatrix {
         drawMatrix(n);
     }
 
+    // public means it is accessible anywhere in the application
     public static void drawMatrix(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
