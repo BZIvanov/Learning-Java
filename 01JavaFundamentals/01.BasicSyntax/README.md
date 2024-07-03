@@ -60,6 +60,7 @@ Recommended order to go through the different examples.
 21. TriangleOfNumbers
 22. PadawanEquipment
 23. RageExpenses
+24. DiagonalWidthMatrix
 
 ## Test input data
 
@@ -348,4 +349,38 @@ Input:
 
 Output:
 Rage expenses: 1.20 lv.
+```
+
+24. DiagonalWidthMatrix
+
+```
+Input:
+8
+0
+
+Output:
+*  0  0  0  0  0  0  0
+0  *  0  0  0  0  0  0
+0  0  *  0  0  0  0  0
+0  0  0  *  0  0  0  0
+0  0  0  0  *  0  0  0
+0  0  0  0  0  *  0  0
+0  0  0  0  0  0  *  0
+0  0  0  0  0  0  0  *
+```
+
+```
+Input:
+8
+3
+
+Output:
+*  *  *  *  0  0  0  0
+*  *  *  *  *  0  0  0
+*  *  *  *  *  *  0  0
+*  *  *  *  *  *  *  0
+0  *  *  *  *  *  *  *
+0  0  *  *  *  *  *  *
+0  0  0  *  *  *  *  *
+0  0  0  0  *  *  *  *
 ```
