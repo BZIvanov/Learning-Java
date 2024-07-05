@@ -338,3 +338,67 @@ Output:
 3 8
 2
 ```
+
+#### 18. ThueMorse
+
+Write a program that takes a single integer command-line argument _n_ and printx _n_ x _n_ pattern based on the Thue-Morse sequence.
+
+The Thue-Morse sequence is an infinite sequence of 0s and 1s constructed by starting with 0 and successively appending the bitwise negation (interchanging 0s and 1s) of the sequence obtained so far. The first few steps of this construction are:
+
+- Step 0: 0
+- Step 1: 01
+- Step 2: 0110
+- Step 3: 01101001
+- Step 4: 0110100110010110
+
+Create an _n_ x _n_ pattern by printing a + (plus sign) if the bits at positions _i_ and _j_ in the Thue-Morse sequence are equal, and a - (minus sign) if they are different. There should be two spaces between each + and - character.
+
+Test inputs and outputs:
+
+```
+Input:
+4
+
+Output:
+-  +  +  -
+-  +  +  -
++  -  -  +
+```
+
+```
+Input:
+8
+
+Output:
++  -  -  +  -  +  +  -
+-  +  +  -  +  -  -  +
+-  +  +  -  +  -  -  +
++  -  -  +  -  +  +  -
+-  +  +  -  +  -  -  +
++  -  -  +  -  +  +  -
++  -  -  +  -  +  +  -
+-  +  +  -  +  -  -  +
+```
+
+```
+Input:
+16
+
+Output:
++  -  -  +  -  +  +  -  -  +  +  -  +  -  -  +
+-  +  +  -  +  -  -  +  +  -  -  +  -  +  +  -
+-  +  +  -  +  -  -  +  +  -  -  +  -  +  +  -
++  -  -  +  -  +  +  -  -  +  +  -  +  -  -  +
+-  +  +  -  +  -  -  +  +  -  -  +  -  +  +  -
++  -  -  +  -  +  +  -  -  +  +  -  +  -  -  +
++  -  -  +  -  +  +  -  -  +  +  -  +  -  -  +
+-  +  +  -  +  -  -  +  +  -  -  +  -  +  +  -
+-  +  +  -  +  -  -  +  +  -  -  +  -  +  +  -
++  -  -  +  -  +  +  -  -  +  +  -  +  -  -  +
++  -  -  +  -  +  +  -  -  +  +  -  +  -  -  +
+-  +  +  -  +  -  -  +  +  -  -  +  -  +  +  -
++  -  -  +  -  +  +  -  -  +  +  -  +  -  -  +
+-  +  +  -  +  -  -  +  +  -  -  +  -  +  +  -
+-  +  +  -  +  -  -  +  +  -  -  +  -  +  +  -
++  -  -  +  -  +  +  -  -  +  +  -  +  -  -  +
+```
