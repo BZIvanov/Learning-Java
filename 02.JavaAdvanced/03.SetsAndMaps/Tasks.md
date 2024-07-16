@@ -390,3 +390,41 @@ electric::(45.00/150.00/10.00)
 water::(20.00/250.00/10.00)
 -Kraken -> damage: 20, health: 250, armor: 10
 ```
+
+#### 19. BirthdayParadox
+
+Create a program that simulates the birthday paradox. The program will run multiple trials to determine the number of people who must enter a room before two people share the same birthday. The results will be summarized in a table.
+
+The program should take two integer command-line arguments: n (the number of possible birthdays) and trials (the number of trials to perform).
+
+For each trial:
+
+- Randomly assign birthdays to people entering the room, with each birthday being a uniform random integer between 0 and n-1
+- Continue until a birthday is repeated
+- Count the number of people who entered the room until a repeated birthday is found
+
+After all trials, summarize the results:
+
+Test inputs and outputs:
+
+- Print a table that includes
+  - The count i (number of people who entered the room)
+  - The number of times exactly i people entered the room before a shared birthday was found
+  - The fraction of trials where i or fewer people entered the room before a shared birthday was found
+- Stop printing the table once the cumulative fraction reaches or exceeds 50%.
+
+```
+Input:
+31
+1000000
+
+Output:
+i       Count   Fraction
+1       0       0.000000
+2       32410   0.032410
+3       62269   0.094679
+4       87314   0.181993
+5       104966  0.286959
+6       115288  0.402247
+7       115849  0.518096
+```
