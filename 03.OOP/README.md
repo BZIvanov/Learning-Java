@@ -1,5 +1,12 @@
 # OOP
 
+The 4 pillars of OOP are:
+
+- Abstraction
+- Encapsulation
+- Inheritance
+- Polymorphism
+
 ## Constructor
 
 Constructor is used to create an object of a class. It has the same name as the class.
