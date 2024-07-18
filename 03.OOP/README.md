@@ -64,3 +64,25 @@ Providing multiple methods with the same name, but different signatures due to a
 ## Hiding
 
 Hiding a static member of a parent class with a static member of the same name in a child class.
+
+## abstract class
+
+Class that cannot be instantiated.
+
+```java
+abstract class MyAbstractClass {
+    public void myConcreteMethod() {
+        System.out.println("Concrete method");
+    }
+
+    abstract void myAbstractMethod();
+}
+```
+
+## final
+
+Modifier that changes the behaviour of a class, method or variable.
+
+- When a class is final, it cannot be extended
+- When a method is final it cannot be overridden
+- Whan a variable is final it can only be assigned a value once
