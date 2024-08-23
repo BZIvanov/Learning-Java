@@ -1,12 +1,30 @@
 # Java Advanced
 
-## Stack and Heap memory
+## Java Memory
 
 ### Stack
 
-The stack holds variables that are needed for running the program.
+Stack memory is used for managing method execution and local variables.
+
+The data on the stack is short-lived, existing only during the execution of a method. Once the method finishes execution, the stack frame for that method is removed, and the memory is reclaimed.
+
+Access to stack memory is fast because it is managed in a sequential manner, with memory being allocated and deallocated automatically by the Java Virtual Machine (JVM).
 
 ### Heap
+
+Heap memory is used for dynamic memory allocation of objects
+
+Objects on the heap live until they are no longer referenced by any part of the program. The JVM's garbage collector reclaims heap memory by removing objects that are no longer needed.
+
+Access to heap memory is slower compared to stack memory due to the need for dynamic memory management and garbage collection.
+
+### Metaspace
+
+Metaspace is a memory area used for class metadata and is separate from both the stack and the heap.
+
+### Garbage collector
+
+The garbage collector is a part of the Java Virtual Machine (JVM) that automatically manages memory by identifying and removing objects that are no longer in use, freeing up space in the heap for new objects. This process helps prevent memory leaks and reduces the need for manual memory management. The garbage collector works by periodically scanning the heap, finding objects that are no longer reachable by any active reference, and reclaiming their memory.
 
 ## Stack and Queue data types
 
