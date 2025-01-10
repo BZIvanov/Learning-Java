@@ -36,7 +36,7 @@ class Dog extends Animal {
 
     Dog(String name, String breed) {
         // Call the superclass constructor (Animal) to initialize the name field
-        super(name);  // This MUST be the first line in the subclass constructor
+        super(name); // This MUST be the first line in the subclass constructor
         this.breed = breed;
         System.out.println("Dog created: " + breed);
     }

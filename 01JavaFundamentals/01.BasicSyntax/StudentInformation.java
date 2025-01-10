@@ -11,6 +11,8 @@ public class StudentInformation {
         int age =  Integer.parseInt(sc.nextLine());
         double grade = Double.parseDouble(sc.nextLine());
 
+        // System is built in class in Java, out is a static member of System class and println is a method of PrintStream class
+        System.out.println("User information:");
         System.out.printf("Name: %s, Age: %d, Grade: %.2f", name, age, grade);
     }
 }
