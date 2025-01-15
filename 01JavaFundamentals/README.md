@@ -1,5 +1,11 @@
 # Java Fundamentals
 
+## JShell
+
+JShell is an interactive REPL (Read-Evaluate-Print Loop) tool. It allows developers to execute Java code snippets interactively without the need to create a full program or class structure. JShell is particularly useful for learning, experimentation, and quick testing.
+
+To use it type in the terminal `jshell` and then you can write simple Java commands.
+
 ## Primitive types
 
 - byte
@@ -12,10 +18,10 @@
 - boolean
 
 ```java
-byte b = 23;
-short s = 21000;
-int i = 45000;
-long l = 12345678912L;
+byte b = 23; // 8 bits
+short s = 21000; // 16 bits
+int i = 45000; // 32 bits
+long l = 12345678912L; // 64 bits
 
 float f = 4.5f;
 double d = 3.42345234234423;
