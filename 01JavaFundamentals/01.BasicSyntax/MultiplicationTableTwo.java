@@ -11,5 +11,7 @@ public class MultiplicationTableTwo {
         for (int i = start; i <= end; i++) {
             System.out.printf("%d X %d = %d%n", n, i, n * i);
         }
+
+        sc.close();
     }
 }

@@ -16,5 +16,7 @@ public class EvenNumber {
         }
 
         System.out.printf("The number is: %d", n);
+
+        sc.close();
     }
 }

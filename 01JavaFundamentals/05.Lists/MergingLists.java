@@ -33,5 +33,7 @@ public class MergingLists {
         }
 
         System.out.println(result.toString().replaceAll("[\\[\\],]", ""));
+
+        sc.close();
     }
 }

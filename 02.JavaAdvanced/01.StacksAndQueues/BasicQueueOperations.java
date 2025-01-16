@@ -31,5 +31,7 @@ public class BasicQueueOperations {
                 System.out.println(Collections.min(queue));
             }
         }
+
+        sc.close();
     }
 }

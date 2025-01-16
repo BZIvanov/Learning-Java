@@ -33,5 +33,7 @@ public class Train {
         }
 
         wagons.forEach(w -> System.out.print(w + " "));
+
+        sc.close();
     }
 }

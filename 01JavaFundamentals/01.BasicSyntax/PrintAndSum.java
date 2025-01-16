@@ -15,5 +15,7 @@ public class PrintAndSum {
         }
         System.out.println(nums.toString().trim());
         System.out.printf("Sum: %d", sum);
+
+        sc.close();
     }
 }

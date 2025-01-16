@@ -1,6 +1,5 @@
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class IntersectionOfTwoMatrices {
     public static void main(String[] args) {

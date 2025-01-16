@@ -7,6 +7,8 @@ public class VowelsCount {
         String text = sc.nextLine();
 
         System.out.println(countVowels(text));
+
+        sc.close();
     }
 
     public static int countVowels(String s) {

@@ -22,5 +22,7 @@ public class FixEmails {
         for (Map.Entry<String, String> entry : emails.entrySet()) {
             System.out.printf("%s -> %s%n", entry.getKey(), entry.getValue());
         }
+
+        sc.close();
     }
 }

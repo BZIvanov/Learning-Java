@@ -19,5 +19,7 @@ public class RemoveNegativeAndReverse {
         } else {
             nums.forEach(e -> System.out.print(e + " "));
         }
+
+        sc.close();
     }
 }

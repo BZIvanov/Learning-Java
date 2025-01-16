@@ -15,5 +15,7 @@ public class MatchFullName {
         while (matcher.find()) {
             System.out.println(matcher.group());
         }
+
+        sc.close();
     }
 }

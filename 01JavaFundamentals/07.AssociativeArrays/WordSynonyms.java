@@ -23,5 +23,7 @@ public class WordSynonyms {
 
             System.out.printf(pattern + "%n", key, value);
         }
+
+        sc.close();
     }
 }

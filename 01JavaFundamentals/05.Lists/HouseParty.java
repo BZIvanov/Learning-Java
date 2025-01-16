@@ -32,5 +32,7 @@ public class HouseParty {
         for (String guest : guests) {
             System.out.println(guest);
         }
+
+        sc.close();
     }
 }

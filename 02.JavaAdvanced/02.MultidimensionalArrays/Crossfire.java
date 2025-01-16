@@ -49,6 +49,8 @@ public class Crossfire {
         }
 
         printMatrix(matrix);
+
+        sc.close();
     }
 
     private static ArrayList<ArrayList<Integer>> generateMatrix(int rows, int cols) {

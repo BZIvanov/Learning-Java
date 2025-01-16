@@ -13,5 +13,7 @@ public class RepeatStrings {
         }
 
         System.out.println(result);
+
+        sc.close();
     }
 }

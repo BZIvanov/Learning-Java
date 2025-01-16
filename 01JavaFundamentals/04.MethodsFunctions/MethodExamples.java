@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class MethodExamples {
     static void printHelloWorld() {
         // static is always used
@@ -26,8 +24,6 @@ public class MethodExamples {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
         // void method which takes no parameters
         printHelloWorld();
 

@@ -16,5 +16,7 @@ public class TriplesLatinLetters {
                 }
             }
         }
+
+        sc.close();
     }
 }

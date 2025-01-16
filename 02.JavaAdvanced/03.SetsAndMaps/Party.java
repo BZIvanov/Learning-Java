@@ -34,5 +34,7 @@ public class Party {
         System.out.println(vipGuests.size() + regularGuests.size());
         vipGuests.forEach(System.out::println);
         regularGuests.forEach(System.out::println);
+
+        sc.close();
     }
 }

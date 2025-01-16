@@ -21,5 +21,7 @@ public class TopIntegers {
                 System.out.print(currentNum + " ");
             }
         }
+
+        sc.close();
     }
 }

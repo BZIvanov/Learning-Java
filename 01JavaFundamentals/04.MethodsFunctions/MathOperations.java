@@ -45,5 +45,7 @@ public class MathOperations {
                 System.out.printf("%.0f",modulo(first, second));
                 break;
         }
+
+        sc.close();
     }
 }

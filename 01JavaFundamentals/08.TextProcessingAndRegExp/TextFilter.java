@@ -14,6 +14,7 @@ public class TextFilter {
         }
         System.out.println(text);
 
+        sc.close();
     }
 
     private static String repeatStr(int length) {

@@ -12,5 +12,7 @@ public class CalculateRectangleArea {
         double b = Double.parseDouble(sc.nextLine());
 
         System.out.printf("%.2f", calculateArea(a, b));
+
+        sc.close();
     }
 }

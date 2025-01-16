@@ -31,7 +31,7 @@ public class ForceBook {
                 String forceUser = data[0];
                 String forceSide = data[1];
 
-                forceBook.forEach((key, value) -> {
+                forceBook.forEach((_, value) -> {
                     value.remove(forceUser);
                 });
 

@@ -37,5 +37,7 @@ public class BombNumbers {
             sum += number;
         }
         System.out.println(sum);
+
+        sc.close();
     }
 }

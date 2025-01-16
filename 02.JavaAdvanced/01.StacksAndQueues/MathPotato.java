@@ -29,6 +29,8 @@ public class MathPotato {
         }
 
         System.out.println("Last is " + queue.poll());
+
+        sc.close();
     }
 
     private static boolean isPrime(int cycle) {

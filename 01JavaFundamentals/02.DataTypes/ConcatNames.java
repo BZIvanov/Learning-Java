@@ -9,5 +9,7 @@ public class ConcatNames {
         String delimiter = sc.nextLine();
 
         System.out.printf("%s%s%s", firstName, delimiter, secondName);
+
+        sc.close();
     }
 }

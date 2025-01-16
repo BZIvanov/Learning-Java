@@ -7,6 +7,8 @@ public class MiddleCharacters {
         String str = sc.nextLine();
 
         System.out.println(getMiddleChars(str));
+
+        sc.close();
     }
 
     public static String getMiddleChars(String str) {

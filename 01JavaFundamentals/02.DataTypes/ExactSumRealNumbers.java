@@ -14,5 +14,7 @@ public class ExactSumRealNumbers {
         }
 
         System.out.println(result);
+
+        sc.close();
     }
 }

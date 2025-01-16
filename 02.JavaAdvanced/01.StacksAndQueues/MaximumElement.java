@@ -26,5 +26,7 @@ public class MaximumElement {
                     System.out.println(Collections.max(numbers));
             }
         }
+
+        sc.close();
     }
 }

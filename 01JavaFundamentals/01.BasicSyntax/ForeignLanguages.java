@@ -20,5 +20,7 @@ public class ForeignLanguages {
                 System.out.println("unknown");
                 break;
         }
+
+        sc.close();
     }
 }

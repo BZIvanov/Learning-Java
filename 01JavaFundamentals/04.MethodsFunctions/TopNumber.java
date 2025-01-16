@@ -11,6 +11,8 @@ public class TopNumber {
                 System.out.println(i);
             }
         }
+
+        sc.close();
     }
 
     private static boolean checkIfContainsOddNumber(int num) {

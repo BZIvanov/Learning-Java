@@ -7,5 +7,7 @@ public class PoundsToDollars {
         double pounds = Double.parseDouble(sc.nextLine());
 
         System.out.printf("%.3f", pounds * 1.31);
+
+        sc.close();
     }
 }

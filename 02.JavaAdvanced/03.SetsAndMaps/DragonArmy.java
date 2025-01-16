@@ -67,5 +67,7 @@ public class DragonArmy {
                     value[2]
             ));
         });
+
+        sc.close();
     }
 }

@@ -2,10 +2,13 @@ import java.util.Scanner;
 
 public class ThueMorse {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         int n = Integer.parseInt(sc.nextLine());
 
         if (n <= 0) {
             System.out.println("The provided integer should be positive.");
+            sc.close();
             return;
         }
 
@@ -16,6 +19,8 @@ public class ThueMorse {
         char[][] pattern = generatePattern(n, thueMorseSequence);
 
         printPattern(pattern);
+
+        sc.close();
     }
 
     private static int[] generateThueMorseSequence(int n) {

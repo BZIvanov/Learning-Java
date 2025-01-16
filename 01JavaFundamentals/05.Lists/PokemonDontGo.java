@@ -35,6 +35,8 @@ public class PokemonDontGo {
         }
 
         System.out.println(sum);
+
+        sc.close();
     }
 
     public static void changeListElements(ArrayList<Integer> pokemons, int element) {

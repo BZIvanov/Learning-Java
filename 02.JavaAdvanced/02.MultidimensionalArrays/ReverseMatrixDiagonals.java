@@ -35,5 +35,7 @@ public class ReverseMatrixDiagonals {
                 row--;
             }
         }
+
+        sc.close();
     }
 }

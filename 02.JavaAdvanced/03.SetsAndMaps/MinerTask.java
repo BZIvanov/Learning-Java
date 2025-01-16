@@ -25,5 +25,7 @@ public class MinerTask {
         for (Map.Entry<String, Integer> kvp : result.entrySet()) {
             System.out.printf("%s -> %d%n", kvp.getKey(), kvp.getValue());
         }
+
+        sc.close();
     }
 }

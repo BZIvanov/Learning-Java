@@ -43,5 +43,7 @@ public class MultiplyEvensByOdds {
             n *= -1;
         }
         System.out.println(getMultipleOfEvensAndOdds(n));
+
+        sc.close();
     }
 }

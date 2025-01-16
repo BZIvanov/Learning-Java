@@ -41,5 +41,7 @@ public class SimpleTextEditor {
                     break;
             }
         }
+
+        sc.close();
     }
 }

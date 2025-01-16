@@ -7,6 +7,8 @@ public class NxNMatrix {
         int n = Integer.parseInt(sc.nextLine());
 
         drawMatrix(n);
+
+        sc.close();
     }
 
     // public means it is accessible anywhere in the application

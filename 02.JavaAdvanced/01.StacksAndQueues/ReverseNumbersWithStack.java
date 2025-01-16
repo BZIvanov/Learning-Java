@@ -13,5 +13,7 @@ public class ReverseNumbersWithStack {
         while (!stack.isEmpty()) {
             System.out.print(stack.pop() + " ");
         }
+
+        sc.close();
     }
 }

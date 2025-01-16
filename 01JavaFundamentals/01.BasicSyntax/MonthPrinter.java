@@ -47,5 +47,7 @@ public class MonthPrinter {
                 System.out.println("Error!");
                 break;
         }
+
+        sc.close();
     }
 }

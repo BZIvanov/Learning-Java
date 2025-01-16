@@ -6,7 +6,6 @@ public class PoisonousPlants {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n = Integer.parseInt(sc.nextLine());
         long[] plants = Arrays.stream(sc.nextLine().split("\\s+"))
                 .mapToLong(Long::parseLong)
                 .toArray();
@@ -29,5 +28,7 @@ public class PoisonousPlants {
         }
 
         System.out.println(Arrays.stream(days).max().getAsInt());
+
+        sc.close();
     }
 }

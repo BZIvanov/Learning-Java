@@ -54,6 +54,8 @@ public class Robotics {
                 products.offer(product);
             }
         }
+
+        sc.close();
     }
 
     private static void printRobotData(String robot, String product, int beginSeconds) {

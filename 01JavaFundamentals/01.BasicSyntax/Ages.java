@@ -17,5 +17,8 @@ public class Ages {
         } else {
             System.out.println("elder");
         }
+
+        // Close the scanner after use
+        sc.close();
     }
 }

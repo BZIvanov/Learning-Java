@@ -21,5 +21,7 @@ public class CountSymbols {
         for (Character ch : table.keySet()) {
             System.out.printf("%c: %d time/s%n", ch, table.get(ch));
         }
+
+        sc.close();
     }
 }

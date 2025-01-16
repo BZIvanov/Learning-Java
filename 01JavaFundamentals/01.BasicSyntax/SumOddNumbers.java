@@ -14,5 +14,7 @@ public class SumOddNumbers {
         }
 
         System.out.printf("Sum: %d", sum);
+
+        sc.close();
     }
 }

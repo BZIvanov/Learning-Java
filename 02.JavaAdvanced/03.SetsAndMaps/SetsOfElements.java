@@ -26,5 +26,7 @@ public class SetsOfElements {
         first.retainAll(second);
 
         first.forEach(e -> System.out.print(e + " "));
+
+        sc.close();
     }
 }

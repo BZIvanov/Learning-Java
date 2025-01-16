@@ -51,5 +51,7 @@ public class ListManipulationAdvanced {
             System.out.println();
             line = sc.nextLine();
         }
+
+        sc.close();
     }
 }

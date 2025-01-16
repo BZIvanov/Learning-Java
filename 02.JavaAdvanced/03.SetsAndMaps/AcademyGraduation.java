@@ -25,5 +25,7 @@ public class AcademyGraduation {
             double avg = sum / grades.size();
             System.out.printf("%s is graduated with %s%n", name, avg);
         });
+
+        sc.close();
     }
 }

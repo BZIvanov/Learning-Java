@@ -24,6 +24,8 @@ public class HandsOfCards {
             long sum = getSum(hands);
             System.out.printf("%s: %d%n", hands.getKey(), sum);
         }
+
+        sc.close();
     }
 
     private static long getSum(Map.Entry<String, Set<String>> hands) {

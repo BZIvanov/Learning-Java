@@ -29,5 +29,7 @@ public class EqualSum {
         if (!hasEqualSum) {
             System.out.println("no");
         }
+
+        sc.close();
     }
 }

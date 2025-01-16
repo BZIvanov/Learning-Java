@@ -38,5 +38,7 @@ public class ChangeList {
         for (Integer number : numbers) {
             System.out.print(number + " ");
         }
+
+        sc.close();
     }
 }

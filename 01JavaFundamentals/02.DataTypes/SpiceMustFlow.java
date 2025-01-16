@@ -21,5 +21,7 @@ public class SpiceMustFlow {
 
         System.out.println(days);
         System.out.println(totalSpice);
+
+        sc.close();
     }
 }

@@ -9,6 +9,8 @@ public class FactorialDivision {
 
         double divisionResult = fact(first) / fact(second);
         System.out.printf("%.2f%n", divisionResult);
+
+        sc.close();
     }
 
     public static double fact(double num) {

@@ -23,5 +23,7 @@ public class Login {
                 System.out.println("Incorrect password. Try again.");
             }
         }
+
+        sc.close();
     }
 }

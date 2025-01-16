@@ -22,5 +22,7 @@ public class MatchPhoneNumber {
         }
 
         System.out.println(String.join(", ", matchedPhones));
+
+        sc.close();
     }
 }

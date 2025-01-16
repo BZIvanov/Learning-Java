@@ -8,5 +8,7 @@ public class WordFilter {
         Arrays.stream(sc.nextLine().split("\\s+"))
                 .filter(w -> w.length() % 2 == 0)
                 .forEach(System.out::println);
+
+        sc.close();
     }
 }

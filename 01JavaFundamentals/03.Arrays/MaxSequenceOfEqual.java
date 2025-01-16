@@ -27,5 +27,7 @@ public class MaxSequenceOfEqual {
         for (int i = 0; i < maxLength; i++) {
             System.out.print(numbers[bestIndex] + " ");
         }
+
+        sc.close();
     }
 }

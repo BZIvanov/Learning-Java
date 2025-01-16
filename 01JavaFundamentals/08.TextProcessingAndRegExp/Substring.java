@@ -14,5 +14,7 @@ public class Substring {
         }
 
         System.out.println(text);
+
+        sc.close();
     }
 }

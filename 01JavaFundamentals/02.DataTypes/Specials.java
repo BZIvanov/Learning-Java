@@ -19,5 +19,7 @@ public class Specials {
             special = (special.charAt(0) + "").toUpperCase() + special.substring(1);
             System.out.printf("%d -> %s%n", ch, special);
         }
+
+        scanner.close();
     }
 }

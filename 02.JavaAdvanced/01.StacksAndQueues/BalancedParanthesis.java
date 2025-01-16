@@ -40,5 +40,7 @@ public class BalancedParanthesis {
         } else {
             System.out.println("NO");
         }
+
+        sc.close();
     }
 }

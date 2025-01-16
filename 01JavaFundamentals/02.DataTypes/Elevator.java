@@ -9,5 +9,7 @@ public class Elevator {
 
         int courses = (int) Math.ceil((double) people / capacity);
         System.out.println(courses);
+
+        sc.close();
     }
 }

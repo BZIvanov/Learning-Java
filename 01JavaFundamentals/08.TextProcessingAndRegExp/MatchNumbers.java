@@ -20,5 +20,7 @@ public class MatchNumbers {
         }
 
         System.out.println(String.join(" ", results));
+
+        sc.close();
     }
 }

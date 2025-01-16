@@ -22,11 +22,14 @@ public class ParkingLot {
 
         if (parkingLot.isEmpty()) {
             System.out.println("Parking Lot is Empty");
+            sc.close();
             return;
         }
 
         for (String s : parkingLot) {
             System.out.println(s);
         }
+
+        sc.close();
     }
 }

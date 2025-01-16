@@ -12,5 +12,7 @@ public class RepeatString {
         int n = Integer.parseInt(sc.nextLine());
 
         System.out.println(wholeText(text, n));
+
+        sc.close();
     }
 }

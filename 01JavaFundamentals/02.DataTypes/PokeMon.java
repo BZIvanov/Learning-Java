@@ -23,5 +23,7 @@ public class PokeMon {
 
         System.out.println(power);
         System.out.println(pokeCounter);
+
+        sc.close();
     }
 }

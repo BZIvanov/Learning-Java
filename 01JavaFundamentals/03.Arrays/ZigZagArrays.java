@@ -28,5 +28,7 @@ public class ZigZagArrays {
         for (int n : second) {
             System.out.print(n + " ");
         }
+
+        sc.close();
     }
 }

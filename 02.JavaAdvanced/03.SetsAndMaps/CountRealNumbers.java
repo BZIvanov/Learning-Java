@@ -20,5 +20,7 @@ public class CountRealNumbers {
         for (Map.Entry<Double, Integer> kvp : result.entrySet()) {
             System.out.printf("%.1f -> %d%n", kvp.getKey(), kvp.getValue());
         }
+
+        sc.close();
     }
 }

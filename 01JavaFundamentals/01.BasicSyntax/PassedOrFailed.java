@@ -11,5 +11,7 @@ public class PassedOrFailed {
         } else {
             System.out.println("Failed!");
         }
+
+        sc.close();
     }
 }

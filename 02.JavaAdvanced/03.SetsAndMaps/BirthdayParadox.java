@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class BirthdayParadox {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         int n = Integer.parseInt(sc.nextLine());
         int trials = Integer.parseInt(sc.nextLine());
 
@@ -35,5 +37,7 @@ public class BirthdayParadox {
             System.out.printf("%d\t%d\t%.6f\n", i, counts[i], fraction);
             if (fraction >= 0.50) break;
         }
+
+        sc.close();
     }
 }

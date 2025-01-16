@@ -18,5 +18,7 @@ public class PeriodicTable {
         for (String el : elements) {
             System.out.print(el + " ");
         }
+
+        sc.close();
     }
 }

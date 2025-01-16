@@ -11,5 +11,7 @@ public class LowerOrUpper {
         } else {
             System.out.println("lower-case");
         }
+
+        sc.close();
     }
 }

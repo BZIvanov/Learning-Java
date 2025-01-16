@@ -25,5 +25,7 @@ public class Orders {
         int quantity = Integer.parseInt(sc.nextLine());
 
         calculatePrice(drink, quantity);
+
+        sc.close();
     }
 }

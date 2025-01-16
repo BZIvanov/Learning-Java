@@ -61,5 +61,7 @@ public class KaminoFactory {
             System.out.print(bestDna.charAt(i) + " ");
         }
         System.out.println();
+
+        sc.close();
     }
 }

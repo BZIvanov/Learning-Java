@@ -8,6 +8,8 @@ public class CharactersInRange {
         char second = sc.nextLine().charAt(0);
 
         System.out.println(getCharsInRange(first, second));
+
+        sc.close();
     }
 
     public static String getCharsInRange(char start, char end) {

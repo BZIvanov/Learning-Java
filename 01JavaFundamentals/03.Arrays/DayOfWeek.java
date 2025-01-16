@@ -13,5 +13,7 @@ public class DayOfWeek {
         } else {
             System.out.println("Invalid day!");
         }
+
+        sc.close();
     }
 }

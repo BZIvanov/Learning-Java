@@ -21,6 +21,8 @@ public class SumAdjacentEqualNumbers {
         }
         String output = joinElementsByDelimiter(numbers);
         System.out.println(output);
+
+        sc.close();
     }
 
     static String joinElementsByDelimiter(List<Double> items) {

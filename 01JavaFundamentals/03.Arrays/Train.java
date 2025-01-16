@@ -19,5 +19,7 @@ public class Train {
         }
         System.out.println();
         System.out.println(sum);
+
+        sc.close();
     }
 }

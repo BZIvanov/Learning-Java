@@ -25,5 +25,7 @@ public class AverageStudentsGrades {
             double avg = v.stream().mapToDouble(e -> e).average().orElse(0d);
             System.out.printf("%s -> %s (avg: %.2f)%n", k, allGrades, avg);
         });
+
+        sc.close();
     }
 }

@@ -20,5 +20,7 @@ public class SumBigNumbers {
         BigInteger sum = count.multiply(first.add(second)).divide(BigInteger.valueOf(2));
 
         System.out.println(sum);
+
+        sc.close();
     }
 }

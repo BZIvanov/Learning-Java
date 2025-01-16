@@ -11,6 +11,8 @@ public class AddAndSubtract {
         int sum = addNumbers(first, second);
         int result = subtractNumbers(sum, third);
         System.out.println(result);
+
+        sc.close();
     }
 
     private static int subtractNumbers(int first, int second) {

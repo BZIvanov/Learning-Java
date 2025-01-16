@@ -57,5 +57,7 @@ public class ListOperations {
         for (Integer number : numbers) {
             System.out.print(number + " ");
         }
+
+        sc.close();
     }
 }

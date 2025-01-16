@@ -22,5 +22,7 @@ public class EqualArrays {
                 System.out.printf("Arrays are identical. Sum: %d", sum);
             }
         }
+
+        sc.close();
     }
 }

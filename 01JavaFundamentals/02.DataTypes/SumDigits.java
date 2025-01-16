@@ -12,5 +12,7 @@ public class SumDigits {
         }
 
         System.out.println(sum);
+
+        sc.close();
     }
 }

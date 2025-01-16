@@ -6,5 +6,7 @@ public class ConvertMToKm {
 
         int meters = Integer.parseInt(sc.nextLine());
         System.out.printf("%.2f", meters / 1000.0);
+
+        sc.close();
     }
 }

@@ -15,5 +15,7 @@ public class PrintReverse {
         for (int i = nums.length - 1; i >= 0; i--) {
             System.out.print(nums[i] + " ");
         }
+
+        sc.close();
     }
 }

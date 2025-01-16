@@ -10,6 +10,8 @@ public class PalindromeIntegers {
             System.out.println(checkForPalindrome(num));
             num = sc.nextLine();
         }
+
+        sc.close();
     }
 
     private static boolean checkForPalindrome(String num) {

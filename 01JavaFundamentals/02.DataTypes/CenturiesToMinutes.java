@@ -11,5 +11,7 @@ public class CenturiesToMinutes {
         int hours = days * 24;
         int minutes = hours * 60;
         System.out.printf("%d centuries = %d years = %d days = %d hours = %d minutes", centuries, years, days, hours, minutes);
+
+        sc.close();
     }
 }

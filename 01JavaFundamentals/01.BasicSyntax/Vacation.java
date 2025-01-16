@@ -51,5 +51,7 @@ public class Vacation {
             }
         }
         System.out.printf("Total price: %.2f", totalPrice);
+
+        sc.close();
     }
 }

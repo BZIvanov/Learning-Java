@@ -13,5 +13,7 @@ public class LargestThree {
                 .limit(3)
                 .map(String::valueOf)
                 .collect(Collectors.joining(" ")));
+
+        sc.close();
     }
 }

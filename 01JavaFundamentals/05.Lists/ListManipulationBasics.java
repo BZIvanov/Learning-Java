@@ -51,5 +51,7 @@ public class ListManipulationBasics {
             }
         }
         System.out.println(numbers.toString().replaceAll("[\\[\\],]", ""));
+
+        sc.close();
     }
 }

@@ -44,5 +44,7 @@ public class CardsGame {
             int sum = second.stream().reduce(Integer::sum).get();
             System.out.printf("Second player wins! Sum: %d", sum);
         }
+
+        sc.close();
     }
 }

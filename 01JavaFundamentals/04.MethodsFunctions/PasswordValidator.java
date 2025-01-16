@@ -6,9 +6,11 @@ public class PasswordValidator {
 
         String password = sc.nextLine();
 
-        if(validatePassword(password)) {
+        if (validatePassword(password)) {
             System.out.println("Password is valid");
         }
+
+        sc.close();
     }
 
     public static boolean validatePassword(String p) {

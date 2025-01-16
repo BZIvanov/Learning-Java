@@ -9,5 +9,7 @@ public class Passed {
         if (grade >= 3.0) {
             System.out.println("Passed!");
         }
+
+        sc.close();
     }
 }

@@ -65,5 +65,7 @@ public class AnonymousThreat {
             line = sc.nextLine();
         }
         elements.forEach(e -> System.out.print(e + " "));
+
+        sc.close();
     }
 }

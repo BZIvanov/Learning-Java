@@ -18,6 +18,7 @@ public class DiagonalWidthMatrix {
             }
             System.out.println(line);
         }
+
         sc.close();
     }
 }

@@ -12,5 +12,7 @@ public class TriangleOfNumbers {
             }
             System.out.println();
         }
+
+        sc.close();
     }
 }

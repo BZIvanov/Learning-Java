@@ -24,5 +24,7 @@ public class HotPotato {
         }
 
         System.out.println("Last is " + queue.poll());
+
+        sc.close();
     }
 }

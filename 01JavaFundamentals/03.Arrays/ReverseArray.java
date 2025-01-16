@@ -15,5 +15,7 @@ public class ReverseArray {
         for (String item : items) {
             System.out.print(item + " ");
         }
+
+        sc.close();
     }
 }

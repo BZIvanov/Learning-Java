@@ -17,5 +17,7 @@ public class UniqueUsernames {
         for (String username : usernames) {
             System.out.println(username);
         }
+
+        sc.close();
     }
 }

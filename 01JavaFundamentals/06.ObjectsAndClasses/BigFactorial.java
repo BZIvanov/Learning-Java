@@ -13,5 +13,7 @@ public class BigFactorial {
         }
 
         System.out.println(result);
+
+        sc.close();
     }
 }

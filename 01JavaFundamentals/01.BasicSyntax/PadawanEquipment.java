@@ -21,5 +21,7 @@ public class PadawanEquipment {
         } else {
             System.out.printf("Ivan Cho will need %.2flv more.%n", totalCost - budget);
         }
+
+        sc.close();
     }
 }

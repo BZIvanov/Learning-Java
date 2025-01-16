@@ -41,5 +41,7 @@ public class TheatrePromotions {
         } else {
             System.out.println("Error!");
         }
+
+        sc.close();
     }
 }

@@ -22,5 +22,7 @@ public class EvenOddSubtraction {
         }
 
         System.out.println(evenSum - oddSum);
+
+        sc.close();
     }
 }

@@ -59,7 +59,6 @@ public class ArrayManipulator {
                         System.out.println("Invalid count");
                     }
                 } else {
-                    int oddCount = Integer.parseInt(cmdArgs[1]);
                     if (count < numbers.length) {
                         printFirstOdd(numbers, count);
                     } else {
@@ -72,6 +71,8 @@ public class ArrayManipulator {
         }
 
         printArray(numbers);
+
+        sc.close();
     }
 
     private static void printFirstOdd(int[] numbers, int count) {

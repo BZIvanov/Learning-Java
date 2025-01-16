@@ -30,5 +30,7 @@ public class Calculations {
             case "subtract": subtract(first, second); break;
             case "divide": divide(first, second); break;
         }
+
+        sc.close();
     }
 }

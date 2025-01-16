@@ -17,5 +17,7 @@ public class SignOfInteger {
 
         int n = Integer.parseInt(sc.nextLine());
         integerSign(n);
+
+        sc.close();
     }
 }

@@ -17,5 +17,7 @@ public class ListOfProducts {
         for (int i = 1; i <= n; i++) {
             System.out.println(i + "." + products.get(i - 1));
         }
+
+        sc.close();
     }
 }

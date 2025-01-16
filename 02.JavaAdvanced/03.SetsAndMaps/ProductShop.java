@@ -26,5 +26,7 @@ public class ProductShop {
                 System.out.printf("Product: %s, Price: %.1f%n", productName, productPrice);
             });
         });
+
+        sc.close();
     }
 }

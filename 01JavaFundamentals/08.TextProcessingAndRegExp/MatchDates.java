@@ -15,5 +15,7 @@ public class MatchDates {
             System.out.printf("Day: %s, Month: %s, Year: %s%n",
                     mat.group("day"), mat.group("month"), mat.group("year"));
         }
+
+        sc.close();
     }
 }

@@ -38,5 +38,7 @@ public class Songs {
                 }
             }
         }
+
+        sc.close();
     }
 }

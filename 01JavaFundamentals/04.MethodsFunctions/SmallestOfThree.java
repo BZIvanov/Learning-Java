@@ -9,6 +9,8 @@ public class SmallestOfThree {
         int third = Integer.parseInt(sc.nextLine());
 
         printSmallest(first, second, third);
+
+        sc.close();
     }
 
     public static void printSmallest(int a, int b, int c) {

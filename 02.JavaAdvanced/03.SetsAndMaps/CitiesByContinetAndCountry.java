@@ -31,5 +31,7 @@ public class CitiesByContinetAndCountry {
                 System.out.printf("  %s -> %s%n", innerKey, cities);
             });
         });
+
+        sc.close();
     }
 }

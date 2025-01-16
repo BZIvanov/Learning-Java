@@ -23,5 +23,7 @@ public class DigitsLettersOthers {
         System.out.println(digits);
         System.out.println(letters);
         System.out.println(others);
+
+        sc.close();
     }
 }

@@ -14,5 +14,7 @@ public class ReverseString {
 
             line = sc.nextLine();
         }
+
+        sc.close();
     }
 }

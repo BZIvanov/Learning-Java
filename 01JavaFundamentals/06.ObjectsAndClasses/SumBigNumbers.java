@@ -10,5 +10,7 @@ public class SumBigNumbers {
 
         BigInteger sum = a.add(b);
         System.out.println(sum);
+
+        sc.close();
     }
 }

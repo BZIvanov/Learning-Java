@@ -20,5 +20,7 @@ public class PrintTriangle {
         for (int i = n - 1; i > 0; i--) {
             System.out.println(printLine(i));
         }
+
+        sc.close();
     }
 }

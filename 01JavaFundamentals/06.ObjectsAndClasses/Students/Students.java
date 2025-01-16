@@ -41,6 +41,8 @@ public class Students {
                         student.getFirstName(), student.getLastName(), student.getAge(), student.getCity());
             }
         }
+
+        sc.close();
     }
 
     private static Student getStudent(List<Student> students, String firstName, String lastName) {

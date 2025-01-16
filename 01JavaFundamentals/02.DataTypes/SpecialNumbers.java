@@ -21,5 +21,7 @@ public class SpecialNumbers {
                 System.out.printf("%d -> False%n", i);
             }
         }
+
+        sc.close();
     }
 }

@@ -16,5 +16,7 @@ public class BackThirthyMinutes {
             h -= 24;
         }
         System.out.printf("%d:%02d", h, m);
+
+        sc.close();
     }
 }

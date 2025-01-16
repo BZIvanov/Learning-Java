@@ -26,5 +26,7 @@ public class StrongNumber {
         } else {
             System.out.println("no");
         }
+
+        sc.close();
     }
 }

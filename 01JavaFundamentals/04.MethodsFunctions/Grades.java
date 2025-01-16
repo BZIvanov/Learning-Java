@@ -20,5 +20,7 @@ public class Grades {
 
         double n = Double.parseDouble(sc.nextLine());
         printGrade(n);
+
+        sc.close();
     }
 }

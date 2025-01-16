@@ -1,5 +1,4 @@
 import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class PopulationCounter {
@@ -54,5 +53,7 @@ public class PopulationCounter {
                         System.out.printf("=>%s: %d%n", e.getKey(), e.getValue());
                     });
         });
+
+        sc.close();
     }
 }

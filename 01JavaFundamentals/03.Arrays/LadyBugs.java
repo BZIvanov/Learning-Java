@@ -56,5 +56,7 @@ public class LadyBugs {
         for (int j : field) {
             System.out.print(j + " ");
         }
+
+        sc.close();
     }
 }

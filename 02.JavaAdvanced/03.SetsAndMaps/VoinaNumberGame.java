@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class VoinaNumberGame {
     public static void main(String[] args) {
@@ -38,6 +37,8 @@ public class VoinaNumberGame {
         } else {
             System.out.println("Second player win!");
         }
+
+        sc.close();
     }
 
     static LinkedHashSet<Integer> getPlayerCards(String line) {

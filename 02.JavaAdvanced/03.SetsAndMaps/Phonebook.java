@@ -22,5 +22,7 @@ public class Phonebook {
                 System.out.printf("Contact %s does not exist.%n", target);
             }
         }
+
+        sc.close();
     }
 }

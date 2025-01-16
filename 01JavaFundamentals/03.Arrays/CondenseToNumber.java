@@ -27,5 +27,7 @@ public class CondenseToNumber {
         }
 
         System.out.println(result);
+
+        sc.close();
     }
 }

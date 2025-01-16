@@ -31,5 +31,7 @@ public class BrowserHistoryUpgrade {
                 forwardPages.clear();
             }
         }
+
+        scanner.close();
     }
 }

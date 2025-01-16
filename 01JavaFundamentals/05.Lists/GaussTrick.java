@@ -18,5 +18,7 @@ public class GaussTrick {
         }
 
         System.out.println(numbers.toString().replaceAll("[\\[\\],]", ""));
+
+        sc.close();
     }
 }

@@ -9,5 +9,7 @@ public class CharsToString {
         data += sc.nextLine();
 
         System.out.println(data);
+
+        sc.close();
     }
 }

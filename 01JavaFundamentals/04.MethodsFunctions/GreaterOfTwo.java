@@ -35,5 +35,7 @@ public class GreaterOfTwo {
                 System.out.println(getMax(x, y));
                 break;
         }
+
+        sc.close();
     }
 }

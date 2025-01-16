@@ -25,5 +25,7 @@ public class Snowballs {
         }
 
         System.out.printf("%d : %d = %.0f (%d)%n", maxSnow, maxTime, maxValue, maxQuality);
+
+        sc.close();
     }
 }

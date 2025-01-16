@@ -17,5 +17,7 @@ public class AppendArrays {
         for (String s : first) {
             System.out.print(s + " ");
         }
+
+        sc.close();
     }
 }

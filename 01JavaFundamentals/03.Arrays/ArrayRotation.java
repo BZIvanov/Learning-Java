@@ -19,5 +19,7 @@ public class ArrayRotation {
         for (String str : strNumbers) {
             System.out.print(str + " ");
         }
+
+        sc.close();
     }
 }

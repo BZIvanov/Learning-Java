@@ -20,5 +20,7 @@ public class RandomizeWords {
             System.out.println(word);
             words.remove(randomIndex);
         }
+
+        sc.close();
     }
 }

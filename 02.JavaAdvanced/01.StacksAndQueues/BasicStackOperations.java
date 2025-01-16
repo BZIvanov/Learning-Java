@@ -39,5 +39,7 @@ public class BasicStackOperations {
                 System.out.println(min);
             }
         }
+
+        sc.close();
     }
 }

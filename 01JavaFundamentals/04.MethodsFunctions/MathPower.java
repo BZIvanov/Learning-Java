@@ -12,5 +12,7 @@ public class MathPower {
         double p = Double.parseDouble(sc.nextLine());
 
         System.out.printf("%.0f", numPower(num, p));
+
+        sc.close();
     }
 }

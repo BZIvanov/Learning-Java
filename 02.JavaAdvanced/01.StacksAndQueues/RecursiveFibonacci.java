@@ -12,6 +12,8 @@ public class RecursiveFibonacci {
 
         long result = getFibb(n);
         System.out.println(result);
+
+        sc.close();
     }
 
     private static long getFibb(int n) {
