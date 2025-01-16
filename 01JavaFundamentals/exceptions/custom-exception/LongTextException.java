@@ -7,7 +7,7 @@ public class LongTextException extends Exception {
         super(message);
     }
 
-    public  LongTextException(Exception e) {
+    public LongTextException(Exception e) {
         super(e);
     }
 }

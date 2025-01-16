@@ -8,8 +8,8 @@ public class WriteToFile {
         String pathOut = "D:\\output.txt";
 
         try (
-                FileInputStream fis = new FileInputStream(pathIn);
-                FileOutputStream fos = new FileOutputStream(pathOut)
+            FileInputStream fis = new FileInputStream(pathIn);
+            FileOutputStream fos = new FileOutputStream(pathOut)
         ) {
             int oneByte = fis.read();
             while (oneByte >= 0) {

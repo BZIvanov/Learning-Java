@@ -7,8 +7,8 @@ public class WriteEveryThirdLine {
 
         int pos = 1;
         try (
-                BufferedReader bfr = new BufferedReader(new FileReader(pathIn));
-                BufferedWriter bfw = new BufferedWriter(new PrintWriter(pathOut))
+            BufferedReader bfr = new BufferedReader(new FileReader(pathIn));
+            BufferedWriter bfw = new BufferedWriter(new PrintWriter(pathOut))
         ) {
             String line = "";
             while ((line = bfr.readLine()) != null) {

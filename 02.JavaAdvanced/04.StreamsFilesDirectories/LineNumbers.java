@@ -1,25 +1,27 @@
 import java.io.*;
 
 public class LineNumbers {
-    public static void main(String[] args) throws IOException {
-        String filePath = "D:\\input.txt";
-        String outputPath = "D:\\output.txt";
+    public static void main(String[] args) {
+        String filePath = "C:\\Users\\Username\\Desktop\\input.txt";
+        String outputPath = "C:\\Users\\Username\\Desktop\\output.txt";
 
-        BufferedReader reader = new BufferedReader(new FileReader(filePath));
+        try (
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            PrintWriter printer = new PrintWriter(new FileWriter(outputPath))
+        ) {
+            String line;
+            int row = 1;
 
-        StringBuilder outputLine = new StringBuilder();
-        String line = reader.readLine();
-        int row = 1;
-        while (line != null) {
-            outputLine.append(row).append(". ").append(line);
-            outputLine.append(System.lineSeparator());
+            // Read and write each line with a line number
+            while ((line = reader.readLine()) != null) {
+                printer.println(row + ". " + line);
+                row++;
+            }
 
-            row++;
-            line = reader.readLine();
+            System.out.println("Lines numbered and written to: " + outputPath);
+
+        } catch (IOException e) {
+            System.err.println("An error occurred: " + e.getMessage());
         }
-
-        PrintWriter printer = new PrintWriter(outputPath);
-        printer.println(outputLine);
-        printer.close();
     }
 }
