@@ -1,22 +1,20 @@
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class WordCount {
     public static void main(String[] args) throws IOException {
-        String textInput = "D:\\text.txt";
-        String wordsInput = "D:\\words.txt";
-        String resultOutput = "D:\\result.txt";
+        String textInput = "C:\\Users\\Username\\Desktop\\text.txt";
+        String wordsInput = "C:\\Users\\Username\\Desktop\\words.txt";
+        String resultOutput = "C:\\Users\\Username\\Desktop\\result.txt";
 
         Map<String, Integer> words = new LinkedHashMap<>();
 
         try (
-                BufferedReader textReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(textInput))));
-                BufferedReader wordsReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(wordsInput))));
-                PrintWriter out = new PrintWriter(new FileWriter(resultOutput))
+            BufferedReader textReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(textInput))));
+            BufferedReader wordsReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(wordsInput))));
+            PrintWriter out = new PrintWriter(new FileWriter(resultOutput))
         ) {
             String line;
 

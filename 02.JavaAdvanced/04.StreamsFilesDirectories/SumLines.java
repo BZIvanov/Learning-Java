@@ -2,27 +2,27 @@ import java.io.*;
 
 public class SumLines {
     public static void main(String[] args) throws IOException {
-        String filePath = "D:\\input.txt";
-        String outFile = "D:\\output.txt";
+        String filePath = "C:\\Users\\Username\\Desktop\\input.txt";
+        String outFile = "C:\\Users\\Username\\Desktop\\output.txt";
 
-        FileWriter writer = new FileWriter(outFile);
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader(filePath));
-            String line = reader.readLine();
-            while (line != null) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath));
+             FileWriter writer = new FileWriter(outFile)) {
+
+            String line;
+
+            while ((line = reader.readLine()) != null) {
                 int asciiSum = 0;
                 for (char symbol : line.toCharArray()) {
                     asciiSum += symbol;
                 }
 
-                writer.write(asciiSum + "");
+                writer.write(String.valueOf(asciiSum));
                 writer.write(System.lineSeparator());
-                line = reader.readLine();
             }
 
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            System.err.println("Error processing files: " + e.getMessage());
+            e.printStackTrace();
         }
-        writer.close();
     }
 }
