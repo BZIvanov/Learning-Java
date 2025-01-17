@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// the file name should match the class name
 public class Division {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
