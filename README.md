@@ -13,3 +13,11 @@ After installing Java you can run the following command to see your installed ve
 ```bash
 java -version
 ```
+
+## IDE
+
+### IntelliJ IDEA
+
+### VSCode
+
+If you are using VSCode as an IDE for Java, make sure to install the extensions from the `Extension Pack for Java` by Microsoft.

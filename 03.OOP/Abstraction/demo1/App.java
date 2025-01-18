@@ -4,7 +4,8 @@ public class App {
         Animal dog = new Dog();
 
         cat.eat();
+        cat.sleep();
         dog.eat();
+        dog.sleep();
     }
 }
-

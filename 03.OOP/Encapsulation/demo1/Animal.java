@@ -1,6 +1,6 @@
 public class Animal {
+    // only the class has access to the fields, to modify the fields we need to use the setter methods
     private String name;
-
     private int age;
 
     public String getName() {

@@ -9,15 +9,56 @@ The 4 pillars of OOP are:
 
 ## Constructor
 
-Constructor is used to create an object of a class. It has the same name as the class.
+A constructor is a special method in a class used to initialize objects. It has the following characteristics:
 
-The constructor has no return type, only methods have it.
+1. **Same Name as the Class** - The constructor's name must match the class name
+2. **No Return Type** - Constructors do not have a return type, not even `void`
+3. **Automatic Invocation** - A constructor is called automatically when an object of the class is created
+4. **Overloading** - A class can have multiple constructors with different parameter lists (constructor overloading).
 
-A class can have multiple constructors.
+```java
+class Animal {
+    private String name;
+    private int age;
+
+    // Non-parameterized constructor
+    public Animal() {
+        this.name = "Unknown";
+        this.age = 0;
+        System.out.println("Non-parameterized constructor called.");
+    }
+
+    // Parameterized constructor
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+        System.out.println("Parameterized constructor called.");
+    }
+
+    // Method to display the animal's details
+    public void displayInfo() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+public class App {
+    public static void main(String[] args) {
+        // Using the non-parameterized constructor
+        Animal genericAnimal = new Animal();
+        genericAnimal.displayInfo();
+
+        // Using the parameterized constructor
+        Animal specificAnimal = new Animal("Dog", 5);
+        specificAnimal.displayInfo();
+    }
+}
+```
 
 ### Default constructor
 
-Gets added for us if we don't create our own constructor. It has no arguments.
+If no constructor is explicitly defined in a class, the Java compiler automatically provides a **default constructor**. This constructor has no arguments and initializes the object with default values (e.g., `null` for objects, `0` for integers, etc.).
+
+However, if any constructor (default or parameterized) is explicitly declared in the class, the compiler will not add a default constructor.
 
 ## super and this
 
