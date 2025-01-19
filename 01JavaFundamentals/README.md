@@ -6,39 +6,6 @@ JShell is an interactive REPL (Read-Evaluate-Print Loop) tool. It allows develop
 
 To use it type in the terminal `jshell` and then you can write simple Java commands.
 
-## Primitive types
-
-- byte
-- short
-- int
-- long
-- float
-- double
-- char
-- boolean
-
-```java
-byte b = 23; // 8 bits
-short s = 21000; // 16 bits
-int i = 45000; // 32 bits
-long l = 12345678912L; // 64 bits
-
-float f = 4.5f;
-double d = 3.42345234234423;
-
-char c = 'b';
-
-boolean bool = true;
-```
-
-## Reference types
-
-- String
-
-```java
-String s = "hello";
-```
-
 ## Object
 
 Object is an instance of a class.

@@ -7,6 +7,7 @@ public class ExactSumRealNumbers {
 
         int n = Integer.parseInt(sc.nextLine());
 
+        // we should provide string to the BigDecimal constructor
         BigDecimal result = new BigDecimal("0");
         for (int i = 0; i < n; i++) {
             BigDecimal num = sc.nextBigDecimal();

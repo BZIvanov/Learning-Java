@@ -245,3 +245,15 @@ Input:
 Output:
 5 : 5 = 1 (7)
 ```
+
+#### 18. SimpleInterestCalculator
+
+Test inputs and outputs:
+
+```
+Input:
+No input
+
+Output:
+Simple Interest for 3 years: 1500.00
+```
