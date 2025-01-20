@@ -257,3 +257,69 @@ No input
 Output:
 Simple Interest for 3 years: 1500.00
 ```
+
+#### 19. SumNumberDigits
+
+Test inputs and outputs:
+
+```
+Input:
+1234
+
+Output:
+10
+```
+
+```
+Input:
+9
+
+Output:
+9
+```
+
+```
+Input:
+-123
+
+Output:
+-1
+```
+
+#### 20. ReverseNumber
+
+Test inputs and outputs:
+
+```
+Input:
+2345
+
+Output:
+5432
+```
+
+#### 21. LeastCommonMultiple
+
+Test inputs and outputs:
+
+```
+Input:
+6
+8
+
+Output:
+24
+```
+
+#### 22. GreatestCommonDivisor
+
+Test inputs and outputs:
+
+```
+Input:
+48
+18
+
+Output:
+6
+```
