@@ -1,6 +1,6 @@
 # Learning Java
 
-This repository contains starting learning materials for Java.
+This repository contains starting learning materials for Java. It is not replacement for the official documentation, just to give you an idea for how Java works. For detailed info refer to the documentation.
 
 ## Installation
 

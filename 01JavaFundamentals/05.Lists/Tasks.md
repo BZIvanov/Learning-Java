@@ -274,3 +274,11 @@ Input:
 Output:
 14
 ```
+
+#### 17. ListItemsLength
+
+_No inputs required. It is learning example_.
+
+#### 18. MaxEvenNumber
+
+_No inputs required. It is learning example_.
