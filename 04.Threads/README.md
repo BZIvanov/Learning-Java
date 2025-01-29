@@ -38,3 +38,7 @@ Recommended learning order for the given examples.
 6. **TERMINATED**
    - The thread has completed its execution and is no longer active
    - Once a thread reaches this state, it cannot be restarted
+
+## Concurrency
+
+Concurrency is the ability to execute multiple threads simultaneously, allowing a program to perform multiple tasks at the same time. This is especially useful in modern computing, where applications need to handle a variety of operations concurrently, such as reading files, network requests, and user interactions.

@@ -23,12 +23,14 @@ It is operating the string with methods. Example methods are _.append_ and more
 
 Access modifiers are keywords to control the visibility and accessibility of the class members.
 
-There are 4 types
+There are 4 types:
 
-- public - accessible from anywhere within the program
-- protected - accessible from anywhere the same package and its subclasses outside the package
-- default - accessible from anywhere within the same package. If we don't provide the access modifier, default will be used
-- private - accessible from anywhere within the same class
+- **public** - accessible from anywhere within the program
+- **protected** - accessible from anywhere the same package and its subclasses outside the package
+- **default** - accessible from anywhere within the same package. If we don't provide the access modifier, default will be used
+- **private** - accessible from anywhere within the same class
+
+Protected and private cannot be used on a class.
 
 ## Static modifier
 
