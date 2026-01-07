@@ -16,10 +16,7 @@ java -version
 
 **Note:** Make sure to install only LTS JDK versions (`17`, `21`, `25`, etc...) to avoid potentiall setup and projects issues.
 
-## IDE
+## Content of this repo
 
-### IntelliJ IDEA
-
-### VSCode
-
-If you are using VSCode as an IDE for Java, make sure to install the extensions from the `Extension Pack for Java` by Microsoft.
+1. **GettingStarted**
+2. **PrimitiveDataTypes**

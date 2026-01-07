@@ -1,11 +1,5 @@
 # Java Fundamentals
 
-## JShell
-
-JShell is an interactive REPL (Read-Evaluate-Print Loop) tool. It allows developers to execute Java code snippets interactively without the need to create a full program or class structure. JShell is particularly useful for learning, experimentation, and quick testing.
-
-To use it type in the terminal `jshell` and then you can write simple Java commands.
-
 ## Object
 
 Object is an instance of a class.
@@ -56,25 +50,3 @@ public class HelloWorld {
 3. **Run the Bytecode with the JVM** - The compiled bytecode is not directly executed by the hardware. Instead, it is interpreted or compiled further by the **Java Virtual Machine (JVM)**. The JVM's job is to make the bytecode portable and executable on any machine with a compatible JVM implementation.
 4. **Convert Bytecode to Native Machine Code** - The JVM uses a component called the **Just-In-Time (JIT) Compiler** to translate bytecode into native machine code (binary code) that the underlying hardware can execute. This conversion happens at runtime and ensures platform independence.
 5. **Execution** - The native machine code is executed by the processor, and the program produces the desired output, e.g., printing "Hello, World!" to the console.
-
-## JVM vs JRE vs JDK
-
-### JVM (Java Virtual Machine)
-
-The JVM is the runtime environment that executes Java bytecode. It provides platform independence by interpreting or compiling bytecode into native machine code for the underlying operating system.
-
-### JRE (Java Runtime Environment)
-
-The JRE is a software package that provides the runtime environment needed to execute Java applications. It includes the JVM, core libraries and other files necessary for Java programs to run.
-
-### JDK (Java Development Kit)
-
-The JDK is a complete toolkit for Java development. It includes the JRE (runtime environment), Development tools like the Java compiler (javac), debugger, and other utilities required to write and build Java applications.
-
-### Key Differences
-
-| Feature  | JVM                  | JRE                      | JDK                               |
-| -------- | -------------------- | ------------------------ | --------------------------------- |
-| Purpose  | Executes bytecode    | Runs Java applications   | Develops and runs Java programs   |
-| Includes | Bytecode execution   | JVM + Core Libraries     | JRE + Compiler, Debugger, Tools   |
-| For Whom | End-users (indirect) | End-users (run programs) | Developers (write & compile code) |
