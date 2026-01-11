@@ -19,4 +19,5 @@ java -version
 ## Content of this repo
 
 1. **GettingStarted**
-2. **PrimitiveDataTypes**
+2. **DeclaringVariables**
+3. **PrimitiveDataTypes**
