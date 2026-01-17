@@ -4,16 +4,16 @@ Read the docs [here](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/d
 
 ## Summary Table
 
-| Data Type   | Size          | Example             |
-| ----------- | ------------- | ------------------- |
-| **byte**    | 1 byte        | `byte b = 10;`      |
-| **short**   | 2 bytes       | `short s = 100;`    |
-| **int**     | 4 bytes       | `int i = 1000;`     |
-| **long**    | 8 bytes       | `long l = 1000L;`   |
-| **float**   | 4 bytes       | `float f = 1.5f;`   |
-| **double**  | 8 bytes       | `double d = 1.5;`   |
-| **char**    | 2 bytes       | `char c = 'A';`     |
-| **boolean** | JVM-dependent | `boolean b = true;` |
+| Data Type   | Size          | Example                  |
+| ----------- | ------------- | ------------------------ |
+| **byte**    | 1 byte        | `byte b = 23;`           |
+| **short**   | 2 bytes       | `short s = 21000;`       |
+| **int**     | 4 bytes       | `int i = 45000;`         |
+| **long**    | 8 bytes       | `long l = 12345678912L;` |
+| **float**   | 4 bytes       | `float f = 1.5f;`        |
+| **double**  | 8 bytes       | `double d = 1.5;`        |
+| **char**    | 2 bytes       | `char c = 'A';`          |
+| **boolean** | JVM-dependent | `boolean b = true;`      |
 
 ## What is a bit? (the smallest unit)
 
@@ -39,3 +39,8 @@ So instead of one light switch, a byte is like 8 switches in a row.
 Because each switch can be ON or OFF, 8 switches can represent:
 
 - 256 different values (from 0 to 255)
+
+## Content of this section
+
+- **int**
+- **char**
