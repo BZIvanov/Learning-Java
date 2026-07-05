@@ -6,7 +6,11 @@ JShell is an interactive REPL (Read-Evaluate-Print Loop) tool. It allows develop
 
 To use it type in the terminal `jshell` and then you can write simple Java commands.
 
-## IDE
+### JShell Documentation
+
+[Here](https://docs.oracle.com/en/java/javase/21/jshell/introduction-jshell.html) is a link to the official JShell documentation.
+
+## IDE (Integrated Development Environment)
 
 Pick an IDE of your choice for development.
 
