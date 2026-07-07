@@ -104,3 +104,7 @@ isValid
 int        ❌
 user-name  ❌
 ```
+
+## Content of this section
+
+1. **Terminology**
