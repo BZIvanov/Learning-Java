@@ -1,6 +1,6 @@
 # ☕ Learning Java ☕
 
-This repository contains starting learning materials for Java. It is not replacement for the official documentation, just to give you an idea for how Java works. For detailed info refer to the documentation.
+This repository contains starting learning materials for Java. It is not replacement for the official documentation, just to give you an idea for how Java works. For detailed info refer to the [documentation](https://docs.oracle.com/en/java/).
 
 ## Installation
 
@@ -21,3 +21,4 @@ java -version
 1. **GettingStarted**
 2. **DeclaringVariables**
 3. **PrimitiveDataTypes**
+4. **StringDataType**

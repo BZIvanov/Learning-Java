@@ -1,9 +1,10 @@
 # char data type
 
 ```java
-char example1 = '\u0022'; // value will be "
-char example2 = 65; // value will be A
-char example3 = '\n' // value will be a new line
+char example1 = 'A', // value will be A
+char example2 = '\u0022'; // value will be "
+char example3 = 65; // value will be A
+char example4 = '\n' // value will be a new line
 ```
 
 ## Unicode characters
