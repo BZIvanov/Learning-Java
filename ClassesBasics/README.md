@@ -89,3 +89,7 @@ public class HelloWorld {
 3. **Run the Bytecode with the JVM** - The compiled bytecode is not directly executed by the hardware. Instead, it is interpreted or compiled further by the **Java Virtual Machine (JVM)**. The JVM's job is to make the bytecode portable and executable on any machine with a compatible JVM implementation.
 4. **Convert Bytecode to Native Machine Code** - The JVM uses a component called the **Just-In-Time (JIT) Compiler** to translate bytecode into native machine code (binary code) that the underlying hardware can execute. This conversion happens at runtime and ensures platform independence.
 5. **Execution** - The native machine code is executed by the processor, and the program produces the desired output, e.g., printing "Hello, World!" to the console.
+
+## Content of this section
+
+1. **tasks**

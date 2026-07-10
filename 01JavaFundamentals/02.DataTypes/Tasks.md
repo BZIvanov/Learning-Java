@@ -6,21 +6,6 @@ Contains info about solving the tasks.
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. IntegerOperations
-
-Test inputs and outputs:
-
-```
-Input:
-10
-20
-2
-3
-
-Output:
-45
-```
-
 #### 2. ExactSumRealNumbers
 
 Test inputs and outputs:
@@ -34,19 +19,6 @@ Input:
 
 Output:
 488907005
-```
-
-#### 3. Elevator
-
-Test inputs and outputs:
-
-```
-Input:
-21
-5
-
-Output:
-5
 ```
 
 #### 4. CenturiesToMinutes
@@ -94,34 +66,6 @@ baa
 bab
 bba
 bbb
-```
-
-#### 7. ConcatNames
-
-Test inputs and outputs:
-
-```
-Input:
-Iva
-Ivanova
--
-
-Output:
-Iva-Ivanova
-```
-
-#### 8. PyramidVolume
-
-Test inputs and outputs:
-
-```
-Input:
-Length: 3
-Width: 2
-Height: 4
-
-Output:
-Pyramid Volume: 8.00
 ```
 
 #### 9. Specials
@@ -186,18 +130,6 @@ Input:
 
 Output:
 161.130
-```
-
-#### 14. LowerOrUpper
-
-Test inputs and outputs:
-
-```
-Input:
-f
-
-Output:
-lower-case
 ```
 
 #### 15. SpiceMustFlow

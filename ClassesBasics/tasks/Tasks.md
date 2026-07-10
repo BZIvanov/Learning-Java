@@ -12,7 +12,22 @@ Recommended order to go through the different examples is as the list of tasks b
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. StudentInformation
+#### 1. IntegerOperations
+
+Test inputs and outputs:
+
+```
+Input:
+10
+20
+2
+3
+
+Output:
+45
+```
+
+#### 2. StudentInformation
 
 Create a Java program that reads a student's information from the console and then prints the information in a formatted manner. The program will prompt the user to enter the student's name, age, and grade. The output should display this information in a specific format.
 
@@ -28,7 +43,7 @@ Output:
 Name: Iva, Age: 23, Grade: 2.30
 ```
 
-#### 2. RageExpenses
+#### 3. RageExpenses
 
 Test inputs and outputs:
 
@@ -44,7 +59,35 @@ Output:
 Rage expenses: 1.20 euros
 ```
 
-#### 3. SumBigNumbers
+#### 4. ConcatNames
+
+Test inputs and outputs:
+
+```
+Input:
+Iva
+Ivanova
+-
+
+Output:
+Iva-Ivanova
+```
+
+#### 5. PyramidVolume
+
+Test inputs and outputs:
+
+```
+Input:
+Length: 3
+Width: 2
+Height: 4
+
+Output:
+Pyramid Volume: 8.00
+```
+
+#### 6. SumBigNumbers
 
 Test inputs and outputs:
 
@@ -55,4 +98,17 @@ Input:
 
 Output:
 7620781877701131694922
+```
+
+#### 7. Elevator
+
+Test inputs and outputs:
+
+```
+Input:
+21
+5
+
+Output:
+5
 ```

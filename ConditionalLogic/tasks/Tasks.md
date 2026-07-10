@@ -110,7 +110,19 @@ Output:
 The number is divisible by 7
 ```
 
-#### 9. Vacation
+#### 9. LowerOrUpper
+
+Test inputs and outputs:
+
+```
+Input:
+f
+
+Output:
+lower-case
+```
+
+#### 10. Vacation
 
 Test inputs and outputs:
 
@@ -124,7 +136,7 @@ Output:
 Total price: 67.50
 ```
 
-#### 10. PadawanEquipment
+#### 11. PadawanEquipment
 
 Test inputs and outputs:
 
