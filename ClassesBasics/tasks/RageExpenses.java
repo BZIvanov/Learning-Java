@@ -17,7 +17,7 @@ public class RageExpenses {
 
         double cost = headCount * headset + mouseCount * mouse + keyboardCount * keyboard + displayCount * display;
 
-        System.out.printf("Rage expenses: %.2f lv.", cost);
+        System.out.printf("Rage expenses: %.2f euros", cost);
 
         sc.close();
     }

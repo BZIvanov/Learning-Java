@@ -22,3 +22,5 @@ java -version
 2. **DeclaringVariables**
 3. **PrimitiveDataTypes**
 4. **StringDataType**
+5. **ClassesBasics**
+6. **ConditionalLogic**

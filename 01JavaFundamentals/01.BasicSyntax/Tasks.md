@@ -12,96 +12,6 @@ Recommended order to go through the different examples is as the list of tasks b
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. StudentInformation
-
-Create a Java program that reads a student's information from the console and then prints the information in a formatted manner. The program will prompt the user to enter the student's name, age, and grade. The output should display this information in a specific format.
-
-Test inputs and outputs:
-
-```
-Input:
-Iva
-23
-2.3
-
-Output:
-Name: Iva, Age: 23, Grade: 2.30
-```
-
-#### 2. Passed
-
-Test inputs and outputs:
-
-```
-Input:
-5
-
-Output:
-Passed!
-```
-
-#### 3. PassedOrFailed
-
-Test inputs and outputs:
-
-```
-Input:
-5
-
-Output:
-Passed!
-```
-
-#### 4. BackThirthyMinutes
-
-Test inputs and outputs:
-
-```
-Input:
-2
-45
-
-Output:
-3:15
-```
-
-#### 5. MonthPrinter
-
-Test inputs and outputs:
-
-```
-Input:
-7
-
-Output:
-July
-```
-
-#### 6. ForeignLanguages
-
-Test inputs and outputs:
-
-```
-Input:
-Spain
-
-Output:
-Spanish
-```
-
-#### 7. TheatrePromotions
-
-Test inputs and outputs:
-
-```
-Input:
-weekend
-27
-
-Output:
-20$
-```
-
 #### 8. DivisibleByThree
 
 Test inputs and outputs:
@@ -177,57 +87,6 @@ Input:
 
 Output:
 The number is: 2
-```
-
-#### 13. SumBigNumbers
-
-Test inputs and outputs:
-
-```
-Input:
-123456788
-123456789999
-
-Output:
-7620781877701131694922
-```
-
-#### 14. Ages
-
-Test inputs and outputs:
-
-```
-Input:
-27
-
-Output:
-adult
-```
-
-#### 15. Division
-
-Test inputs and outputs:
-
-```
-Input:
-21
-
-Output:
-The number is divisible by 7
-```
-
-#### 16. Vacation
-
-Test inputs and outputs:
-
-```
-Input:
-3
-Regular
-Sunday
-
-Output:
-Total price: 67.50
 ```
 
 #### 17. PrintAndSum
@@ -311,38 +170,6 @@ Output:
 1
 2 2
 3 3 3
-```
-
-#### 22. PadawanEquipment
-
-Test inputs and outputs:
-
-```
-Input:
-234
-3
-12.5
-18.5
-8
-
-Output:
-The money is enough - it would cost 125.50lv.
-```
-
-#### 23. RageExpenses
-
-Test inputs and outputs:
-
-```
-Input:
-2
-1.2
-1.6
-2.1
-2.3
-
-Output:
-Rage expenses: 1.20 lv.
 ```
 
 #### 24. DiagonalWidthMatrix
