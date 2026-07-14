@@ -43,7 +43,19 @@ Output:
 Name: Iva, Age: 23, Grade: 2.30
 ```
 
-#### 3. RageExpenses
+#### 3. PoundsToDollars
+
+Test inputs and outputs:
+
+```
+Input:
+123
+
+Output:
+161.130
+```
+
+#### 4. RageExpenses
 
 Test inputs and outputs:
 
@@ -59,7 +71,7 @@ Output:
 Rage expenses: 1.20 euros
 ```
 
-#### 4. ConcatNames
+#### 5. ConcatNames
 
 Test inputs and outputs:
 
@@ -73,7 +85,7 @@ Output:
 Iva-Ivanova
 ```
 
-#### 5. PyramidVolume
+#### 6. PyramidVolume
 
 Test inputs and outputs:
 
@@ -87,7 +99,7 @@ Output:
 Pyramid Volume: 8.00
 ```
 
-#### 6. SumBigNumbers
+#### 7. SumBigNumbers
 
 Test inputs and outputs:
 
@@ -100,7 +112,7 @@ Output:
 7620781877701131694922
 ```
 
-#### 7. Elevator
+#### 8. Elevator
 
 Test inputs and outputs:
 

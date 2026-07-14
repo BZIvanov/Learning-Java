@@ -120,18 +120,6 @@ Output:
 0.23
 ```
 
-#### 13. PoundsToDollars
-
-Test inputs and outputs:
-
-```
-Input:
-123
-
-Output:
-161.130
-```
-
 #### 15. SpiceMustFlow
 
 Test inputs and outputs:

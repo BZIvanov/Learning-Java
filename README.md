@@ -24,3 +24,4 @@ java -version
 4. **StringDataType**
 5. **ClassesBasics**
 6. **ConditionalLogic**
+7. **Methods**
