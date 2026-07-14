@@ -101,3 +101,10 @@ public static void greet() {
 - `void` means the method doesn't return a value.
 
 Don't worry about keywords like `public` and `static` yet—they'll make much more sense in the next sections.
+
+## Content of this section
+
+1. **Parameters**
+2. **ReturnValue**
+3. **Overloading**
+4. **tasks**
