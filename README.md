@@ -25,3 +25,4 @@ java -version
 5. **ClassesBasics**
 6. **ConditionalLogic**
 7. **Methods**
+8. **Loops**

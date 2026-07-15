@@ -21,18 +21,6 @@ Output:
 488907005
 ```
 
-#### 4. CenturiesToMinutes
-
-Test inputs and outputs:
-
-```
-Input:
-2
-
-Output:
-2 centuries = 200 years = 73048 days = 1753152 hours = 105189120 minutes
-```
-
 #### 5. SpecialNumbers
 
 Test inputs and outputs:
@@ -47,25 +35,6 @@ Output:
 3 -> False
 4 -> False
 5 -> True
-```
-
-#### 6. TriplesLatinLetters
-
-Test inputs and outputs:
-
-```
-Input:
-2
-
-Output:
-aaa
-aab
-aba
-abb
-baa
-bab
-bba
-bbb
 ```
 
 #### 9. Specials
@@ -92,20 +61,6 @@ Input:
 
 Output:
 14
-```
-
-#### 11. CharsToString
-
-Test inputs and outputs:
-
-```
-Input:
-a
-b
-c
-
-Output:
-abc
 ```
 
 #### 12. ConvertMToKm

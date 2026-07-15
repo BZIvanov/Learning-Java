@@ -99,7 +99,19 @@ Output:
 Pyramid Volume: 8.00
 ```
 
-#### 7. SumBigNumbers
+#### 7. CenturiesToMinutes
+
+Test inputs and outputs:
+
+```
+Input:
+2
+
+Output:
+2 centuries = 200 years = 73048 days = 1753152 hours = 105189120 minutes
+```
+
+#### 8. SumBigNumbers
 
 Test inputs and outputs:
 
@@ -112,7 +124,7 @@ Output:
 7620781877701131694922
 ```
 
-#### 8. Elevator
+#### 9. Elevator
 
 Test inputs and outputs:
 

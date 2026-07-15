@@ -12,28 +12,13 @@ Recommended order to go through the different examples is as the list of tasks b
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 8. DivisibleByThree
+#### 1. DivisibleByThree
 
 Test inputs and outputs:
 
 _No inputs!_
 
-#### 9. SumOddNumbers
-
-Test inputs and outputs:
-
-```
-Input:
-3
-
-Output:
-1
-3
-5
-Sum: 9
-```
-
-#### 10. MultiplicationTable
+#### 2. MultiplicationTable
 
 Test inputs and outputs:
 
@@ -54,7 +39,7 @@ Output:
 3 X 10 = 30
 ```
 
-#### 11. MultiplicationTableTwo
+#### 3. MultiplicationTableTwo
 
 Test inputs and outputs:
 
@@ -69,7 +54,7 @@ Output:
 3 X 10 = 30
 ```
 
-#### 12. EvenNumber
+#### 4. SumOddNumbers
 
 Test inputs and outputs:
 
@@ -78,18 +63,13 @@ Input:
 3
 
 Output:
-Please write an even number.
+1
+3
+5
+Sum: 9
 ```
 
-```
-Input:
-2
-
-Output:
-The number is: 2
-```
-
-#### 17. PrintAndSum
+#### 5. PrintAndSum
 
 Test inputs and outputs:
 
@@ -103,7 +83,7 @@ Output:
 Sum: 12
 ```
 
-#### 18. Login
+#### 6. Login
 
 Test inputs and outputs:
 
@@ -116,49 +96,7 @@ Output:
 User Elena logged in.
 ```
 
-#### 19. StrongNumber
-
-Test inputs and outputs:
-
-```
-Input:
-225
-
-Output:
-no
-```
-
-#### 20. VendingMachine
-
-Test inputs and outputs:
-
-```
-Input:
-0.2
-1
-0.1
-0.5
-0.2
-Start
-Water
-
-Output:
-Purchased Water
-
-Input:
-Nuts
-
-Output:
-Sorry, not enough money
-
-Input:
-End
-
-Output:
-Change: 1.30
-```
-
-#### 21. TriangleOfNumbers
+#### 7. TriangleOfNumbers
 
 Test inputs and outputs:
 
@@ -172,7 +110,26 @@ Output:
 3 3 3
 ```
 
-#### 24. DiagonalWidthMatrix
+#### 8. TriplesLatinLetters
+
+Test inputs and outputs:
+
+```
+Input:
+2
+
+Output:
+aaa
+aab
+aba
+abb
+baa
+bab
+bba
+bbb
+```
+
+#### 9. DiagonalWidthMatrix
 
 Test inputs and outputs:
 
@@ -206,4 +163,66 @@ Output:
 0  0  *  *  *  *  *  *
 0  0  0  *  *  *  *  *
 0  0  0  0  *  *  *  *
+```
+
+#### 10. EvenNumber
+
+Test inputs and outputs:
+
+```
+Input:
+3
+
+Output:
+Please write an even number.
+```
+
+```
+Input:
+2
+
+Output:
+The number is: 2
+```
+
+#### 11. StrongNumber
+
+Test inputs and outputs:
+
+```
+Input:
+225
+
+Output:
+no
+```
+
+#### 12. VendingMachine
+
+Test inputs and outputs:
+
+```
+Input:
+0.2
+1
+0.1
+0.5
+0.2
+Start
+Water
+
+Output:
+Purchased Water
+
+Input:
+Nuts
+
+Output:
+Sorry, not enough money
+
+Input:
+End
+
+Output:
+Change: 1.30
 ```
