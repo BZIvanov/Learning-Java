@@ -2,11 +2,17 @@
 
 Contains info about solving the tasks.
 
+You can run the below examples using your IDE for easier learning/development instead of compiling and running java programs using the terminal.
+
+## Recommended learning order
+
+Recommended order to go through the different examples is as the list of tasks below.
+
 ## Tasks
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. CountRealNumbers
+### CountRealNumbers
 
 Test inputs and outputs:
 
@@ -23,7 +29,7 @@ Output:
 9.0 -> 1
 ```
 
-#### 2. WordSynonyms
+### WordSynonyms
 
 Test inputs and outputs:
 
@@ -42,7 +48,7 @@ drink - water
 animal - cat, dog
 ```
 
-#### 3. WordFilter
+### WordFilter
 
 Test inputs and outputs:
 
@@ -55,7 +61,7 @@ bb
 cccc
 ```
 
-#### 4. LargestThree
+### LargestThree
 
 Test inputs and outputs:
 
@@ -67,7 +73,7 @@ Output:
 11 9 8
 ```
 
-#### 5. CountChars
+### CountChars
 
 Test inputs and outputs:
 
@@ -85,7 +91,7 @@ r -> 1
 d -> 1
 ```
 
-#### 6. MinerTask
+### MinerTask
 
 Test inputs and outputs:
 
@@ -104,7 +110,7 @@ Output:
 5 -> 6
 ```
 
-#### 7. LegendaryFarming
+### LegendaryFarming
 
 Test inputs and outputs:
 
@@ -124,7 +130,7 @@ motes: 165
 shards: 35
 ```
 
-#### 8. Orders
+### Orders
 
 Test inputs and outputs:
 
@@ -139,7 +145,7 @@ sword -> 360.00
 shield -> 400.00
 ```
 
-#### 9. Parking
+### Parking
 
 Test inputs and outputs:
 
@@ -154,7 +160,7 @@ Iva => 2894
 Miro => 8473
 ```
 
-#### 10. Courses
+### Courses
 
 Test inputs and outputs:
 
@@ -173,7 +179,7 @@ Design: 1
 -- Eli
 ```
 
-#### 11. StudentAcademy
+### StudentAcademy
 
 Test inputs and outputs:
 
@@ -193,7 +199,7 @@ Output:
 Iva -> 6.50
 ```
 
-#### 12. CompanyUsers
+### CompanyUsers
 
 Test inputs and outputs:
 
@@ -215,7 +221,7 @@ Miro
 -- 124
 ```
 
-#### 13. ForceBook
+### ForceBook
 
 Test inputs and outputs:
 

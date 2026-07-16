@@ -6,47 +6,7 @@ Contains info about solving the tasks.
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. RandomizeWords
-
-Test inputs and outputs:
-
-```
-Input:
-apple kiwi banana orange
-
-Output:
-orange
-kiwi
-banana
-apple
-```
-
-#### 2. SumBigNumbers
-
-Test inputs and outputs:
-
-```
-Input:
-423234234256
-6345856756345
-
-Output:
-6769090990601
-```
-
-#### 3. BigFactorial
-
-Test inputs and outputs:
-
-```
-Input:
-23
-
-Output:
-25852016738884976640000
-```
-
-#### 4. Songs
+### Songs
 
 Test inputs and outputs:
 
@@ -61,7 +21,7 @@ Output:
 PianoMusic
 ```
 
-#### 5. Students
+### Students
 
 Test inputs and outputs:
 
@@ -78,7 +38,7 @@ Iva Ivanova is 23 years old and lives in city Sofia
 Elena Petrova is 25 years old and lives in city Sofia
 ```
 
-#### 6. Messages
+### Messages
 
 Test inputs and outputs:
 
@@ -91,7 +51,7 @@ Excellent product. I cannot believe but now I feel awesome. Iva - Plovdiv
 I can’t live without this product. I cannot believe but now I feel awesome. Katya - Ruse
 ```
 
-#### 7. Articles
+### Articles
 
 Test inputs and outputs:
 
@@ -106,7 +66,7 @@ Output:
 MyArticle - Updated content: Iva
 ```
 
-#### 8. Poll
+### Poll
 
 Test inputs and outputs:
 
@@ -120,7 +80,7 @@ Output:
 Ivo - 31
 ```
 
-#### 9. VehicleCatalogue
+### VehicleCatalogue
 
 Test inputs and outputs:
 

@@ -36,6 +36,21 @@ Output:
 7 11 10
 ```
 
+### RandomizeWords
+
+Test inputs and outputs:
+
+```
+Input:
+apple kiwi banana orange
+
+Output:
+orange
+kiwi
+banana
+apple
+```
+
 ### MergingLists
 
 Test inputs and outputs:
