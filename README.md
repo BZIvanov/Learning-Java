@@ -26,3 +26,4 @@ java -version
 6. **ConditionalLogic**
 7. **Methods**
 8. **Loops**
+9. **Arrays**

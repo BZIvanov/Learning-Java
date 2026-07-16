@@ -18,100 +18,6 @@ Output:
 The number -2 is negative.
 ```
 
-#### 2. Grades
-
-Test inputs and outputs:
-
-```
-Input:
-6
-
-Output:
-Excellent
-```
-
-#### 3. PrintTriangle
-
-Test inputs and outputs:
-
-```
-Input:
-3
-
-Output:
-1
-1 2
-1 2 3
-1 2
-1
-```
-
-#### 4. Calculations
-
-Test inputs and outputs:
-
-```
-Input:
-add
-2
-3
-
-Output:
-5
-```
-
-#### 5. Orders
-
-Test inputs and outputs:
-
-```
-Input:
-water
-2
-
-Output:
-2.00
-```
-
-#### 6. CalculateRectangleArea
-
-Test inputs and outputs:
-
-```
-Input:
-2.3
-1.2
-
-Output:
-2.76
-```
-
-#### 7. RepeatString
-
-Test inputs and outputs:
-
-```
-Input:
-abc
-2
-
-Output:
-abcabc
-```
-
-#### 8. MathPower
-
-Test inputs and outputs:
-
-```
-Input:
-2
-3
-
-Output:
-8
-```
-
 #### 9. GreaterOfTwo
 
 Test inputs and outputs:
@@ -191,32 +97,6 @@ Output:
 i j k l m n o p q r s t u v
 ```
 
-#### 15. PasswordValidator
-
-Test inputs and outputs:
-
-```
-Input:
-234asdQWE
-
-Output:
-Password is valid
-```
-
-#### 16. AddAndSubtract
-
-Test inputs and outputs:
-
-```
-Input:
-4
-8
-1
-
-Output:
-11
-```
-
 #### 17. MiddleCharacters
 
 Test inputs and outputs:
@@ -241,34 +121,6 @@ Output:
 3 3 3
 3 3 3
 3 3 3
-```
-
-#### 19. FactorialDivision
-
-Test inputs and outputs:
-
-```
-Input:
-24.82
-12.54
-
-Output:
-4333607402828287.50
-```
-
-#### 20. PalindromeIntegers
-
-Test inputs and outputs:
-
-```
-Input:
-2345432
-
-Output:
-true
-
-Input:
-END
 ```
 
 #### 21. TopNumber

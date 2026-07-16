@@ -2,11 +2,17 @@
 
 Contains info about solving the tasks.
 
+You can run the below examples using your IDE for easier learning/development instead of compiling and running java programs using the terminal.
+
+## Recommended learning order
+
+Recommended order to go through the different examples is as the list of tasks below.
+
 ## Tasks
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. DayOfWeek
+### DayOfWeek
 
 Test inputs and outputs:
 
@@ -18,7 +24,7 @@ Output:
 Sunday
 ```
 
-#### 2. PrintReverse
+### PrintReverse
 
 Test inputs and outputs:
 
@@ -32,7 +38,7 @@ Output:
 1 3
 ```
 
-#### 3. SumEvenNumbers
+### SumEvenNumbers
 
 Test inputs and outputs:
 
@@ -44,43 +50,7 @@ Output:
 14
 ```
 
-#### 4. ReverseArray
-
-Test inputs and outputs:
-
-```
-Input:
-aa bb cc dd
-
-Output:
-dd cc bb aa
-```
-
-#### 5. EvenOddSubtraction
-
-Test inputs and outputs:
-
-```
-Input:
-2 4 5 11 9 3 1 8
-
-Output:
--15
-```
-
-#### 6. EqualArrays
-
-Test inputs and outputs:
-
-```
-Input:
-1 2 3 4
-
-Output:
-5 6 7 8
-```
-
-#### 7. CondenseToNumber
+### CondenseToNumber
 
 Test inputs and outputs:
 
@@ -92,7 +62,56 @@ Output:
 38
 ```
 
-#### 8. Train
+### ReverseArray
+
+Test inputs and outputs:
+
+```
+Input:
+aa bb cc dd
+
+Output:
+dd cc bb aa
+```
+
+### EvenOddSubtraction
+
+Test inputs and outputs:
+
+```
+Input:
+2 4 5 11 9 3 1 8
+
+Output:
+-15
+```
+
+### EqualArrays
+
+Test inputs and outputs:
+
+```
+Input:
+1 2 3 4
+
+Output:
+5 6 7 8
+```
+
+### CommonElements
+
+Test inputs and outputs:
+
+```
+Input:
+one two
+three four one
+
+Output:
+one
+```
+
+### Train
 
 Test inputs and outputs:
 
@@ -107,20 +126,20 @@ Output:
 23
 ```
 
-#### 9. CommonElements
+### ArrayRotation
 
 Test inputs and outputs:
 
 ```
 Input:
-one two
-three four one
+2 8 9 1 0 5 7
+2
 
 Output:
-one
+9 1 0 5 7 2 8
 ```
 
-#### 10. ZigZagArrays
+### ZigZagArrays
 
 Test inputs and outputs:
 
@@ -135,20 +154,7 @@ Output:
 7 4
 ```
 
-#### 11. ArrayRotation
-
-Test inputs and outputs:
-
-```
-Input:
-2 8 9 1 0 5 7
-2
-
-Output:
-9 1 0 5 7 2 8
-```
-
-#### 12. TopIntegers
+### TopIntegers
 
 Test inputs and outputs:
 
@@ -160,7 +166,7 @@ Output:
 9 1
 ```
 
-#### 13. EqualSum
+### EqualSum
 
 Test inputs and outputs:
 
@@ -172,7 +178,7 @@ Output:
 2
 ```
 
-#### 14. MaxSequenceOfEqual
+### MaxSequenceOfEqual
 
 Test inputs and outputs:
 
@@ -184,7 +190,7 @@ Output:
 5 5
 ```
 
-#### 15. MagicSum
+### MagicSum
 
 Test inputs and outputs:
 
@@ -197,7 +203,7 @@ Output:
 3 1
 ```
 
-#### 16. KaminoFactory
+### KaminoFactory
 
 Test inputs and outputs:
 
@@ -215,7 +221,7 @@ Best DNA sample 1 with sum: 5.
 a   b   c
 ```
 
-#### 17. LadyBugs
+### LadyBugs
 
 Test inputs and outputs:
 

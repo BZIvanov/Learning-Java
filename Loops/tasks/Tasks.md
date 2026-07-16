@@ -12,13 +12,13 @@ Recommended order to go through the different examples is as the list of tasks b
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. DivisibleByThree
+### DivisibleByThree
 
 Test inputs and outputs:
 
 _No inputs!_
 
-#### 2. MultiplicationTable
+### MultiplicationTable
 
 Test inputs and outputs:
 
@@ -39,7 +39,7 @@ Output:
 3 X 10 = 30
 ```
 
-#### 3. MultiplicationTableTwo
+### MultiplicationTableTwo
 
 Test inputs and outputs:
 
@@ -54,7 +54,65 @@ Output:
 3 X 10 = 30
 ```
 
-#### 4. SumOddNumbers
+### SpecialNumbers
+
+Test inputs and outputs:
+
+```
+Input:
+5
+
+Output:
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+```
+
+### Specials
+
+Test inputs and outputs:
+
+```
+Input:
+3
+
+Output:
+1 -> False
+2 -> False
+3 -> False
+```
+
+### PrintTriangle
+
+Test inputs and outputs:
+
+```
+Input:
+3
+
+Output:
+1
+1 2
+1 2 3
+1 2
+1
+```
+
+### SumDigits
+
+Test inputs and outputs:
+
+```
+Input:
+2345
+
+Output:
+14
+```
+
+### SumOddNumbers
 
 Test inputs and outputs:
 
@@ -69,7 +127,93 @@ Output:
 Sum: 9
 ```
 
-#### 5. PrintAndSum
+### PalindromeIntegers
+
+Test inputs and outputs:
+
+```
+Input:
+2345432
+
+Output:
+true
+
+Input:
+END
+```
+
+### ExactSumRealNumbers
+
+Test inputs and outputs:
+
+```
+Input:
+3
+412312321
+34242342
+42352342
+
+Output:
+488907005
+```
+
+### PokeMon
+
+Test inputs and outputs:
+
+```
+Input:
+3
+12
+9
+
+Output:
+3
+0
+```
+
+### SpiceMustFlow
+
+Test inputs and outputs:
+
+```
+Input:
+1234
+
+Output:
+114
+73276
+```
+
+### SumNumberDigits
+
+Test inputs and outputs:
+
+```
+Input:
+1234
+
+Output:
+10
+```
+
+```
+Input:
+9
+
+Output:
+9
+```
+
+```
+Input:
+-123
+
+Output:
+-1
+```
+
+### PrintAndSum
 
 Test inputs and outputs:
 
@@ -83,7 +227,7 @@ Output:
 Sum: 12
 ```
 
-#### 6. Login
+### Login
 
 Test inputs and outputs:
 
@@ -96,7 +240,19 @@ Output:
 User Elena logged in.
 ```
 
-#### 7. TriangleOfNumbers
+### ReverseNumber
+
+Test inputs and outputs:
+
+```
+Input:
+2345
+
+Output:
+5432
+```
+
+### TriangleOfNumbers
 
 Test inputs and outputs:
 
@@ -110,7 +266,7 @@ Output:
 3 3 3
 ```
 
-#### 8. TriplesLatinLetters
+### TriplesLatinLetters
 
 Test inputs and outputs:
 
@@ -129,7 +285,37 @@ bba
 bbb
 ```
 
-#### 9. DiagonalWidthMatrix
+### PasswordValidator
+
+Test inputs and outputs:
+
+```
+Input:
+234asdQWE
+
+Output:
+Password is valid
+```
+
+### Snowballs
+
+Test inputs and outputs:
+
+```
+Input:
+2
+9
+11
+8
+5
+5
+7
+
+Output:
+5 : 5 = 1 (7)
+```
+
+### DiagonalWidthMatrix
 
 Test inputs and outputs:
 
@@ -165,7 +351,7 @@ Output:
 0  0  0  0  *  *  *  *
 ```
 
-#### 10. EvenNumber
+### EvenNumber
 
 Test inputs and outputs:
 
@@ -185,7 +371,7 @@ Output:
 The number is: 2
 ```
 
-#### 11. StrongNumber
+### StrongNumber
 
 Test inputs and outputs:
 
@@ -197,7 +383,33 @@ Output:
 no
 ```
 
-#### 12. VendingMachine
+### GreatestCommonDivisor
+
+Test inputs and outputs:
+
+```
+Input:
+48
+18
+
+Output:
+6
+```
+
+### LeastCommonMultiple
+
+Test inputs and outputs:
+
+```
+Input:
+6
+8
+
+Output:
+24
+```
+
+### VendingMachine
 
 Test inputs and outputs:
 

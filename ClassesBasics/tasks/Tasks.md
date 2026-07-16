@@ -12,7 +12,7 @@ Recommended order to go through the different examples is as the list of tasks b
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. IntegerOperations
+### IntegerOperations
 
 Test inputs and outputs:
 
@@ -27,7 +27,7 @@ Output:
 45
 ```
 
-#### 2. StudentInformation
+### StudentInformation
 
 Create a Java program that reads a student's information from the console and then prints the information in a formatted manner. The program will prompt the user to enter the student's name, age, and grade. The output should display this information in a specific format.
 
@@ -43,7 +43,7 @@ Output:
 Name: Iva, Age: 23, Grade: 2.30
 ```
 
-#### 3. PoundsToDollars
+### PoundsToDollars
 
 Test inputs and outputs:
 
@@ -55,7 +55,7 @@ Output:
 161.130
 ```
 
-#### 4. RageExpenses
+### RageExpenses
 
 Test inputs and outputs:
 
@@ -71,7 +71,19 @@ Output:
 Rage expenses: 1.20 euros
 ```
 
-#### 5. ConcatNames
+### ConvertMToKm
+
+Test inputs and outputs:
+
+```
+Input:
+234
+
+Output:
+0.23
+```
+
+### ConcatNames
 
 Test inputs and outputs:
 
@@ -85,7 +97,7 @@ Output:
 Iva-Ivanova
 ```
 
-#### 6. PyramidVolume
+### PyramidVolume
 
 Test inputs and outputs:
 
@@ -99,7 +111,7 @@ Output:
 Pyramid Volume: 8.00
 ```
 
-#### 7. CenturiesToMinutes
+### CenturiesToMinutes
 
 Test inputs and outputs:
 
@@ -111,7 +123,7 @@ Output:
 2 centuries = 200 years = 73048 days = 1753152 hours = 105189120 minutes
 ```
 
-#### 8. SumBigNumbers
+### SumBigNumbers
 
 Test inputs and outputs:
 
@@ -124,7 +136,7 @@ Output:
 7620781877701131694922
 ```
 
-#### 9. Elevator
+### Elevator
 
 Test inputs and outputs:
 
