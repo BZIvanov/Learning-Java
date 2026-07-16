@@ -18,6 +18,12 @@ Test inputs and outputs:
 
 _No inputs!_
 
+### MethodExamples
+
+Test inputs and outputs:
+
+_No inputs!_
+
 ### MultiplicationTable
 
 Test inputs and outputs:
@@ -37,6 +43,20 @@ Output:
 3 X 8 = 24
 3 X 9 = 27
 3 X 10 = 30
+```
+
+### NxNMatrix
+
+Test inputs and outputs:
+
+```
+Input:
+3
+
+Output:
+3 3 3
+3 3 3
+3 3 3
 ```
 
 ### MultiplicationTableTwo
@@ -82,6 +102,18 @@ Output:
 1 -> False
 2 -> False
 3 -> False
+```
+
+### MultiplyEvensByOdds
+
+Test inputs and outputs:
+
+```
+Input:
+245713
+
+Output:
+96
 ```
 
 ### PrintTriangle
@@ -185,6 +217,19 @@ Output:
 73276
 ```
 
+### CharactersInRange
+
+Test inputs and outputs:
+
+```
+Input:
+hello
+world
+
+Output:
+i j k l m n o p q r s t u v
+```
+
 ### SumNumberDigits
 
 Test inputs and outputs:
@@ -211,6 +256,18 @@ Input:
 
 Output:
 -1
+```
+
+### VowelsCount
+
+Test inputs and outputs:
+
+```
+Input:
+qwertyu
+
+Output:
+2
 ```
 
 ### PrintAndSum
@@ -264,6 +321,20 @@ Output:
 1
 2 2
 3 3 3
+```
+
+### TopNumber
+
+Test inputs and outputs:
+
+```
+Input:
+59
+
+Output:
+17
+35
+53
 ```
 
 ### TriplesLatinLetters

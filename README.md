@@ -27,3 +27,6 @@ java -version
 7. **Methods**
 8. **Loops**
 9. **Arrays**
+10. **Lists**
+11. **Testing**
+12. **Threads**

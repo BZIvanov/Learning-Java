@@ -2,11 +2,17 @@
 
 Contains info about solving the tasks.
 
+You can run the below examples using your IDE for easier learning/development instead of compiling and running java programs using the terminal.
+
+## Recommended learning order
+
+Recommended order to go through the different examples is as the list of tasks below.
+
 ## Tasks
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. SumAdjacentEqualNumbers
+### SumAdjacentEqualNumbers
 
 Test inputs and outputs:
 
@@ -18,7 +24,7 @@ Output:
 2 10 9 1 7 8 1 6
 ```
 
-#### 2. GaussTrick
+### GaussTrick
 
 Test inputs and outputs:
 
@@ -30,7 +36,7 @@ Output:
 7 11 10
 ```
 
-#### 3. MergingLists
+### MergingLists
 
 Test inputs and outputs:
 
@@ -43,7 +49,7 @@ Output:
 2 1 4 3 5 5 2 5 1 8 9 1 9
 ```
 
-#### 4. ListManipulationBasics
+### ListManipulationBasics
 
 Test inputs and outputs:
 
@@ -58,7 +64,7 @@ Output:
 2 8 5 5 1 9 3 4
 ```
 
-#### 5. ListManipulationAdvanced
+### ListManipulationAdvanced
 
 Test inputs and outputs:
 
@@ -74,7 +80,7 @@ Input:
 end
 ```
 
-#### 6. ListOfProducts
+### ListOfProducts
 
 Test inputs and outputs:
 
@@ -91,7 +97,7 @@ Output:
 3.apple
 ```
 
-#### 7. RemoveNegativeAndReverse
+### RemoveNegativeAndReverse
 
 Test inputs and outputs:
 
@@ -103,7 +109,7 @@ Output:
 8 0 1 9 2 7 2
 ```
 
-#### 8. Train
+### Train
 
 Test inputs and outputs:
 
@@ -118,7 +124,7 @@ Output:
 8 12 5
 ```
 
-#### 9. ChangeList
+### ChangeList
 
 Test inputs and outputs:
 
@@ -133,7 +139,7 @@ Output:
 5 9 7 2 1 1 4
 ```
 
-#### 10. HouseParty
+#### HouseParty
 
 Test inputs and outputs:
 
@@ -150,7 +156,7 @@ Eli
 Ani
 ```
 
-#### 11. ListOperations
+### ListOperations
 
 Test inputs and outputs:
 
@@ -165,7 +171,7 @@ Output:
 9 1 2 8 2 5 7
 ```
 
-#### 12. BombNumbers
+### BombNumbers
 
 Test inputs and outputs:
 
@@ -178,7 +184,7 @@ Output:
 5
 ```
 
-#### 13. CardsGame
+### CardsGame
 
 Test inputs and outputs:
 
@@ -233,7 +239,7 @@ Output:
 First player wins! Sum: 30
 ```
 
-#### 14. AppendArrays
+### AppendArrays
 
 Test inputs and outputs:
 
@@ -245,7 +251,7 @@ Output:
 water cake apple
 ```
 
-#### 15. AnonymousThreat
+### AnonymousThreat
 
 Test inputs and outputs:
 
@@ -260,7 +266,7 @@ Output:
 111 222333 444 555
 ```
 
-#### 16. PokemonDontGo
+### PokemonDontGo
 
 Test inputs and outputs:
 
@@ -275,10 +281,10 @@ Output:
 14
 ```
 
-#### 17. ListItemsLength
+### ListItemsLength
 
 _No inputs required. It is learning example_.
 
-#### 18. MaxEvenNumber
+### MaxEvenNumber
 
 _No inputs required. It is learning example_.

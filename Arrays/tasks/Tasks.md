@@ -203,6 +203,20 @@ Output:
 3 1
 ```
 
+### ArrayManipulator
+
+Test inputs and outputs:
+
+```
+Input:
+2 8 9 3 4
+exchange 2
+end
+
+Output:
+[3, 4, 2, 8, 9]
+```
+
 ### KaminoFactory
 
 Test inputs and outputs:

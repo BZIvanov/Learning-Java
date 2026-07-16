@@ -36,6 +36,32 @@ Output:
 Excellent
 ```
 
+### SignOfInteger
+
+Test inputs and outputs:
+
+```
+Input:
+-2
+
+Output:
+The number -2 is negative.
+```
+
+### MathOperations
+
+Test inputs and outputs:
+
+```
+Input:
+1.8
+*
+5.4
+
+Output:
+10
+```
+
 ### MathPower
 
 Test inputs and outputs:
@@ -49,6 +75,18 @@ Output:
 8
 ```
 
+### MiddleCharacters
+
+Test inputs and outputs:
+
+```
+Input:
+helloWorld
+
+Output:
+oW
+```
+
 ### CalculateRectangleArea
 
 Test inputs and outputs:
@@ -60,6 +98,34 @@ Input:
 
 Output:
 2.76
+```
+
+### GreaterOfTwo
+
+Test inputs and outputs:
+
+```
+Input:
+int
+2
+3
+
+Output:
+3
+```
+
+### SmallestOfThree
+
+Test inputs and outputs:
+
+```
+Input:
+3
+1
+8
+
+Output:
+1
 ```
 
 ### Calculations
