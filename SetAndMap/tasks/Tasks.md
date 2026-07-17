@@ -6,7 +6,7 @@ Contains info about solving the tasks.
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. ParkingLot
+### ParkingLot
 
 Test inputs and outputs:
 
@@ -23,7 +23,7 @@ car3
 car1
 ```
 
-#### 2. Party
+### Party
 
 Test inputs and outputs:
 
@@ -42,7 +42,7 @@ Output:
 asdfghjk
 ```
 
-#### 3. VoinaNumberGame
+### VoinaNumberGame
 
 Test inputs and outputs:
 
@@ -55,7 +55,7 @@ Output:
 Second player win!
 ```
 
-#### 4. CountRealNumbers
+### CountRealNumbers
 
 Test inputs and outputs:
 
@@ -71,7 +71,7 @@ Output:
 5.1 -> 1
 ```
 
-#### 5. AverageStudentsGrades
+### AverageStudentsGrades
 
 Test inputs and outputs:
 
@@ -90,7 +90,7 @@ Iva -> 3.50 5.50 (avg: 4.50)
 Miro -> 5.50 5.00 (avg: 5.25)
 ```
 
-#### 6. ProductShop
+### ProductShop
 
 Test inputs and outputs:
 
@@ -120,7 +120,7 @@ Product: apple, Price: 0.8
 Product: orange, Price: 1.2
 ```
 
-#### 7. CitiesByContinetAndCountry
+### CitiesByContinetAndCountry
 
 Test inputs and outputs:
 
@@ -145,7 +145,7 @@ NorthAmerica:
   UnitedStates -> NewYorkCity, Washington
 ```
 
-#### 8. AcademyGraduation
+### AcademyGraduation
 
 Test inputs and outputs:
 
@@ -165,7 +165,7 @@ Iva is graduated with 5.0
 Miro is graduated with 4.875
 ```
 
-#### 9. UniqueUsernames
+### UniqueUsernames
 
 Test inputs and outputs:
 
@@ -183,7 +183,7 @@ Miro
 Eli
 ```
 
-#### 10. SetsOfElements
+### SetsOfElements
 
 Test inputs and outputs:
 
@@ -200,7 +200,7 @@ Output:
 5
 ```
 
-#### 11. PeriodicTable
+### PeriodicTable
 
 Test inputs and outputs:
 
@@ -215,7 +215,7 @@ Output:
 apple banana blue green hello kiwi world
 ```
 
-#### 12. CountSymbols
+### CountSymbols
 
 Test inputs and outputs:
 
@@ -230,7 +230,7 @@ l: 2 time/s
 o: 1 time/s
 ```
 
-#### 13. Phonebook
+### Phonebook
 
 Test inputs and outputs:
 
@@ -250,7 +250,7 @@ Iva -> 32134
 Contact John does not exist.
 ```
 
-#### 14. MinerTask
+### MinerTask
 
 Test inputs and outputs:
 
@@ -269,7 +269,7 @@ Output:
 5 -> 0
 ```
 
-#### 15. FixEmails
+### FixEmails
 
 Test inputs and outputs:
 
@@ -287,7 +287,7 @@ Output:
 Eli -> eli@mail.bg
 ```
 
-#### 16. HandsOfCards
+### HandsOfCards
 
 Test inputs and outputs:
 
@@ -319,7 +319,7 @@ Frank: 56
 George: 58
 ```
 
-#### 17. PopulationCounter
+### PopulationCounter
 
 Test inputs and outputs:
 
@@ -341,7 +341,7 @@ Bulgaria (total population: 41212341)
 =>Sofia: 41212341
 ```
 
-#### 18. DragonArmy
+### DragonArmy
 
 Test inputs and outputs:
 
@@ -391,7 +391,7 @@ water::(20.00/250.00/10.00)
 -Kraken -> damage: 20, health: 250, armor: 10
 ```
 
-#### 19. BirthdayParadox
+### BirthdayParadox
 
 Create a program that simulates the birthday paradox. The program will run multiple trials to determine the number of people who must enter a room before two people share the same birthday. The results will be summarized in a table.
 

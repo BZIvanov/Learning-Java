@@ -6,14 +6,16 @@ Contains info about solving the tasks.
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 18. SimpleInterestCalculator
+### DigitsLettersOthers
 
 Test inputs and outputs:
 
 ```
 Input:
-No input
+Hello123 World 45.
 
 Output:
-Simple Interest for 3 years: 1500.00
+12345
+HelloWorld
+  .
 ```

@@ -57,20 +57,6 @@ Output:
 The secret cocktail recipe contains **** and ******.
 ```
 
-#### 5. DigitsLettersOthers
-
-Test inputs and outputs:
-
-```
-Input:
-Hello123 World 45.
-
-Output:
-12345
-HelloWorld
-  .
-```
-
 #### 6. MatchFullName
 
 Test inputs and outputs:

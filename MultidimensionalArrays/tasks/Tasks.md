@@ -6,7 +6,7 @@ Contains info about solving the tasks.
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. CompareMatrices
+### CompareMatrices
 
 Test inputs and outputs:
 
@@ -24,7 +24,7 @@ Output:
 not equal
 ```
 
-#### 2. PositionsOf
+### PositionsOf
 
 Test inputs and outputs:
 
@@ -40,7 +40,7 @@ Output:
 2 2
 ```
 
-#### 3. IntersectionOfTwoMatrices
+### IntersectionOfTwoMatrices
 
 Test inputs and outputs:
 
@@ -58,7 +58,7 @@ a b c
 * * *
 ```
 
-#### 4. SumMatrixElements
+### SumMatrixElements
 
 Test inputs and outputs:
 
@@ -74,7 +74,7 @@ Output:
 27
 ```
 
-#### 5. MaximumSumSubmatrix
+### MaximumSumSubmatrix
 
 Test inputs and outputs:
 
@@ -90,7 +90,7 @@ Output:
 21
 ```
 
-#### 6. PrintDiagonals
+### PrintDiagonals
 
 Test inputs and outputs:
 
@@ -106,7 +106,7 @@ Output:
 0 4 9
 ```
 
-#### 7. FindRealQueen
+### FindRealQueen
 
 Test inputs and outputs:
 
@@ -154,7 +154,7 @@ Output:
 0 2
 ```
 
-#### 8. WrongMeasurements
+### WrongMeasurements
 
 Test inputs and outputs:
 
@@ -172,7 +172,7 @@ Output:
 2 0 0
 ```
 
-#### 9. FillTheMatrix
+### FillTheMatrix
 
 Test inputs and outputs:
 
@@ -188,7 +188,7 @@ Output:
 5 10 15 20 25
 ```
 
-#### 10. MatrixOfPalindromes
+### MatrixOfPalindromes
 
 Test inputs and outputs:
 
@@ -202,7 +202,7 @@ bbb bcb bdb beb bfb bgb
 ccc cdc cec cfc cgc chc
 ```
 
-#### 11. DiagonalDifference
+### DiagonalDifference
 
 Test inputs and outputs:
 
@@ -217,7 +217,7 @@ Output:
 5
 ```
 
-#### 12. MaximalSum
+### MaximalSum
 
 Test inputs and outputs:
 
@@ -235,7 +235,7 @@ Sum = 48
 8 3 9
 ```
 
-#### 13. MatrixShuffling
+### MatrixShuffling
 
 Test inputs and outputs:
 
@@ -257,7 +257,7 @@ Input:
 END
 ```
 
-#### 14. StringMatrixRotation
+### StringMatrixRotation
 
 Test inputs and outputs:
 
@@ -278,7 +278,7 @@ ne
 a
 ```
 
-#### 15. Crossfire
+### Crossfire
 
 Test inputs and outputs:
 
@@ -295,7 +295,7 @@ Output:
 12
 ```
 
-#### 16. HeiganDance
+### HeiganDance
 
 Test inputs and outputs:
 
@@ -316,7 +316,7 @@ Player: Killed by Plague Cloud
 Final position: 7, 7
 ```
 
-#### 17. ReverseMatrixDiagonals
+### ReverseMatrixDiagonals
 
 Test inputs and outputs:
 
@@ -339,7 +339,7 @@ Output:
 2
 ```
 
-#### 18. ThueMorse
+### ThueMorse
 
 Write a program that takes a single integer command-line argument _n_ and printx _n_ x _n_ pattern based on the Thue-Morse sequence.
 

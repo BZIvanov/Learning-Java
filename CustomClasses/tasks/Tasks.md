@@ -97,3 +97,15 @@ Output:
 Cars have average horsepower of: 134.00.
 Trucks have average horsepower of: 259.00.
 ```
+
+### SimpleInterestCalculator
+
+Test inputs and outputs:
+
+```
+Input:
+No input
+
+Output:
+Simple Interest for 3 years: 1500.00
+```

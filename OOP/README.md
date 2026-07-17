@@ -127,3 +127,20 @@ Modifier that changes the behaviour of a class, method or variable.
 - When a class is final, it cannot be extended
 - When a method is final it cannot be overridden
 - Whan a variable is final it can only be assigned a value once
+
+## Access modifiers
+
+Access modifiers are keywords to control the visibility and accessibility of the class members.
+
+There are 4 types:
+
+- **public** - accessible from anywhere within the program
+- **protected** - accessible from anywhere the same package and its subclasses outside the package
+- **default** - accessible from anywhere within the same package. If we don't provide the access modifier, default will be used
+- **private** - accessible from anywhere within the same class
+
+Protected and private cannot be used on a class.
+
+## Static modifier
+
+It indicates that a member belongs to the class itself, rather than to any instance of the class.

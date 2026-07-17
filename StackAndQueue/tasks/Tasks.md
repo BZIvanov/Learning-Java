@@ -6,7 +6,7 @@ Contains info about solving the tasks.
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. BrowseHistory
+### BrowseHistory
 
 Test inputs and outputs:
 
@@ -21,7 +21,7 @@ Home
 Output:
 ```
 
-#### 2. SimpleCalculator
+### SimpleCalculator
 
 Test inputs and outputs:
 
@@ -33,7 +33,7 @@ Output:
 12
 ```
 
-#### 3. DecimalToBinaryConverter
+### DecimalToBinaryConverter
 
 Test inputs and outputs:
 
@@ -45,7 +45,7 @@ Output:
 1100
 ```
 
-#### 4. MatchingBrackets
+### MatchingBrackets
 
 Test inputs and outputs:
 
@@ -58,7 +58,7 @@ Output:
 (and that)
 ```
 
-#### 5. PrinterQueue
+### PrinterQueue
 
 Test inputs and outputs:
 
@@ -80,7 +80,7 @@ Print2
 Print3
 ```
 
-#### 6. HotPotato
+### HotPotato
 
 Test inputs and outputs:
 
@@ -98,7 +98,7 @@ Removed 12
 Last is 11
 ```
 
-#### 7. MathPotato
+### MathPotato
 
 Test inputs and outputs:
 
@@ -120,7 +120,7 @@ Removed 23
 Last is 99
 ```
 
-#### 8. BrowserHistoryUpgrade
+### BrowserHistoryUpgrade
 
 Test inputs and outputs:
 
@@ -143,7 +143,7 @@ Dashboard
 no next URLs
 ```
 
-#### 9. ReverseNumbersWithStack
+### ReverseNumbersWithStack
 
 Test inputs and outputs:
 
@@ -155,7 +155,7 @@ Output:
 cc bb aa
 ```
 
-#### 10. BasicStackOperations
+### BasicStackOperations
 
 Test inputs and outputs:
 
@@ -186,7 +186,7 @@ Output:
 1
 ```
 
-#### 11. MaximumElement
+### MaximumElement
 
 Test inputs and outputs:
 
@@ -201,7 +201,7 @@ Output:
 8
 ```
 
-#### 12. BasicQueueOperations
+### BasicQueueOperations
 
 Test inputs and outputs:
 
@@ -223,7 +223,7 @@ Output:
 3
 ```
 
-#### 13. Robotics
+### Robotics
 
 Test inputs and outputs:
 
@@ -242,7 +242,7 @@ ROBOT - Product2 [08:00:02]
 ROBOT - Product3 [08:00:03]
 ```
 
-#### 14. BalancedParanthesis
+### BalancedParanthesis
 
 Test inputs and outputs:
 
@@ -254,7 +254,7 @@ Output:
 YES
 ```
 
-#### 15. RecursiveFibonacci
+### RecursiveFibonacci
 
 Test inputs and outputs:
 
@@ -266,7 +266,7 @@ Output:
 17711
 ```
 
-#### 16. SimpleTextEditor
+### SimpleTextEditor
 
 Test inputs and outputs:
 
@@ -285,7 +285,7 @@ w
 o
 ```
 
-#### 17. PoisonousPlants
+### PoisonousPlants
 
 Test inputs and outputs:
 

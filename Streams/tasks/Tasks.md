@@ -6,7 +6,7 @@ Contains info about solving the tasks.
 
 Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
 
-#### 1. ReadFile
+### ReadFile
 
 Test inputs and outputs:
 
@@ -18,7 +18,7 @@ Output:
 1001000 1100101 1101100 1101100 1101111 100000 1010111 1101111 1110010 1101100 1100100
 ```
 
-#### 2. WriteToFile
+### WriteToFile
 
 Test inputs and outputs:
 
@@ -30,7 +30,7 @@ Output:
 Hello World
 ```
 
-#### 3. CopyBytes
+### CopyBytes
 
 Test inputs and outputs:
 
@@ -42,7 +42,7 @@ Output:
 72101108108111 87111114108100
 ```
 
-#### 4. ExtractIntegers
+### ExtractIntegers
 
 Test inputs and outputs:
 
@@ -54,7 +54,7 @@ Output:
 19
 ```
 
-#### 5. WriteEveryThirdLine
+### WriteEveryThirdLine
 
 Test inputs and outputs:
 
@@ -72,7 +72,7 @@ ccc
 fff
 ```
 
-#### 6. SortLines
+### SortLines
 
 Test inputs and outputs:
 
@@ -96,19 +96,19 @@ ee
 ff
 ```
 
-#### 7. ListFiles
+### ListFiles
 
 Test inputs and outputs:
 
 _Dependant on the files you have_
 
-#### 8. NestedFolders
+### NestedFolders
 
 Test inputs and outputs:
 
 _Dependant on the folders and files you have_
 
-#### 9. SumLines
+### SumLines
 
 Test inputs and outputs:
 
@@ -124,7 +124,7 @@ Output:
 609
 ```
 
-#### 10. SumBytes
+### SumBytes
 
 Test inputs and outputs:
 
@@ -138,7 +138,7 @@ Output:
 1575
 ```
 
-#### 11. AllCapitals
+### AllCapitals
 
 Test inputs and outputs:
 
@@ -154,7 +154,7 @@ APPLE
 BANANA
 ```
 
-#### 12. CountCharacterTypes
+### CountCharacterTypes
 
 Test inputs and outputs:
 
@@ -170,7 +170,7 @@ Consonants: 8
 Punctuation: 0
 ```
 
-#### 13. LineNumbers
+### LineNumbers
 
 Test inputs and outputs:
 
@@ -186,7 +186,7 @@ Output:
 3. banana
 ```
 
-#### 14. WordCount
+### WordCount
 
 Test inputs and outputs:
 
@@ -203,7 +203,7 @@ kiwi - 1
 banana - 1
 ```
 
-#### 15. MergeTwoFiles
+### MergeTwoFiles
 
 Test inputs and outputs:
 
@@ -219,19 +219,19 @@ First file text.
 Second file text.
 ```
 
-#### 16. GetFolderSize
+### GetFolderSize
 
 Test inputs and outputs:
 
 _Dependant on the folder and files you have_
 
-#### 17. CopyPicture
+### CopyPicture
 
 Test inputs and outputs:
 
 _Dependant on the picture you have_
 
-#### 18. CreateZipArchive
+### CreateZipArchive
 
 Test inputs and outputs:
 
