@@ -30,7 +30,7 @@ At this stage, it's perfectly fine to remember one simple rule:
 
 > Every standalone Java program starts running from the `main()` method.
 
-The different keywords (`public`, `static`, `void`) and the parameter (`String[] args`) all have specific purposes, but you'll explore what each one means later in the course.
+The different keywords (`public`, `static`, `void`) and the parameter (`String[] args`) all have specific purposes, but you'll explore what each one means in the upcoming sections.
 
 ### Program Flow
 
