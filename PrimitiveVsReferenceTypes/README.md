@@ -240,7 +240,7 @@ Both references point to the same object.
 
 `String` is a reference type:
 
-```java id="t7nbn9"
+```java
 String message = "Hello";
 ```
 
