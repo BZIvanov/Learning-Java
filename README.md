@@ -19,17 +19,17 @@ java -version
 ## Content of this repo
 
 1. **[GettingStarted](GettingStarted/)**
-2. **[DeclaringVariables](DeclaringVariables/)**
-3. **[PrimitiveDataTypes](PrimitiveDataTypes/)**
-4. **[StringDataType](StringDataType/)**
-5. **[PrimitiveVsReferenceTypes](PrimitiveVsReferenceTypes/)**
-6. **[ClassesOverview](ClassesOverview/)**
-7. **[ConditionalLogic](ConditionalLogic/)**
-8. **[Methods](Methods/)**
-9. **[Loops](Loops/)**
-10. **[StringsAndRegularExpressions](StringsAndRegularExpressions/)**
-11. **[BuiltinClasses](BuiltinClasses/)**
-12. **[CustomClasses](CustomClasses/)**
+2. **[VariablesOverview](VariablesOverview/)**
+3. **[DataTypesOverview](DataTypesOverview/)**
+4. **[PrimitiveVsReferenceTypes](PrimitiveVsReferenceTypes/)**
+5. **[ClassesOverview](ClassesOverview/)**
+6. **[BuiltinClassesOverview](BuiltinClassesOverview/)**
+7. **[CustomClassesOverview](CustomClassesOverview/)**
+8. **[ConditionalLogicOverview](ConditionalLogicOverview/)**
+9. **[MethodsOverview](MethodsOverview/)**
+10. **[Loops](Loops/)**
+11. **[Debugging](Debugging/)**
+12. **[StringsAndRegularExpressions](StringsAndRegularExpressions/)**
 13. **[LambdaExpressions](LambdaExpressions/)**
 14. **[Arrays](Arrays/)**
 15. **[MultidimensionalArrays](MultidimensionalArrays/)**

@@ -43,4 +43,3 @@ Because each switch can be ON or OFF, 8 switches can represent:
 ## Content of this section
 
 - **data-types**
-- **casting**
