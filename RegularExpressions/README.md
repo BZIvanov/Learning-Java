@@ -1,4 +1,4 @@
-# Strings and Regular Expressions
+# Regular Expressions
 
 ## String pool
 
