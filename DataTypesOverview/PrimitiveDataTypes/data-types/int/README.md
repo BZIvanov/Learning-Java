@@ -1,6 +1,22 @@
 # int data type
 
-## Types
+The int data type is a **32-bit signed integer** used to store whole numbers (numbers without a decimal point).
+
+It is the **most commonly used integer type in Java** because it provides a good balance between memory usage and range.
+
+```java
+int age = 25;
+int score = 100;
+int temperature = -8;
+```
+
+## Integer Literals
+
+### Decimal (base 10)
+
+```java
+int number = 125;
+```
 
 ### Binary
 

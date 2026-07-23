@@ -1,4 +1,4 @@
-# Declaring variables
+# Variables overview
 
 A **variable** is just a **named box in memory** that stores a value.
 
@@ -55,6 +55,8 @@ int age = 25;
 ```
 
 ## Examples with different data types
+
+More details about data types can be found in the upcoming sections.
 
 ```java
 byte level = 3;

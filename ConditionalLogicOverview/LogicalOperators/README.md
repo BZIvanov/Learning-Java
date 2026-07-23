@@ -53,11 +53,9 @@ The `&&` operator combines two conditions into one.
 
 Java provides three main logical operators:
 
-| Operator | Name        | Description                  |            |                                     |
-| -------- | ----------- | ---------------------------- | ---------- | ----------------------------------- |
-| `&&`     | Logical AND | Both conditions must be true |            |                                     |
-| `        |             | `                            | Logical OR | At least one condition must be true |
-| `!`      | Logical NOT | Reverses a boolean value     |            |                                     |
+- `&&` — Logical AND — Both conditions must be true
+- `||` — Logical OR — At least one condition must be true
+- `!` — Logical NOT — Reverses a boolean value
 
 ---
 
