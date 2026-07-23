@@ -4,4 +4,3 @@
 
 - **multiple-catch**
 - **finally**
-- **custom-exception**
