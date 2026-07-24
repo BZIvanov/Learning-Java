@@ -1,14 +1,10 @@
-# Classes and Objects overview
+# Classes and Objects Overview
 
-So far in this repository, every example has been written inside a **single Java class** containing the `main()` method.
+So far in this repository, most examples have been written inside a **single Java class** that contains the `main()` method.
 
-This approach is useful when learning Java fundamentals because it allows us to focus on one concept at a time without introducing additional files or project structure.
+That approach is useful while learning the fundamentals because it lets you focus on one concept at a time. Real Java applications, however, are usually divided into many classes. Each class describes one part of the program and has its own responsibility.
 
-However, real Java applications are built differently.
-
-Instead of placing everything inside one class, a program is usually divided into many classes, each with its own responsibility.
-
-This section introduces the building blocks of object-oriented programming (OOP) and explains how Java programs are organized using classes, objects, and packages.
+This section introduces the building blocks of object-oriented programming (OOP): classes, objects, fields, constructors, instance methods, static members, packages, and object references.
 
 ---
 
@@ -16,9 +12,7 @@ This section introduces the building blocks of object-oriented programming (OOP)
 
 Imagine writing an application for a library.
 
-Instead of putting everything into one file, it makes more sense to separate the program into multiple classes.
-
-For example:
+Instead of placing every variable and method into one large file, it is easier to split the program into smaller classes:
 
 ```text
 Library
@@ -27,14 +21,14 @@ Member
 Loan
 ```
 
-Each class has its own responsibility.
+Each class has its own job:
 
 - `Book` stores information about a book.
 - `Member` stores information about a library member.
 - `Loan` represents a borrowed book.
-- `Library` manages books and members.
+- `Library` manages books, members, and loans.
 
-Breaking a program into smaller classes makes the code easier to read, understand, maintain, and reuse.
+Breaking a program into smaller classes makes the code easier to read, test, maintain, and reuse.
 
 ---
 
@@ -47,16 +41,18 @@ It defines:
 - What data an object stores.
 - What actions an object can perform.
 
-Think of a class as the design or plan for something.
+For example, a `Car` class can describe that every car has a brand, model, color, and year.
 
-For example:
+```java
+public class Car {
+    String brand;
+    String model;
+    String color;
+    int year;
+}
+```
 
-- A house blueprint describes what a house should look like.
-- A car blueprint describes how a car is built.
-
-The blueprint itself is **not** the finished object.
-
-It simply describes how one can be created.
+The class itself is not a specific car. It only describes what a car object should contain.
 
 ---
 
@@ -64,161 +60,67 @@ It simply describes how one can be created.
 
 An **object** is an actual instance of a class.
 
-If a class is a blueprint, an object is the real thing built from that blueprint.
-
-For example:
-
-Class:
-
-```text
-Car
-```
-
-Possible objects:
-
-```text
-Red Toyota Corolla
-Blue Honda Civic
-White Tesla Model 3
-```
-
-All three objects belong to the same class, but each object has its own data.
-
----
-
-## Classes and Objects Work Together
-
-A class defines the structure.
-
-Objects use that structure.
-
-For example, imagine the following class:
+If a class is the blueprint, an object is the real thing created from that blueprint.
 
 ```java
-class Car {
-    String brand;
-    int year;
-}
+Car firstCar = new Car();
+Car secondCar = new Car();
 ```
 
-Later, objects can be created from this class.
+Both variables store `Car` objects, but each object can have different field values.
 
-At this point, don't worry about the syntax or the `new` keyword.
+```java
+firstCar.brand = "Toyota";
+firstCar.model = "Corolla";
+firstCar.color = "red";
+firstCar.year = 2021;
 
-You'll learn how to create objects in the following pages.
+secondCar.brand = "Honda";
+secondCar.model = "Civic";
+secondCar.color = "blue";
+secondCar.year = 2023;
+```
 
-For now, remember the relationship:
-
-- A **class** describes what an object looks like.
-- An **object** is created from a class.
+The class defines the structure. The objects hold the actual data.
 
 ---
 
-## Why Are Objects Useful?
+## From Variables to Objects
 
-Objects allow us to model real-world things.
+Without objects, related data is often stored in separate variables:
 
-For example:
+```java
+String firstBookTitle = "Clean Code";
+String firstBookAuthor = "Robert C. Martin";
+int firstBookPages = 464;
 
-Instead of storing unrelated variables:
-
-```text
-bookTitle
-bookAuthor
-bookPages
+String secondBookTitle = "Effective Java";
+String secondBookAuthor = "Joshua Bloch";
+int secondBookPages = 416;
 ```
 
-we can create a `Book` object that keeps all related information together.
+This works for very small programs, but it becomes messy quickly.
 
-This makes programs easier to organize and understand.
+With objects, related information can stay together:
 
-Objects are one of the core ideas behind object-oriented programming.
-
----
-
-## Organizing Classes with Packages
-
-As programs grow, they may contain dozens, hundreds, or even thousands of classes.
-
-Java uses **packages** to organize related classes.
-
-A package works much like a folder on your computer.
-
-For example:
-
-```text
-com.example.library
-
-├── Book.java
-├── Member.java
-├── Loan.java
-└── Library.java
+```java
+Book firstBook = new Book("Clean Code", "Robert C. Martin", 464);
+Book secondBook = new Book("Effective Java", "Joshua Bloch", 416);
 ```
 
-Packages help:
-
-- Organize code.
-- Avoid class name conflicts.
-- Make projects easier to navigate.
-- Group related functionality together.
-
-You'll learn more about packages later in this section.
-
----
-
-## Classes Can Work Together
-
-One class can use another class.
-
-For example:
-
-A `Library` class may contain multiple `Book` objects.
-
-A `Student` class may contain an `Address` object.
-
-Classes rarely exist in isolation.
-
-Instead, they work together to solve larger problems.
-
----
-
-## From One Class to Many
-
-Until now, every example in this repository has looked similar to this:
-
-```text
-MyFirstClass
-└── main()
-```
-
-As you continue learning Java, your programs will gradually evolve into something like this:
-
-```text
-Application
-├── Main
-├── User
-├── Product
-├── Order
-├── ShoppingCart
-├── Payment
-└── Database
-```
-
-Each class has a specific responsibility.
-
-This approach makes applications much easier to develop and maintain than placing all code into one large class.
+This makes the code easier to understand because each `Book` object represents one complete thing.
 
 ---
 
 # What You'll Learn in This Section
 
-In the following pages, you'll learn:
+In the following pages, you will learn:
 
 - What classes are.
 - What objects are.
 - How to create classes.
 - How to create objects.
-- Fields (instance variables).
+- Fields, also called instance variables.
 - Constructors.
 - Instance methods.
 - The `this` keyword.
@@ -226,8 +128,29 @@ In the following pages, you'll learn:
 - Packages.
 - Object references.
 
-By the end of this section, you'll be able to create your own classes, create objects from those classes, and organize them into a small Java application.
+By the end of this section, you will be able to create your own classes, create objects from those classes, and organize them into a small Java application.
 
-## Content of this section
+## Recommended Learning Order
 
-- **tasks**
+1. **[ClassesAndObjects](ClassesAndObjects/)** - learn the relationship between a class and an object.
+2. **[Fields](Fields/)** - store data inside objects.
+3. **[Constructors](Constructors/)** - create objects with valid starting data.
+4. **[InstanceMethods](InstanceMethods/)** - add behavior to objects.
+5. **[ThisKeyword](ThisKeyword/)** - understand how an object refers to itself.
+6. **[StaticMembers](StaticMembers/)** - learn what belongs to the class instead of one object.
+7. **[Packages](Packages/)** - organize classes into folders and namespaces.
+8. **[ObjectReferences](ObjectReferences/)** - understand how object variables point to objects in memory.
+9. **[tasks](tasks/)** - practice the concepts with small exercises.
+
+## Key Idea
+
+When writing Java, try to think in terms of **responsibilities**.
+
+Ask yourself:
+
+- What thing am I trying to model?
+- What information does that thing need?
+- What actions should that thing be able to perform?
+- Which code belongs inside this class, and which code belongs somewhere else?
+
+This way of thinking is the foundation for writing larger Java programs.
