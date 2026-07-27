@@ -1,146 +1,207 @@
 # OOP
 
-The 4 pillars of OOP are:
+This section contains deeper object-oriented programming topics.
 
-- Abstraction
-- Encapsulation
-- Inheritance
-- Polymorphism
+Earlier, **[ClassesAndObjectsOverview](../ClassesAndObjectsOverview/)** introduced classes, objects, fields, constructors, instance methods, static members, packages, and object references.
 
-## Constructor
+Then **[OOPOverview](../OOPOverview/)** introduced basic OOP thinking: access modifiers, encapsulation, getters and setters, composition, and class responsibility.
 
-A constructor is a special method in a class used to initialize objects. It has the following characteristics:
+This section goes further into the main OOP features used when classes start working in larger relationships.
 
-1. **Same Name as the Class** - The constructor's name must match the class name
-2. **No Return Type** - Constructors do not have a return type, not even `void`
-3. **Automatic Invocation** - A constructor is called automatically when an object of the class is created
-4. **Overloading** - A class can have multiple constructors with different parameter lists (constructor overloading).
+---
 
-```java
-class Animal {
-    private String name;
-    private int age;
+## The Four Pillars of OOP
 
-    // Non-parameterized constructor
-    public Animal() {
-        this.name = "Unknown";
-        this.age = 0;
-        System.out.println("Non-parameterized constructor called.");
-    }
+The four commonly named pillars of object-oriented programming are:
 
-    // Parameterized constructor
-    public Animal(String name, int age) {
-        this.name = name;
-        this.age = age;
-        System.out.println("Parameterized constructor called.");
-    }
+- **Encapsulation** - keeping data protected inside objects.
+- **Inheritance** - allowing one class to reuse and extend another class.
+- **Polymorphism** - allowing the same method call to behave differently depending on the object.
+- **Abstraction** - focusing on what an object can do instead of every implementation detail.
 
-    // Method to display the animal's details
-    public void displayInfo() {
-        System.out.println("Name: " + name + ", Age: " + age);
-    }
-}
+The pillars are connected. For example, inheritance and polymorphism often work together, and abstraction is often created with abstract classes or interfaces.
 
-public class App {
-    public static void main(String[] args) {
-        // Using the non-parameterized constructor
-        Animal genericAnimal = new Animal();
-        genericAnimal.displayInfo();
+---
 
-        // Using the parameterized constructor
-        Animal specificAnimal = new Animal("Dog", 5);
-        specificAnimal.displayInfo();
-    }
-}
-```
+## Recommended Learning Order
 
-### Default constructor
+1. **[Encapsulation](Encapsulation/)** - revisit encapsulation as one of the OOP pillars.
+2. **[Inheritance](Inheritance/)** - learn parent and child classes with `extends`.
+3. **[Polymorphism](Polymorphism/)** - use parent references for child objects and override behavior.
+4. **[Abstraction](Abstraction/)** - use abstract classes to describe shared behavior.
+5. **[interface](interface/interface.md)** - define contracts that classes can implement.
+6. **[enum](enum/enum.md)** - represent a fixed set of named constants.
+7. **[generic](generic/)** - create classes that work with different data types.
 
-If no constructor is explicitly defined in a class, the Java compiler automatically provides a **default constructor**. This constructor has no arguments and initializes the object with default values (e.g., `null` for objects, `0` for integers, etc.).
+---
 
-However, if any constructor (default or parameterized) is explicitly declared in the class, the compiler will not add a default constructor.
+## Inheritance
 
-## super and this
+Inheritance allows one class to reuse fields and methods from another class.
 
 ```java
 class Animal {
     String name;
 
-    Animal(String name) {
+    public Animal(String name) {
         this.name = name;
-        System.out.println("Animal created: " + name);
+    }
+
+    public void eat() {
+        System.out.println(name + " is eating.");
     }
 }
 
 class Dog extends Animal {
-    String breed;
-
-    Dog(String name, String breed) {
-        // Call the superclass constructor (Animal) to initialize the name field
-        super(name); // This MUST be the first line in the subclass constructor
-        this.breed = breed;
-        System.out.println("Dog created: " + breed);
+    public Dog(String name) {
+        super(name);
     }
-}
 
-public class Main {
-    public static void main(String[] args) {
-        Dog myDog = new Dog("Buddy", "Labrador");
+    public void bark() {
+        System.out.println(name + " is barking.");
     }
 }
 ```
 
-## Override annotation
+`Dog` extends `Animal`, so it can use the behavior from `Animal` and add behavior of its own.
 
-Using the `@Override` annotation is not strictly required for method overriding. However, it's strongly recommended for the following benefits:
+Java classes can extend only one class directly.
 
-- It helps catch potential errors during compilation, such as typos in method names or argument lists.
-- It enhances code readability by explicitly stating the intention to override a method.
-- It provides an additional layer of safety during refactoring when the superclass method signature changes.
+---
 
-## Overloading
+## `super` and `this`
 
-Providing multiple methods with the same name, but different signatures due to a different parameter list.
+Use `this` to refer to the current object.
 
-## Hiding
-
-Hiding a static member of a parent class with a static member of the same name in a child class.
-
-## abstract class
-
-Class that cannot be instantiated.
+Use `super` to refer to the parent class.
 
 ```java
-abstract class MyAbstractClass {
-    public void myConcreteMethod() {
-        System.out.println("Concrete method");
-    }
+class Animal {
+    private String name;
 
-    abstract void myAbstractMethod();
+    public Animal(String name) {
+        this.name = name;
+    }
+}
+
+class Dog extends Animal {
+    private String breed;
+
+    public Dog(String name, String breed) {
+        super(name);
+        this.breed = breed;
+    }
 }
 ```
 
-## final
+When calling a parent constructor with `super(...)`, it must be the first statement in the child constructor.
 
-Modifier that changes the behaviour of a class, method or variable.
+---
 
-- When a class is final, it cannot be extended
-- When a method is final it cannot be overridden
-- Whan a variable is final it can only be assigned a value once
+## Method Overriding
 
-## Access modifiers
+Method overriding means a child class provides its own version of a method inherited from a parent class.
 
-Access modifiers are keywords to control the visibility and accessibility of the class members.
+```java
+class Animal {
+    public void makeSound() {
+        System.out.println("Some sound");
+    }
+}
 
-There are 4 types:
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+}
+```
 
-- **public** - accessible from anywhere within the program
-- **protected** - accessible from anywhere the same package and its subclasses outside the package
-- **default** - accessible from anywhere within the same package. If we don't provide the access modifier, default will be used
-- **private** - accessible from anywhere within the same class
+Use `@Override` when overriding methods. It helps the compiler catch mistakes in method names or parameters.
 
-Protected and private cannot be used on a class.
+---
 
-## Static modifier
+## Polymorphism
 
-It indicates that a member belongs to the class itself, rather than to any instance of the class.
+Polymorphism allows a variable of a parent type to refer to an object of a child type.
+
+```java
+Animal animal = new Dog();
+animal.makeSound();
+```
+
+The variable type is `Animal`, but the actual object is a `Dog`.
+
+If `Dog` overrides `makeSound()`, Java runs the `Dog` version.
+
+---
+
+## Abstraction
+
+Abstraction means focusing on the important behavior and hiding unnecessary details.
+
+In Java, abstraction is commonly created with:
+
+- Abstract classes.
+- Interfaces.
+
+An abstract class cannot be instantiated directly.
+
+```java
+abstract class Animal {
+    public abstract void makeSound();
+}
+```
+
+A concrete child class must implement the abstract behavior.
+
+```java
+class Cat extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+}
+```
+
+---
+
+## Other Important Terms
+
+### Overloading
+
+Overloading means creating multiple methods with the same name but different parameter lists.
+
+```java
+public int add(int a, int b) {
+    return a + b;
+}
+
+public double add(double a, double b) {
+    return a + b;
+}
+```
+
+### Hiding
+
+Hiding happens when a static member in a child class has the same name as a static member in a parent class.
+
+Static members are resolved by the reference type, not by the runtime object in the same way overridden instance methods are.
+
+### `final`
+
+The `final` modifier limits changes:
+
+- A final class cannot be extended.
+- A final method cannot be overridden.
+- A final variable can be assigned only once.
+
+```java
+final int maxUsers = 100;
+```
+
+## Key Idea
+
+The basic overview section helps you protect and organize individual classes.
+
+This OOP section focuses on relationships between classes and on writing flexible code through inheritance, polymorphism, abstraction, interfaces, enums, and generics.
