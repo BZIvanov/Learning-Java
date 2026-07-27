@@ -1,14 +1,87 @@
 # Inheritance
 
-Inheritance is a feature in Object-Oriented Programming (OOP) that allows a class (called the child or subclass) to inherit properties and methods from another class (called the parent or superclass).
+Inheritance allows one class to reuse and extend another class.
 
-This helps reuse code, reduce duplication, and create a clear hierarchy between classes.
+The class being inherited from is called the **parent class**, **base class**, or **superclass**.
 
-One class cannot inherit from 2 other classes.
+The class that inherits is called the **child class**, **derived class**, or **subclass**.
 
-## Example:
+---
 
-If a `Vehicle` class defines common properties like `speed` and `color`, and methods like `start()` and `stop()`, a `Car` class can inherit these features and add its own unique behavior, such as a `honk()` method.
+## Basic Example
+
+```java
+public class Animal {
+    public String name;
+    public int age;
+
+    public void eat() {
+        System.out.println("Animal eating");
+    }
+}
+```
+
+```java
+public class Dog extends Animal {
+    public void bark() {
+        System.out.println("Dog barking");
+    }
+}
+```
+
+`Dog` inherits the fields and methods from `Animal`.
+
+```java
+Dog dog = new Dog();
+dog.name = "Rex";
+dog.age = 3;
+
+dog.eat();
+dog.bark();
+```
+
+Output:
+
+```text
+Animal eating
+Dog barking
+```
+
+## The `extends` Keyword
+
+In Java, inheritance is created with `extends`.
+
+```java
+public class Dog extends Animal {
+}
+```
+
+This means:
+
+```text
+Dog is an Animal.
+```
+
+Use inheritance when there is a real "is-a" relationship.
+
+Good examples:
+
+- `Dog` is an `Animal`.
+- `Car` is a `Vehicle`.
+- `Manager` is an `Employee`.
+
+## Single Class Inheritance
+
+One Java class can directly extend only one class.
+
+```java
+public class Dog extends Animal {
+}
+```
+
+A class cannot directly extend two classes.
+
+Java uses interfaces when a class needs to follow multiple contracts.
 
 ## Why use Inheritance?
 
@@ -16,6 +89,23 @@ If a `Vehicle` class defines common properties like `speed` and `color`, and met
 - **Extensibility:** Add new features by extending existing classes.
 - **Hierarchy:** Represent real-world relationships (e.g., `Bird` is a type of `Animal`).
 
+## Be Careful
+
+Do not use inheritance only to reuse a few lines of code.
+
+If the relationship is "has-a", use composition instead.
+
+```text
+A car has an engine.       Composition
+A car is a vehicle.        Inheritance
+```
+
 ## Implicit Inheritance: The Object Class
 
-In Java, all classes automatically inherit from the built-in `Object` class, if we didn't explicitly extended from another class. This is because `Object` is the root superclass of all Java classes.
+In Java, all classes automatically inherit from the built-in `Object` class if they do not explicitly extend another class.
+
+`Object` is the root superclass of all Java classes.
+
+## Key Idea
+
+Inheritance helps model "is-a" relationships and share common behavior, but it should be used carefully.
