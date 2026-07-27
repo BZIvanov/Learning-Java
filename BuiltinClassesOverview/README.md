@@ -14,6 +14,9 @@ The answer is that Java comes with a large collection of **built-in classes** th
 
 This collection is called the **Java Standard Library**.
 
+In this section, "built-in classes" means classes that are already provided by Java.
+Some of them can be used immediately, while others need an `import` statement.
+
 Instead of writing everything from scratch, you can use these classes to perform common tasks such as:
 
 - Printing text to the console
@@ -125,11 +128,27 @@ Math
 String
 Integer
 Scanner
+StringBuilder
+BigInteger
 ```
 
 Some of these classes are available immediately, while others must be imported before they can be used.
 
-You'll learn about imports later in the course.
+For example, these classes are available automatically because they are part of `java.lang`:
+
+```java
+System
+Math
+String
+Integer
+```
+
+Other classes are still provided by Java, but they live in different packages and must be imported:
+
+```java
+import java.util.Scanner;
+import java.math.BigInteger;
+```
 
 For now, it's enough to know that Java provides many useful classes that are ready to use.
 
@@ -179,5 +198,5 @@ The main difference is simply who wrote them:
 
 ## Content of this section
 
-- **BigIntegerClass**
-- **StringBuilderClass**
+- **[BigIntegerClass](BigIntegerClass/)** - working with very large whole numbers.
+- **[StringBuilderClass](StringBuilderClass/)** - building and changing text efficiently.

@@ -8,6 +8,10 @@ Below are the tasks requirements and examples of input data to be provided for t
 
 ### SumBigNumbers
 
+Read two very large whole numbers and print their sum.
+
+Because the numbers may be too large for `int` or `long`, use `BigInteger`.
+
 Test inputs and outputs:
 
 ```
@@ -21,6 +25,10 @@ Output:
 
 ### BigFactorial
 
+Read an integer `n` and print `n!`.
+
+The result can become very large, so store the factorial result in a `BigInteger`.
+
 Test inputs and outputs:
 
 ```
@@ -29,4 +37,17 @@ Input:
 
 Output:
 25852016738884976640000
+```
+
+### SumBigNumbersSeries
+
+Test inputs and outputs:
+
+```
+Input:
+123456788
+123456789999
+
+Output:
+7620781877701131694922
 ```

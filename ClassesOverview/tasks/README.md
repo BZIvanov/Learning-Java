@@ -123,19 +123,6 @@ Output:
 2 centuries = 200 years = 73048 days = 1753152 hours = 105189120 minutes
 ```
 
-### SumBigNumbers
-
-Test inputs and outputs:
-
-```
-Input:
-123456788
-123456789999
-
-Output:
-7620781877701131694922
-```
-
 ### Elevator
 
 Test inputs and outputs:
