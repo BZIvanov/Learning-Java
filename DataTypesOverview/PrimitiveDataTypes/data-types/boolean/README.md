@@ -10,8 +10,8 @@ boolean hasErrors = false;
 
 ## Boolean values
 
-- `true` — means the condition is correct or enabled.
-- `false` — means the condition is incorrect or disabled.
+- `true` means the condition is correct or enabled.
+- `false` means the condition is incorrect or disabled.
 
 ## When to use boolean
 
@@ -24,7 +24,9 @@ int a = 5;
 int b = 10;
 boolean isGreater = a > b; // false
 boolean isEqual = a == b;  // false
-boolean hasSpace = text.isEmpty();
+
+String text = "Java";
+boolean isEmpty = text.isEmpty(); // false
 ```
 
 ## Boolean in conditionals
@@ -44,9 +46,9 @@ if (isActive) {
 Boolean values are often produced by comparison operators:
 
 ```java
-boolean result1 = 3 < 7;    // true
-boolean result2 = 4 >= 4;   // true
-boolean result3 = 5 != 5;   // false
+boolean result1 = 3 < 7;        // true
+boolean result2 = 4 >= 4;       // true
+boolean result3 = 5 != 5;       // false
 boolean result4 = (2 + 2) == 4; // true
 ```
 
@@ -55,10 +57,10 @@ boolean result4 = (2 + 2) == 4; // true
 The wrapper class `Boolean` provides useful methods when working with boolean values.
 
 ```java
-System.out.println(Boolean.TRUE);            // true
-System.out.println(Boolean.FALSE);           // false
+System.out.println(Boolean.TRUE);                 // true
+System.out.println(Boolean.FALSE);                // false
 System.out.println(Boolean.parseBoolean("true")); // true
-System.out.println(Boolean.toString(false));       // "false"
+System.out.println(Boolean.toString(false));      // "false"
 ```
 
 ## Common mistakes

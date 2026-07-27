@@ -1,6 +1,3 @@
-// classes are orgianized in packages, which usually represents the folder they are in, if the class is in the root folder it won't have package
-package company;
-
 import java.util.Scanner;
 
 public class IntegerOperations {

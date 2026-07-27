@@ -46,7 +46,7 @@ Hello, World!
 
 ---
 
-## Strings Can Store Any Text
+## Strings can store any text
 
 A string can contain:
 
@@ -81,7 +81,7 @@ The first stores **text**, while the second stores a **numeric value**.
 
 ---
 
-## Concatenating Strings
+## Concatenating strings
 
 You can join strings together using the `+` operator. This is called **concatenation**.
 
@@ -118,7 +118,7 @@ Hello, World!
 
 ---
 
-## Combining Strings and Variables
+## Combining strings and variables
 
 The `+` operator can also combine strings with other values.
 
@@ -139,7 +139,48 @@ Java automatically converts the number to text when it is joined with a string.
 
 ---
 
-## Common String Methods
+## Comparing strings
+
+Use `.equals()` when you want to compare the text inside two strings.
+
+```java
+String first = "Java";
+String second = "Java";
+
+System.out.println(first.equals(second)); // true
+```
+
+Avoid using `==` for string content comparison.
+
+```java
+String first = new String("Java");
+String second = new String("Java");
+
+System.out.println(first == second);      // false
+System.out.println(first.equals(second)); // true
+```
+
+The `==` operator checks whether two variables refer to the same object. The `.equals()` method checks whether the text is the same.
+
+---
+
+## Strings are immutable
+
+Strings cannot be changed after they are created.
+
+When a method appears to change a string, Java creates a new string instead.
+
+```java
+String word = "java";
+String upper = word.toUpperCase();
+
+System.out.println(word);  // java
+System.out.println(upper); // JAVA
+```
+
+---
+
+## Common String methods
 
 Since `String` is a special type in Java, it comes with many useful methods.
 
@@ -197,7 +238,7 @@ java
 
 ---
 
-## Strings Are Case-Sensitive
+## Strings are case-sensitive
 
 Java treats uppercase and lowercase letters as different characters.
 

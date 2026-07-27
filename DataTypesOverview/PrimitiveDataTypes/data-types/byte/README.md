@@ -27,7 +27,7 @@ It is often used in low-level programming, file I/O, and binary protocols.
 ## Common mistakes
 
 ```java
-byte value = 128; // invalid: out of range
+byte value = 128;   // invalid: out of range
 byte value2 = 1000; // invalid: out of range
 ```
 
@@ -39,3 +39,11 @@ byte result = (byte) sum;
 ```
 
 The cast should be used carefully because the value may wrap if it is outside the `byte` range.
+
+Arithmetic with `byte` values is promoted to `int`, so this also causes an error:
+
+```java
+byte a = 10;
+byte b = 20;
+byte result = a + b; // invalid: a + b is an int
+```

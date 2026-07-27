@@ -30,6 +30,15 @@ System.out.println(result); // 0.30000000000000004
 boolean equal = result == 0.3; // usually false
 ```
 
+For comparisons, it is usually better to check whether the difference is very small:
+
+```java
+double expected = 0.3;
+boolean closeEnough = Math.abs(result - expected) < 0.000001;
+```
+
+Use `BigDecimal` instead of `double` when exact decimal precision is required, such as money calculations.
+
 ## Double class
 
 The wrapper class `Double` includes helper methods for parsing and checking values.

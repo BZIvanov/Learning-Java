@@ -2,6 +2,17 @@
 
 Read the docs [here](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html) for more info.
 
+Primitive data types store simple values directly. They are built into the Java language and are not created from classes.
+
+Example:
+
+```java
+int age = 25;
+double price = 19.99;
+char grade = 'A';
+boolean isValid = true;
+```
+
 ## Summary Table
 
 | Data Type   | Size          | Example                  |
@@ -24,7 +35,7 @@ A bit is the smallest piece of data a computer understands.
   - OFF = 0
   - ON = 1
 
-That’s it. Just two possibilities.
+That's it. Just two possibilities.
 
 ## What is a byte?
 
@@ -40,6 +51,18 @@ Because each switch can be ON or OFF, 8 switches can represent:
 
 - 256 different values (from 0 to 255)
 
+## Default values
+
+When primitive fields are declared inside a class, Java gives them default values.
+
+| Data Type | Default Value |
+| --------- | ------------- |
+| Numbers   | `0` or `0.0`  |
+| `char`    | `'\u0000'`    |
+| `boolean` | `false`       |
+
+Local variables inside methods do not get automatic default values. They must be assigned before use.
+
 ## Content of this section
 
-- **data-types**
+- **[data-types](data-types/)**

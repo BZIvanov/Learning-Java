@@ -25,6 +25,8 @@ float value = 3.14; // invalid: literal is double by default
 float value2 = 1.23456789012345f; // precision is limited
 ```
 
+Like `double`, `float` should not be used when exact decimal precision is required, such as money calculations.
+
 ## Float class
 
 The wrapper class `Float` provides useful constant values and helper methods.
@@ -32,6 +34,6 @@ The wrapper class `Float` provides useful constant values and helper methods.
 ```java
 System.out.println(Float.MIN_VALUE);
 System.out.println(Float.MAX_VALUE);
-System.out.println(Float.parseFloat("2.5f"));
+System.out.println(Float.parseFloat("2.5"));
 System.out.println(Float.isInfinite(1f / 0f));
 ```

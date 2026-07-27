@@ -1,7 +1,7 @@
 # long data type
 
 The `long` data type is a **64-bit signed integer** used for whole numbers that are larger than `int` can store.
-It is the best choice for large integer values such as timestamps, IDs, and currency calculations.
+It is a good choice for large integer values such as timestamps, IDs, and exact whole-number calculations.
 
 ```java
 long population = 8_000_000_000L;
@@ -18,6 +18,8 @@ long value = 123456789L;
 long bigValue = 9_000_000_000L;
 ```
 
+Use uppercase `L` instead of lowercase `l` because it is easier to read.
+
 ## Range
 
 The allowed range is from `-9_223_372_036_854_775_808` to `9_223_372_036_854_775_807`.
@@ -29,12 +31,12 @@ System.out.println(Long.MAX_VALUE);
 
 ## Common usage
 
-Use `long` when `int` is too small, especially for large counts, high-precision timestamps, and financial values that require full integer accuracy.
+Use `long` when `int` is too small, especially for large counts, timestamps, IDs, and financial values stored as whole units such as cents.
 
 ## Common mistakes
 
 ```java
-long value = 10000000000; // invalid: literal is int by default and too large
+long value = 10000000000;  // invalid: literal is int by default and too large
 long value2 = 10000000000L; // valid
 ```
 

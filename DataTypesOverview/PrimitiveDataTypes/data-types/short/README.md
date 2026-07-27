@@ -26,7 +26,7 @@ for example in arrays or old file formats.
 ## Common mistakes
 
 ```java
-short value = 40000; // invalid: out of range
+short value = 40000;      // invalid: out of range
 short result = 10000 * 4; // invalid without cast because expression is int
 ```
 
@@ -38,3 +38,11 @@ short result = (short) sum;
 ```
 
 This can cause overflow if the value falls outside the `short` range.
+
+Arithmetic with `short` values is promoted to `int`, so this also causes an error:
+
+```java
+short a = 10;
+short b = 20;
+short result = a + b; // invalid: a + b is an int
+```

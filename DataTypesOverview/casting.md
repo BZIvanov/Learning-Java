@@ -33,10 +33,10 @@ Historically, CPUs perform arithmetic most efficiently using machine word sizes 
 
 So Java simplifies the rules:
 
-- `byte + byte` → `int`
-- `byte - byte` → `int`
-- `byte * byte` → `int`
-- `byte / byte` → `int`
+- `byte + byte` becomes `int`
+- `byte - byte` becomes `int`
+- `byte * byte` becomes `int`
+- `byte / byte` becomes `int`
 
 The same is true for `short` and `char`.
 
@@ -68,7 +68,7 @@ byte someValue = 10;
 byte myValue = (byte) (someValue / 2);
 ```
 
-The cast `(byte)` means: "I know this expression is an `int`, but I want you to convert it to a `byte`.". Now the code compiles.
+The cast `(byte)` means: "I know this expression is an `int`, but I want you to convert it to a `byte`." Now the code compiles.
 
 ---
 
@@ -101,9 +101,9 @@ Java refuses because an `int` may not fit into a `byte`.
 
 ## Why does Java require the cast?
 
-A `byte` can hold only values from -128 to 127.
+A `byte` can hold only values from `-128` to `127`.
 
-An `int` can hold values from about -2.1 billion to +2.1 billion.
+An `int` can hold values from about `-2.1 billion` to `2.1 billion`.
 
 If Java allowed this automatically:
 
@@ -124,7 +124,7 @@ byte y = (byte) x;
 
 ## What happens if the value doesn't fit?
 
-Casting doesn't prevent overflow—it simply keeps the low-order 8 bits.
+Casting doesn't prevent overflow. It simply keeps the low-order bits that fit into the target type.
 
 Example:
 
@@ -139,19 +139,19 @@ Output: `-126`
 
 This surprises many beginners. The bits of `130` are: `10000010`.
 
-A `byte` interprets those same 8 bits as a signed two's complement value, which is -126.
+A `byte` interprets those same 8 bits as a signed two's complement value, which is `-126`.
 
-So a cast is **not** the same as a mathematical conversion—it may lose information.
+So a cast is **not** the same as a mathematical conversion. It may lose information.
 
 ---
 
 ## Widening vs. narrowing conversions
 
-There are two broad categories of numeric conversions:
+There are two broad categories of numeric conversions.
 
-**Widening (automatic)**
+### Widening conversions
 
-These are safe because the destination type can represent every value of the source type.
+Widening conversions are automatic because the destination type can represent every value of the source type.
 
 ```java
 byte b = 10;
@@ -165,9 +165,9 @@ float f = x;
 
 No cast is required.
 
-**Narrowing (requires a cast)**
+### Narrowing conversions
 
-These may lose information.
+Narrowing conversions may lose information, so Java requires a cast.
 
 ```java
 int x = 100;
