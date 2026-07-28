@@ -135,12 +135,13 @@ By the end of this section, you will be able to create your own classes, create 
 1. **[ClassesAndObjects](ClassesAndObjects/)** - learn the relationship between a class and an object.
 2. **[Fields](Fields/)** - store data inside objects.
 3. **[Constructors](Constructors/)** - create objects with valid starting data.
-4. **[InstanceMethods](InstanceMethods/)** - add behavior to objects.
-5. **[ThisKeyword](ThisKeyword/)** - understand how an object refers to itself.
-6. **[StaticMembers](StaticMembers/)** - learn what belongs to the class instead of one object.
-7. **[Packages](Packages/)** - organize classes into folders and namespaces.
-8. **[ObjectReferences](ObjectReferences/)** - understand how object variables point to objects in memory.
-9. **[tasks](tasks/)** - practice the concepts with small exercises.
+4. **[Records](Records/)** - concise, immutable data carriers (a modern alternative to simple POJOs).
+5. **[InstanceMethods](InstanceMethods/)** - add behavior to objects.
+6. **[ThisKeyword](ThisKeyword/)** - understand how an object refers to itself.
+7. **[StaticMembers](StaticMembers/)** - learn what belongs to the class instead of one object.
+8. **[Packages](Packages/)** - organize classes into folders and namespaces.
+9. **[ObjectReferences](ObjectReferences/)** - understand how object variables point to objects in memory.
+10. **[tasks](tasks/)** - practice the concepts with small exercises.
 
 ## Key Idea
 

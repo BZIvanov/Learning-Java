@@ -111,3 +111,33 @@ you can write this:
 ```java
 Book book = new Book("Effective Java", "Joshua Bloch", 416);
 ```
+
+## Constructor Chaining
+
+A constructor can call another constructor in the same class using `this(...)`.
+This helps reuse common setup logic and keep constructors consistent.
+The call to another constructor must be the first statement inside the constructor.
+
+```java
+class Book {
+    String title;
+    String author;
+    int pages;
+
+    public Book(String title, String author, int pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }
+
+    public Book(String title, String author) {
+        this(title, author, 0);
+    }
+
+    public Book() {
+        this("Unknown", "Unknown", 0);
+    }
+}
+```
+
+Using constructor chaining like this avoids repeating initialization code.
