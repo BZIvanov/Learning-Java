@@ -1,7 +1,9 @@
-// Child class (inherits from Animal)
 public class Dog extends Animal {
-    // Unique method for Dog class
-    void bark() {
-        System.out.println("Dog barking");
+    public Dog(String name, int age) {
+        super(name, age);
+    }
+
+    public void bark() {
+        System.out.println(getName() + " is barking");
     }
 }

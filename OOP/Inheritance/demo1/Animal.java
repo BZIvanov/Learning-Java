@@ -1,11 +1,21 @@
-// Parent class (superclass)
 public class Animal {
-    // Common properties for all animals
-    public String name;
-    public int age;
+    private String name;
+    private int age;
 
-    // Common method for all animals
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     public void eat() {
-        System.out.println("Animal eating");
+        System.out.println(name + " is eating");
     }
 }

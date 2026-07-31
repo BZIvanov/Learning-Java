@@ -16,22 +16,20 @@ public enum Direction {
     }
 
     public Direction left() {
-        switch (this) {
-            case NORTH: return WEST;
-            case WEST: return SOUTH;
-            case SOUTH: return EAST;
-            case EAST: return NORTH;
-        }
-        return this; // This should never be reached
+        return switch (this) {
+            case NORTH -> WEST;
+            case WEST -> SOUTH;
+            case SOUTH -> EAST;
+            case EAST -> NORTH;
+        };
     }
 
     public Direction right() {
-        switch (this) {
-            case NORTH: return EAST;
-            case EAST: return SOUTH;
-            case SOUTH: return WEST;
-            case WEST: return NORTH;
-        }
-        return this; // This should never be reached
+        return switch (this) {
+            case NORTH -> EAST;
+            case EAST -> SOUTH;
+            case SOUTH -> WEST;
+            case WEST -> NORTH;
+        };
     }
 }

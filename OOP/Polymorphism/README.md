@@ -57,6 +57,21 @@ The variable type is `Animal`, but the actual objects are `Dog` and `Cat`.
 
 Java chooses the method based on the actual object at runtime.
 
+This also works well with collections or arrays:
+
+```java
+Animal[] animals = {
+    new Dog(),
+    new Cat()
+};
+
+for (Animal animal : animals) {
+    animal.eat();
+}
+```
+
+The loop does not need to know whether each object is a dog or a cat.
+
 ## Method Overriding
 
 Polymorphism usually works together with method overriding.

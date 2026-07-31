@@ -1,13 +1,10 @@
 public class App {
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        Dog dog = new Dog();
+        Cat cat = new Cat("Milo", 2);
+        Dog dog = new Dog("Rex", 3);
 
-        // Demonstrating inherited behavior
-        cat.eat(); // Output: "Animal eating"
-        dog.eat(); // Output: "Animal eating"
-
-        // Demonstrating unique behavior in Dog
-        dog.bark(); // Output: "Dog barking"
+        cat.eat();
+        dog.eat();
+        dog.bark();
     }
 }

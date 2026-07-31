@@ -1,13 +1,17 @@
 public class App {
     public static void main(String[] args) {
-        Dog dog = new Dog();
         Cat cat = new Cat();
 
-        dog.eat();
+        Predator dog = new Dog();
         dog.hunt();
 
         cat.eat();
-        cat.hide();
+
+        Predator catAsPredator = cat;
+        Prey catAsPrey = cat;
+
+        catAsPredator.hunt();
+        catAsPrey.hide();
     }
 }
 

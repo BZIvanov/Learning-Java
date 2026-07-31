@@ -62,6 +62,8 @@ String text = textBox.getItem();
 
 No cast is needed.
 
+The compiler remembers that `textBox` is a `Box<String>`, so `getItem()` returns a `String`.
+
 You can use the same class with another type:
 
 ```java

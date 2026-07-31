@@ -13,5 +13,11 @@ public class App {
         bunnyToy.setName("Fluffy");
 
         toyBox.setItem(bunnyToy);
+
+        Cake cake = cakeBox.getItem();
+        Toy toy = toyBox.getItem();
+
+        System.out.println("Cake type: " + cake.getType());
+        System.out.println("Toy name: " + toy.getName());
     }
 }

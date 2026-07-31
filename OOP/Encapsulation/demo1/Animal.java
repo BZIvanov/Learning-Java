@@ -1,7 +1,11 @@
 public class Animal {
-    // only the class has access to the fields, to modify the fields we need to use the setter methods
     private String name;
     private int age;
+
+    public Animal(String name, int age) {
+        this.name = name;
+        setAge(age);
+    }
 
     public String getName() {
         return name;
@@ -16,7 +20,7 @@ public class Animal {
     }
 
     public void setAge(int age) {
-        if (age > 0) {
+        if (age >= 0) {
             this.age = age;
         }
     }

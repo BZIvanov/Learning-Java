@@ -87,6 +87,30 @@ for (Direction direction : Direction.values()) {
 }
 ```
 
+## Enums Can Have Methods
+
+Enums can also store fields and define methods, because they are a special kind of class.
+
+```java
+public enum Direction {
+    NORTH,
+    EAST,
+    SOUTH,
+    WEST;
+
+    public Direction right() {
+        return switch (this) {
+            case NORTH -> EAST;
+            case EAST -> SOUTH;
+            case SOUTH -> WEST;
+            case WEST -> NORTH;
+        };
+    }
+}
+```
+
+This keeps behavior related to the enum inside the enum itself.
+
 ## Key Idea
 
 Enums make code clearer and safer when a variable should only have one value from a known set.

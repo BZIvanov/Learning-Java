@@ -12,19 +12,32 @@ The class that inherits is called the **child class**, **derived class**, or **s
 
 ```java
 public class Animal {
-    public String name;
-    public int age;
+    private String name;
+    private int age;
+
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     public void eat() {
-        System.out.println("Animal eating");
+        System.out.println(name + " is eating");
     }
 }
 ```
 
 ```java
 public class Dog extends Animal {
+    public Dog(String name, int age) {
+        super(name, age);
+    }
+
     public void bark() {
-        System.out.println("Dog barking");
+        System.out.println(getName() + " is barking");
     }
 }
 ```
@@ -32,9 +45,7 @@ public class Dog extends Animal {
 `Dog` inherits the fields and methods from `Animal`.
 
 ```java
-Dog dog = new Dog();
-dog.name = "Rex";
-dog.age = 3;
+Dog dog = new Dog("Rex", 3);
 
 dog.eat();
 dog.bark();
@@ -43,8 +54,8 @@ dog.bark();
 Output:
 
 ```text
-Animal eating
-Dog barking
+Rex is eating
+Rex is barking
 ```
 
 ## The `extends` Keyword
@@ -76,6 +87,9 @@ One Java class can directly extend only one class.
 
 ```java
 public class Dog extends Animal {
+    public Dog(String name, int age) {
+        super(name, age);
+    }
 }
 ```
 
@@ -105,6 +119,12 @@ A car is a vehicle.        Inheritance
 In Java, all classes automatically inherit from the built-in `Object` class if they do not explicitly extend another class.
 
 `Object` is the root superclass of all Java classes.
+
+## Inheritance and Encapsulation
+
+Inheritance does not mean fields should be public.
+
+Keep fields private when possible and let child classes use public or protected methods from the parent class.
 
 ## Key Idea
 
