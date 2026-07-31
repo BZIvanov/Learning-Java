@@ -26,6 +26,8 @@ java -version
 3. **[DataTypesOverview](DataTypesOverview/)**
    - Primitive data types
    - String data type
+   - Text blocks
+   - String formatting
    - Casting
 4. **[ClassesOverview](ClassesOverview/)**
    - Basic Class

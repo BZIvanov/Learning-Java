@@ -81,6 +81,49 @@ The first stores **text**, while the second stores a **numeric value**.
 
 ---
 
+## Text blocks
+
+A **text block** is another way to create a `String`.
+
+Text blocks use three double quotation marks (`"""`) and are useful when you need to store text on multiple lines.
+
+Example:
+
+```java
+String message = """
+        Hello, Java!
+        This text is written
+        on multiple lines.
+        """;
+
+System.out.println(message);
+```
+
+Output:
+
+```text
+Hello, Java!
+This text is written
+on multiple lines.
+```
+
+Text blocks are easier to read than writing one long string with many `\n` newline characters.
+
+For example, this is harder to read:
+
+```java
+String message = "Hello, Java!\nThis text is written\non multiple lines.";
+```
+
+Use text blocks when the text itself has multiple lines, such as:
+
+- Messages
+- Simple menus
+- HTML or JSON examples
+- SQL queries
+
+---
+
 ## Concatenating strings
 
 You can join strings together using the `+` operator. This is called **concatenation**.
@@ -136,6 +179,61 @@ Emma is 25 years old.
 ```
 
 Java automatically converts the number to text when it is joined with a string.
+
+---
+
+## Formatting strings
+
+`String.format()` creates a new string by placing values inside a text pattern.
+
+This is useful when you want the final text to follow a specific structure.
+
+Example:
+
+```java
+String name = "Emma";
+int age = 25;
+
+String message = String.format("%s is %d years old.", name, age);
+
+System.out.println(message);
+```
+
+Output:
+
+```text
+Emma is 25 years old.
+```
+
+The placeholders start with `%`.
+
+Common placeholders are:
+
+| Placeholder | Used For        | Example Value |
+| ----------- | --------------- | ------------- |
+| `%s`        | Text            | `"Java"`      |
+| `%d`        | Whole numbers   | `42`          |
+| `%f`        | Decimal numbers | `3.14`        |
+| `%n`        | New line        |               |
+
+Example with a decimal number:
+
+```java
+String product = "Book";
+double price = 12.5;
+
+String result = String.format("%s costs %.2f dollars.", product, price);
+
+System.out.println(result);
+```
+
+Output:
+
+```text
+Book costs 12.50 dollars.
+```
+
+The `.2` in `%.2f` means that the number should be shown with 2 digits after the decimal point.
 
 ---
 
