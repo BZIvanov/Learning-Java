@@ -29,9 +29,9 @@ The pillars are connected. For example, inheritance and polymorphism often work 
 2. **[Inheritance](Inheritance/)** - learn parent and child classes with `extends`.
 3. **[Polymorphism](Polymorphism/)** - use parent references for child objects and override behavior.
 4. **[Abstraction](Abstraction/)** - use abstract classes to describe shared behavior.
-5. **[interface](interface/interface.md)** - define contracts that classes can implement.
-6. **[enum](enum/enum.md)** - represent a fixed set of named constants.
-7. **[generic](generic/)** - create classes that work with different data types.
+5. **[Interface](interface/)** - define contracts that classes can implement.
+6. **[Enum](enum/)** - represent a fixed set of named constants.
+7. **[Generics](generic/)** - create classes that work with different data types.
 
 ---
 

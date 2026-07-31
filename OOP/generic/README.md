@@ -99,9 +99,9 @@ printItem("Hello");
 printItem(123);
 ```
 
-## Unknown class type `Class<?>`
+## Wildcards and `Class<?>`
 
-Consider the below example:
+A wildcard is used when a type is unknown or when a method should accept any type.
 
 ```java
 public boolean supports(Class<?> authentication) {
@@ -109,15 +109,13 @@ public boolean supports(Class<?> authentication) {
 }
 ```
 
-The syntax `Class<?>` in the Java code snippet `public boolean supports(Class<?> authentication)` signifies a **generic class type with an unknown type parameter**.
+This means the method accepts a `Class` object for some unknown type.
 
-Let's break it down:
+- `Class` is the built-in Java class that represents types at runtime.
+- `<...>` marks a generic type.
+- `?` is the wildcard symbol, meaning "some type I do not need to name exactly."
 
-- `Class`: This refers to the `java.lang.Class` class, which represents classes and interfaces in a running Java application. It's used to obtain runtime information about types.
-- `<...>`: These angle brackets denote a generic type. Generics allow you to parameterize classes and interfaces with types.
-- `?`: This is the wildcard character. It represents an unknown type. In the context of `Class<?>`, it means that the Class object can represent any type.
-
-**In essence, `Class<?>` means "a Class object representing some unknown type."**
+So `Class<?>` means "a `Class` object representing some unknown type." It is useful when you want type safety without fixing a specific generic type.
 
 ## Key Idea
 

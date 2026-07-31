@@ -84,7 +84,7 @@ Example:
 
 ```text
 Dog is an Animal.       Abstract class or inheritance can make sense.
-Dog can Hunt.           Interface can make sense.
+Dog can hunt.           Interface can make sense.
 ```
 
 ## Key Idea
