@@ -19,25 +19,77 @@ java -version
 ## Content of this repo
 
 1. **[GettingStarted](GettingStarted/)**
+   - JShell
+   - IDE
+   - JVM, JRE, JDK
 2. **[VariablesOverview](VariablesOverview/)**
 3. **[DataTypesOverview](DataTypesOverview/)**
+   - Primitive data types
+   - String data type
+   - Casting
 4. **[ClassesOverview](ClassesOverview/)**
+   - Basic Class
+   - Compilation process
 5. **[BuiltinClassesOverview](BuiltinClassesOverview/)**
+   - System Class
+   - Math Class
+   - Integer Class
+   - BigInteger Class
+   - StringBuilder Class
 6. **[ConditionalLogicOverview](ConditionalLogicOverview/)**
+   - If Else statement
+   - Switch statement
+   - Logical operators
 7. **[MethodsOverview](MethodsOverview/)**
+   - Method parameters
+   - Method return value
+   - Method overloading
 8. **[Loops](Loops/)**
+   - For Loop
+   - While Loop
+   - Do While Loop
+   - Break statement
+   - Continue statement
+   - Nested loops
+   - Enhanced For Loop
 9. **[Debugging](Debugging/)**
+   - Breakpoints
 10. **[HandlingExceptionsOverview](HandlingExceptionsOverview/)**
+    - Try Catch
+    - Multiple catch
+    - Finally
+    - Throw
 11. **[ClassesAndObjectsOverview](ClassesAndObjectsOverview/)**
+    - Class
+    - Object
+    - Field
+    - Constructor
+    - Record
+    - Instance Method
+    - This keyword
+    - Static member
+    - Packages
+    - Object references
 12. **[OOPOverview](OOPOverview/)**
-13. **[LambdaExpressions](LambdaExpressions/)**
-14. **[Arrays](Arrays/)**
-15. **[MultidimensionalArrays](MultidimensionalArrays/)**
-16. **[Lists](Lists/)**
-17. **[AssociativeArrays](AssociativeArrays/)**
-18. **[StackAndQueue](StackAndQueue/)**
-19. **[SetAndMap](SetAndMap/)**
-20. **[OOP](OOP/)**
+    - Access modifiers
+    - Encapsulation
+    - Getters and Setters
+    - Composition
+13. **[OOP](OOP/)**
+    - Encapsulation
+    - Inheritance
+    - Polymorphism
+    - Abstraction
+    - Interface
+    - Enum
+    - Generics
+14. **[LambdaExpressions](LambdaExpressions/)**
+15. **[Arrays](Arrays/)**
+16. **[MultidimensionalArrays](MultidimensionalArrays/)**
+17. **[Lists](Lists/)**
+18. **[AssociativeArrays](AssociativeArrays/)**
+19. **[StackAndQueue](StackAndQueue/)**
+20. **[SetAndMap](SetAndMap/)**
 21. **[RegularExpressions](RegularExpressions/)**
 22. **[Streams](Streams/)**
 23. **[Testing](Testing/)**
