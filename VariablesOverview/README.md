@@ -54,6 +54,14 @@ Most of the time you do both together:
 int age = 25;
 ```
 
+Java can also infer the type of a local variable when you use `var` and assign a value immediately:
+
+```java
+var age = 25;
+```
+
+The variable still has a fixed type. In this example, Java treats `age` as an `int`.
+
 ## Examples with different data types
 
 More details about data types can be found in the upcoming sections.
@@ -109,4 +117,5 @@ user-name  ❌
 
 ## Content of this section
 
-1. **Terminology**
+1. **[Terminology](Terminology.md)**
+2. **[VarKeyword](VarKeyword/)**

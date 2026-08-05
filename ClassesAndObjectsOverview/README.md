@@ -4,7 +4,7 @@ So far in this repository, most examples have been written inside a **single Jav
 
 That approach is useful while learning the fundamentals because it lets you focus on one concept at a time. Real Java applications, however, are usually divided into many classes. Each class describes one part of the program and has its own responsibility.
 
-This section introduces the building blocks of object-oriented programming (OOP): classes, objects, fields, constructors, instance methods, static members, packages, and object references.
+This section introduces the building blocks of object-oriented programming (OOP): classes, objects, fields, constructors, factory methods, instance methods, static members, packages, and object references.
 
 ---
 
@@ -122,6 +122,7 @@ In the following pages, you will learn:
 - How to create objects.
 - Fields, also called instance variables.
 - Constructors.
+- Factory methods.
 - Instance methods.
 - The `this` keyword.
 - Static fields and methods.
@@ -136,12 +137,13 @@ By the end of this section, you will be able to create your own classes, create 
 2. **[Fields](Fields/)** - store data inside objects.
 3. **[Constructors](Constructors/)** - create objects with valid starting data.
 4. **[Records](Records/)** - concise, immutable data carriers (a modern alternative to simple POJOs).
-5. **[InstanceMethods](InstanceMethods/)** - add behavior to objects.
-6. **[ThisKeyword](ThisKeyword/)** - understand how an object refers to itself.
-7. **[StaticMembers](StaticMembers/)** - learn what belongs to the class instead of one object.
-8. **[Packages](Packages/)** - organize classes into folders and namespaces.
-9. **[ObjectReferences](ObjectReferences/)** - understand how object variables point to objects in memory.
-10. **[tasks](tasks/)** - practice the concepts with small exercises.
+5. **[FactoryMethods](FactoryMethods/)** - create objects through named methods.
+6. **[InstanceMethods](InstanceMethods/)** - add behavior to objects.
+7. **[ThisKeyword](ThisKeyword/)** - understand how an object refers to itself.
+8. **[StaticMembers](StaticMembers/)** - learn what belongs to the class instead of one object.
+9. **[Packages](Packages/)** - organize classes into folders and namespaces.
+10. **[ObjectReferences](ObjectReferences/)** - understand how object variables point to objects in memory.
+11. **[tasks](tasks/)** - practice the concepts with small exercises.
 
 ## Key Idea
 

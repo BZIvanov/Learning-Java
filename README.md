@@ -23,6 +23,9 @@ java -version
    - IDE
    - JVM, JRE, JDK
 2. **[VariablesOverview](VariablesOverview/)**
+   - Variables
+   - Terminology
+   - var keyword
 3. **[DataTypesOverview](DataTypesOverview/)**
    - Primitive data types
    - String data type
@@ -66,6 +69,7 @@ java -version
     - Object
     - Field
     - Constructor
+    - Factory Method
     - Record
     - Instance Method
     - This keyword
