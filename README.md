@@ -85,6 +85,7 @@ java -version
     - Encapsulation
     - Inheritance
     - Polymorphism
+    - instanceof
     - Abstraction
     - Interface
     - Enum

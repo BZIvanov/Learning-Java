@@ -28,10 +28,11 @@ The pillars are connected. For example, inheritance and polymorphism often work 
 1. **[Encapsulation](Encapsulation/)** - revisit encapsulation as one of the OOP pillars.
 2. **[Inheritance](Inheritance/)** - learn parent and child classes with `extends`.
 3. **[Polymorphism](Polymorphism/)** - use parent references for child objects and override behavior.
-4. **[Abstraction](Abstraction/)** - use abstract classes to describe shared behavior.
-5. **[Interface](interface/)** - define contracts that classes can implement.
-6. **[Enum](enum/)** - represent a fixed set of named constants.
-7. **[Generics](generic/)** - create classes that work with different data types.
+4. **[Instanceof](Instanceof/)** - check an object's real type safely.
+5. **[Abstraction](Abstraction/)** - use abstract classes to describe shared behavior.
+6. **[Interface](interface/)** - define contracts that classes can implement.
+7. **[Enum](enum/)** - represent a fixed set of named constants.
+8. **[Generics](generic/)** - create classes that work with different data types.
 
 ---
 
@@ -133,6 +134,28 @@ animal.makeSound();
 The variable type is `Animal`, but the actual object is a `Dog`.
 
 If `Dog` overrides `makeSound()`, Java runs the `Dog` version.
+
+---
+
+## instanceof
+
+The `instanceof` operator checks an object's real type.
+
+```java
+Animal animal = new Dog();
+
+boolean isDog = animal instanceof Dog;
+```
+
+Modern Java can also create a typed variable during the check:
+
+```java
+if (animal instanceof Dog dog) {
+    dog.bark();
+}
+```
+
+Use this when you need subtype-specific behavior after working with a general parent type.
 
 ---
 
