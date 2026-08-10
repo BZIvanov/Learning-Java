@@ -1,22 +1,18 @@
-# About
+# Array exercises
 
-Contains info about solving the tasks.
-
-You can run the below examples using your IDE for easier learning/development instead of compiling and running java programs using the terminal.
+Run each program from your IDE and provide the sample input through standard
+input. Output spacing at the end of a line is not significant.
 
 ## Recommended learning order
 
-Recommended order to go through the different examples is as the list of tasks below.
+The exercises move from basic indexing and traversal to more involved array
+algorithms.
 
-## Tasks
+### 1. DayOfWeek
 
-Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
+Read a number from 1 to 7 and print the corresponding day of the week.
 
-### DayOfWeek
-
-Test inputs and outputs:
-
-```
+```text
 Input:
 7
 
@@ -24,11 +20,11 @@ Output:
 Sunday
 ```
 
-### PrintReverse
+### 2. PrintReverse
 
-Test inputs and outputs:
+Read a count followed by that many integers, then print them in reverse order.
 
-```
+```text
 Input:
 2
 3
@@ -38,11 +34,11 @@ Output:
 1 3
 ```
 
-### SumEvenNumbers
+### 3. SumEvenNumbers
 
-Test inputs and outputs:
+Print the sum of all even values in a space-separated integer array.
 
-```
+```text
 Input:
 1 4 8 3 2
 
@@ -50,11 +46,11 @@ Output:
 14
 ```
 
-### CondenseToNumber
+### 4. CondenseToNumber
 
-Test inputs and outputs:
+Repeatedly replace adjacent values with their sums until one value remains.
 
-```
+```text
 Input:
 2 8 1 9
 
@@ -62,11 +58,11 @@ Output:
 38
 ```
 
-### ReverseArray
+### 5. ReverseArray
 
-Test inputs and outputs:
+Reverse a space-separated string array in place.
 
-```
+```text
 Input:
 aa bb cc dd
 
@@ -74,11 +70,11 @@ Output:
 dd cc bb aa
 ```
 
-### EvenOddSubtraction
+### 6. EvenOddSubtraction
 
-Test inputs and outputs:
+Subtract the sum of the odd values from the sum of the even values.
 
-```
+```text
 Input:
 2 4 5 11 9 3 1 8
 
@@ -86,23 +82,25 @@ Output:
 -15
 ```
 
-### EqualArrays
+### 7. EqualArrays
 
-Test inputs and outputs:
+Compare two integer arrays. Print their sum when they are identical; otherwise,
+print the index of the first difference.
 
-```
+```text
 Input:
+1 2 3 4
 1 2 3 4
 
 Output:
-5 6 7 8
+Arrays are identical. Sum: 10
 ```
 
-### CommonElements
+### 8. CommonElements
 
-Test inputs and outputs:
+Print the values that appear in both string arrays.
 
-```
+```text
 Input:
 one two
 three four one
@@ -111,11 +109,11 @@ Output:
 one
 ```
 
-### Train
+### 9. Train
 
-Test inputs and outputs:
+Read the passenger count for each wagon, print all counts, and print their sum.
 
-```
+```text
 Input:
 2
 12
@@ -126,11 +124,11 @@ Output:
 23
 ```
 
-### ArrayRotation
+### 10. ArrayRotation
 
-Test inputs and outputs:
+Rotate an array to the left by the requested number of positions.
 
-```
+```text
 Input:
 2 8 9 1 0 5 7
 2
@@ -139,11 +137,11 @@ Output:
 9 1 0 5 7 2 8
 ```
 
-### ZigZagArrays
+### 11. ZigZagArrays
 
-Test inputs and outputs:
+Read pairs of integers and distribute them alternately between two arrays.
 
-```
+```text
 Input:
 2
 1 7
@@ -154,11 +152,11 @@ Output:
 7 4
 ```
 
-### TopIntegers
+### 12. TopIntegers
 
-Test inputs and outputs:
+Print every value that is greater than all values to its right.
 
-```
+```text
 Input:
 2 8 5 9 1
 
@@ -166,11 +164,11 @@ Output:
 9 1
 ```
 
-### EqualSum
+### 13. EqualSum
 
-Test inputs and outputs:
+Find an index whose left-side sum equals its right-side sum.
 
-```
+```text
 Input:
 2 6 3 0 8
 
@@ -178,11 +176,11 @@ Output:
 2
 ```
 
-### MaxSequenceOfEqual
+### 14. MaxSequenceOfEqual
 
-Test inputs and outputs:
+Print the longest consecutive sequence of equal values.
 
-```
+```text
 Input:
 2 5 5 9 1
 
@@ -190,11 +188,11 @@ Output:
 5 5
 ```
 
-### MagicSum
+### 15. MagicSum
 
-Test inputs and outputs:
+Print each pair of values whose sum equals the target.
 
-```
+```text
 Input:
 2 3 9 1 5
 4
@@ -203,11 +201,12 @@ Output:
 3 1
 ```
 
-### ArrayManipulator
+### 16. ArrayManipulator
 
-Test inputs and outputs:
+Apply `exchange`, `max`, `min`, `first`, and `last` commands to an integer array
+until the `end` command is received.
 
-```
+```text
 Input:
 2 8 9 3 4
 exchange 2
@@ -217,29 +216,30 @@ Output:
 [3, 4, 2, 8, 9]
 ```
 
-### KaminoFactory
+### 17. KaminoFactory
 
-Test inputs and outputs:
+Select the DNA sample with the longest sequence of consecutive `1` values.
+Resolve ties by earliest starting index, then by greatest sum, then by input
+order.
 
-```
+```text
 Input:
-a b c
-b d a
-c b a
-b c a
-c a b
+5
+1!0!1!1!0
+0!0!1!1!0
 Clone them!
 
 Output:
-Best DNA sample 1 with sum: 5.
-a   b   c
+Best DNA sample 1 with sum: 3.
+1 0 1 1 0
 ```
 
-### LadyBugs
+### 18. LadyBugs
 
-Test inputs and outputs:
+Move ladybugs left or right across a field. A bug skips occupied cells and
+leaves the field when no valid landing position remains.
 
-```
+```text
 Input:
 5
 0 2

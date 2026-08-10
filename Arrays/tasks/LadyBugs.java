@@ -24,6 +24,11 @@ public class LadyBugs {
             String cmd = cmdArgs[1];
             int flyLength = Integer.parseInt(cmdArgs[2]);
 
+            if (flyLength < 0) {
+                flyLength = Math.abs(flyLength);
+                cmd = cmd.equals("right") ? "left" : "right";
+            }
+
             if (index < 0 || index > fieldSize - 1 || field[index] == 0) {
                 command = sc.nextLine();
                 continue;
