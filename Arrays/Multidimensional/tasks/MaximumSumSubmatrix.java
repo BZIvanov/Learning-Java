@@ -5,13 +5,13 @@ public class MaximumSumSubmatrix {
     private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int[] dimensions = Arrays.stream(sc.nextLine().split(" "))
+        int[] dimensions = Arrays.stream(sc.nextLine().trim().split("\\s+"))
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
         int[][] matrix = fillMatrix(dimensions[0], dimensions[1]);
 
-        int maxSum = 0;
+        int maxSum = Integer.MIN_VALUE;
         int[] winningStartIndex = new int[2];
         for (int row = 0; row < matrix.length - 1; row++) {
             for (int col = 0; col < matrix[row].length - 1; col++) {
@@ -39,7 +39,7 @@ public class MaximumSumSubmatrix {
     private static int[][] fillMatrix(int r, int c) {
         int[][] matrix = new int[r][c];
         for (int[] ints : matrix) {
-            int[] tempRow = Arrays.stream(sc.nextLine().split(" "))
+            int[] tempRow = Arrays.stream(sc.nextLine().trim().split("\\s+"))
                     .mapToInt(Integer::parseInt)
                     .toArray();
             System.arraycopy(tempRow, 0, ints, 0, ints.length);

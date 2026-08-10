@@ -11,7 +11,7 @@ public class MaximalSum {
 
         int[][] matrix = fillMatrix(values[0], values[1]);
 
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         int rowIndex = 0;
         int colIndex = 0;
         for (int row = 0; row < matrix.length - 2; row++) {

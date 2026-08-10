@@ -91,14 +91,15 @@ java -version
     - Enum
     - Generics
 14. **[Arrays](Arrays/)**
-15. **[MultidimensionalArrays](MultidimensionalArrays/)**
-16. **[Lists](Lists/)**
-17. **[AssociativeArrays](AssociativeArrays/)**
-18. **[StackAndQueue](StackAndQueue/)**
-19. **[SetAndMap](SetAndMap/)**
-20. **[LambdaExpressions](LambdaExpressions/)**
-21. **[RegularExpressions](RegularExpressions/)**
-22. **[Streams](Streams/)**
-23. **[Testing](Testing/)**
-24. **[Threads](Threads/)**
-25. **[Other](Other/)**
+    - One-dimensional arrays
+    - Multidimensional arrays
+15. **[Lists](Lists/)**
+16. **[AssociativeArrays](AssociativeArrays/)**
+17. **[StackAndQueue](StackAndQueue/)**
+18. **[SetAndMap](SetAndMap/)**
+19. **[LambdaExpressions](LambdaExpressions/)**
+20. **[RegularExpressions](RegularExpressions/)**
+21. **[Streams](Streams/)**
+22. **[Testing](Testing/)**
+23. **[Threads](Threads/)**
+24. **[Other](Other/)**

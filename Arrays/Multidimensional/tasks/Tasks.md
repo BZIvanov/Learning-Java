@@ -1,10 +1,21 @@
-# About
+# Multidimensional array exercises
 
-Contains info about solving the tasks.
+Run each program from your IDE and provide the sample input through standard
+input. Output spacing at the end of a line is not significant.
 
-## Tasks
+## Recommended learning order
 
-Below are the tasks requirements and examples of input data to be provided for the different programs and expected outputs.
+1. Start with `CompareMatrices`, `PositionsOf`, `IntersectionOfTwoMatrices`, and
+   `SumMatrixElements` to practise matrix input and nested traversal.
+2. Continue with `MaximumSumSubmatrix`, `PrintDiagonals`, `FindRealQueen`, and
+   `WrongMeasurements` for indexes, neighbors, and bounds checking.
+3. Use `FillTheMatrix`, `MatrixOfPalindromes`, `DiagonalDifference`, and
+   `MaximalSum` to practise construction and common matrix patterns.
+4. Finish with the command-driven and simulation exercises from
+   `MatrixShuffling` through `ThueMorse`.
+
+Each exercise below includes one valid input/output example. Read the matching
+Java file for the implementation.
 
 ### CompareMatrices
 
@@ -237,6 +248,9 @@ Sum = 48
 
 ### MatrixShuffling
 
+Process valid `swap row1 col1 row2 col2` commands and print the matrix after
+each swap. Print `Invalid input!` for malformed or out-of-bounds commands.
+
 Test inputs and outputs:
 
 ```
@@ -247,14 +261,12 @@ Input:
 4 5 6
 7 8 9
 swap 0 2 2 1
+END
 
 Output:
 1 2 8
 4 5 6
 7 3 9
-
-Input:
-END
 ```
 
 ### StringMatrixRotation
@@ -280,6 +292,9 @@ a
 
 ### Crossfire
 
+Generate a numbered matrix, destroy the requested cross-shaped areas, then
+collapse the surviving values to the left and remove empty rows.
+
 Test inputs and outputs:
 
 ```
@@ -292,7 +307,8 @@ Nuke it
 
 Output:
 1 3 4
-12
+8
+9 11 12
 ```
 
 ### HeiganDance
@@ -341,7 +357,8 @@ Output:
 
 ### ThueMorse
 
-Write a program that takes a single integer command-line argument _n_ and printx _n_ x _n_ pattern based on the Thue-Morse sequence.
+Read a positive integer _n_ and print an _n_ by _n_ pattern based on the
+Thue-Morse sequence.
 
 The Thue-Morse sequence is an infinite sequence of 0s and 1s constructed by starting with 0 and successively appending the bitwise negation (interchanging 0s and 1s) of the sequence obtained so far. The first few steps of this construction are:
 
@@ -360,6 +377,7 @@ Input:
 4
 
 Output:
++  -  -  +
 -  +  +  -
 -  +  +  -
 +  -  -  +

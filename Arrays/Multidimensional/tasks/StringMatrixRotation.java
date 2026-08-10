@@ -5,19 +5,18 @@ public class StringMatrixRotation {
     private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int angle = Integer.parseInt(sc.nextLine());
-
-        String input = sc.nextLine();
+        int angle = parseAngle(sc.nextLine());
 
         ArrayList<String> words = new ArrayList<>();
-        int maxWordLength = input.length();
+        int maxWordLength = 0;
+
+        String input = sc.nextLine();
         while (!input.equals("END")) {
             words.add(input);
-            input = sc.nextLine();
-
             if (maxWordLength < input.length()) {
                 maxWordLength = input.length();
             }
+            input = sc.nextLine();
         }
 
         char[][] matrix = new char[words.size()][maxWordLength];
@@ -61,5 +60,10 @@ public class StringMatrixRotation {
                 System.out.println();
             }
         }
+    }
+
+    private static int parseAngle(String input) {
+        String numericAngle = input.replaceAll("[^0-9-]", "");
+        return Math.floorMod(Integer.parseInt(numericAngle), 360);
     }
 }
