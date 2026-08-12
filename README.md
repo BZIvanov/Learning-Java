@@ -47,6 +47,7 @@ java -version
    - Logical operators
 7. **[MethodsOverview](MethodsOverview/)**
    - Method parameters
+   - Variable arguments (varargs)
    - Method return value
    - Method overloading
 8. **[Loops](Loops/)**

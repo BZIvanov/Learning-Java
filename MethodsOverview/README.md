@@ -104,7 +104,8 @@ Don't worry about keywords like `public` and `static` yet—they'll make much mo
 
 ## Content of this section
 
-1. **Parameters**
-2. **ReturnValue**
-3. **Overloading**
-4. **tasks**
+1. **[Parameters](Parameters/README.md)**
+2. **[Variable Arguments (Varargs)](VariableArguments/README.md)**
+3. **[Return Value](ReturnValue/README.md)**
+4. **[Overloading](Overloading/README.md)**
+5. **[Tasks](tasks/Tasks.md)**
