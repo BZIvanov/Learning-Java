@@ -30,3 +30,8 @@ same indexing and reference concepts, then add another level of nesting.
 Java does not have a special matrix type. An `int[][]` is an array whose
 elements are references to other `int[]` arrays. This explains why rows can
 have different lengths and why copying multidimensional arrays requires care.
+
+## Next step
+
+After arrays, continue with [Lists and ArrayList](../Lists/README.md). Lists keep
+ordered, indexed access while removing the fixed-length limitation of arrays.
