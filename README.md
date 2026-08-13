@@ -95,7 +95,7 @@ java -version
     - One-dimensional arrays
     - Multidimensional arrays
 15. **[Lists](Lists/)**
-    - List and ArrayList
+    - List, ArrayList, and LinkedList
     - Mutable and unmodifiable lists
     - Indexing, iteration, conversion, and copying
 16. **[AssociativeArrays](AssociativeArrays/)**

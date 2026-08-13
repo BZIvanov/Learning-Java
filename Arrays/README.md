@@ -33,5 +33,6 @@ have different lengths and why copying multidimensional arrays requires care.
 
 ## Next step
 
-After arrays, continue with [Lists and ArrayList](../Lists/README.md). Lists keep
-ordered, indexed access while removing the fixed-length limitation of arrays.
+After arrays, continue with
+[List, ArrayList, and LinkedList](../Lists/README.md). Lists keep ordered,
+indexed access while removing the fixed-length limitation of arrays.

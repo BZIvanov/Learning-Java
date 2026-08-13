@@ -1,4 +1,4 @@
-# Lists and ArrayList
+# List, ArrayList, and LinkedList
 
 An array stores a fixed number of elements. A list keeps the same useful ideas—
 ordered elements, zero-based indexes, and iteration—but can grow and shrink as
@@ -36,7 +36,8 @@ an `ArrayList<>`:
 
 - `List` is an interface: it describes the operations available to an ordered
   collection.
-- `ArrayList` is a class: it provides those operations using a resizable array.
+- `ArrayList` and `LinkedList` are classes that provide those operations using
+  different internal structures.
 - Declaring the variable using the interface keeps the code flexible.
 
 ## Arrays and lists compared
@@ -262,16 +263,97 @@ List<Integer> second = new ArrayList<>(first);
 System.out.println(first.equals(second)); // true
 ```
 
-## When to use an array or an ArrayList
+## LinkedList
+
+`LinkedList` is another mutable implementation of the `List` interface. Code
+that uses only `List` operations looks almost the same as it does with an
+`ArrayList`; only the created object changes:
+
+```java
+import java.util.LinkedList;
+import java.util.List;
+
+List<String> route = new LinkedList<>();
+
+route.add("Sofia");
+route.add("Plovdiv");
+route.add(1, "Pazardzhik");
+
+System.out.println(route.get(1)); // Pazardzhik
+route.remove("Plovdiv");
+System.out.println(route);        // [Sofia, Pazardzhik]
+```
+
+The same `add`, `get`, `set`, `remove`, `size`, and iteration rules apply
+because both classes implement `List`.
+
+### How its structure differs
+
+An `ArrayList` stores its elements next to one another in an internal array. A
+`LinkedList` stores each element in a separate node. Each node contains an
+element and links to the node before and after it; this is called a
+**doubly-linked list**.
+
+This difference changes the work required by common operations:
+
+| Operation | `ArrayList` | `LinkedList` |
+| --- | --- | --- |
+| Read or replace by index | Direct access | Walks through nodes to the index |
+| Add at the end | Usually fast | Fast |
+| Add or remove at the beginning | Shifts later elements | Changes a few links |
+| Add or remove by index | Finds the index directly, then shifts elements | Walks to the index, then changes links |
+| Memory per element | Lower overhead | Extra links are stored for every node |
+
+This is why `LinkedList` is not automatically faster whenever a program adds
+or removes elements. For example, `route.add(500, value)` must first walk to
+index `500`. The method call is convenient, but locating that index still takes
+work.
+
+### Operations at both ends
+
+A `LinkedList` can efficiently work with its first and last elements:
+
+```java
+LinkedList<String> waiting = new LinkedList<>();
+
+waiting.addFirst("Ana");
+waiting.addLast("Ben");
+
+String first = waiting.getFirst();
+String last = waiting.getLast();
+
+waiting.removeFirst();
+waiting.removeLast();
+```
+
+`getFirst`, `getLast`, `removeFirst`, and `removeLast` throw a
+`NoSuchElementException` when the list is empty. Check `isEmpty()` first when an
+empty list is possible.
+
+`LinkedList` can also be used as a queue or a double-ended queue. Those uses and
+their preferred method names are covered later in the
+[Stack and Queue](../StackAndQueue/README.md) section.
+
+## Choosing between an array, ArrayList, and LinkedList
 
 Choose an array when the size is fixed, primitive storage is useful, or an API
 specifically requires an array. Choose an `ArrayList` for a general-purpose
 ordered collection whose size may change.
 
 `ArrayList` is usually the best first list implementation. It provides fast
-indexed access and fast appending in normal use. Inserting or removing near the
-beginning requires later elements to shift, so another data structure may be a
-better fit when that is the program's main operation.
+indexed access, fast appending in normal use, and less per-element memory
+overhead than a `LinkedList`.
+
+Consider `LinkedList` when a program frequently adds or removes elements at
+the beginning or end and also needs it specifically as a list. Avoid it for
+code that repeatedly accesses elements by index. When unsure, begin with
+`ArrayList` and change the implementation only when the program's operations
+show that another structure is a better fit.
+
+For the complete API contracts, see the official Java 21 documentation for
+[`List`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html),
+[`ArrayList`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayList.html),
+and [`LinkedList`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/LinkedList.html).
 
 ## Common mistakes
 
@@ -283,6 +365,8 @@ better fit when that is the program's main operation.
 - Using `i <= list.size()` instead of `i < list.size()`.
 - Adding or removing elements during an enhanced `for` loop.
 - Expecting assignment or a shallow copy to duplicate mutable element objects.
+- Assuming `LinkedList` makes every insertion or removal fast, even when it
+  must first find an index.
 
 ## Practice
 
