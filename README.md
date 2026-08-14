@@ -95,10 +95,11 @@ java -version
     - One-dimensional arrays
     - Multidimensional arrays
 15. **[Lists](Lists/)**
-    - List, ArrayList, and LinkedList
-    - Mutable and unmodifiable lists
-    - Indexing, conversion, and copying
-    - Iterator and ListIterator
+    - [List basics](Lists/Basics/)
+    - [Iterator and ListIterator](Lists/Iteration/)
+    - [Reading and converting lists](Lists/InputAndConversion/)
+    - [References and copying](Lists/ReferencesAndCopying/)
+    - [LinkedList and choosing a list type](Lists/LinkedList/)
 16. **[AssociativeArrays](AssociativeArrays/)**
 17. **[StackAndQueue](StackAndQueue/)**
 18. **[SetAndMap](SetAndMap/)**
