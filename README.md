@@ -97,7 +97,8 @@ java -version
 15. **[Lists](Lists/)**
     - List, ArrayList, and LinkedList
     - Mutable and unmodifiable lists
-    - Indexing, iteration, conversion, and copying
+    - Indexing, conversion, and copying
+    - Iterator and ListIterator
 16. **[AssociativeArrays](AssociativeArrays/)**
 17. **[StackAndQueue](StackAndQueue/)**
 18. **[SetAndMap](SetAndMap/)**
