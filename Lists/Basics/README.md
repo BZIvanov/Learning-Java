@@ -69,7 +69,9 @@ List<Double> prices = new ArrayList<>();
 ```
 
 Generics work with reference types, not primitive types. Use the corresponding
-wrapper class for primitive values:
+wrapper class for primitive values. Review
+[Wrapper classes, boxing, and unboxing](../../BuiltinClassesOverview/WrapperClasses/README.md)
+if these automatic conversions are unfamiliar:
 
 | Primitive | List element type |
 | --- | --- |

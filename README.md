@@ -39,6 +39,7 @@ java -version
    - System Class
    - Math Class
    - Integer Class
+   - [Wrapper classes, autoboxing, and unboxing](BuiltinClassesOverview/WrapperClasses/)
    - BigInteger Class
    - StringBuilder Class
 6. **[ConditionalLogicOverview](ConditionalLogicOverview/)**

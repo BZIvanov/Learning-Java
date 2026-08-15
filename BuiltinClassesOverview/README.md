@@ -112,6 +112,10 @@ Output:
 
 This is especially useful when reading numbers entered by a user.
 
+`Integer` is also the wrapper class corresponding to the primitive type `int`.
+The dedicated [Wrapper classes](WrapperClasses/) lesson explains all eight
+primitive wrappers, boxing, autoboxing, and unboxing.
+
 ---
 
 ## Do We Always Need to Create Classes?
@@ -198,5 +202,7 @@ The main difference is simply who wrote them:
 
 ## Content of this section
 
+- **[WrapperClasses](WrapperClasses/)** - wrapper types, boxing, autoboxing,
+  unboxing, and their common caveats.
 - **[BigIntegerClass](BigIntegerClass/)** - working with very large whole numbers.
 - **[StringBuilderClass](StringBuilderClass/)** - building and changing text efficiently.
